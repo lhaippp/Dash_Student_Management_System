@@ -1,0 +1,51 @@
+ID_ELEVE,NOM_ELE,PRENOM_ELE,groupe_promo,num_groupe_etudiant,libelle,site,NOTE,TYPE_INSCR,CODE_UP,CODE_FORMATION,CODE_ADMISSION,NOUVEAU,EMAIL_ELE,LOGIN,MOY_CC,MOY_CS,MOY,CREDIT,ECTS_GRADE,rang_domaine,code_domaine,NIVEAU_INIT_MAX_FRANCAIS,NIVEAU_ATTEINT_MAX_FRANCAIS,DATE_EDITION
+6536,Blizzard,Banegrief,2,8,Jita,Brest,,.,UVF3B415,IG 3A,CC  MP,,blizzard.banegrief@imt-atlantique.fr,bblizzard,,,,,,,,,,26/01/2018
+8389,Blizzard,Spelldragon,2,8,Jita,Brest,,.,UVF3B415,IG 3A,AL  F,NOUVEAU,blizzard.spelldragon@imt-atlantique.fr,sblizzard,,,,,,,,b2,B1+,26/01/2018
+6507,Bo'thal,Resthres,1,2,Évaluation,Brest,,.,UVF3B415,IG 3A,CC  MP,,bo'thal.resthres@imt-atlantique.fr,rbo'thal,,,,,,,,,,26/01/2018
+5961,Celeborn,Imorcaror,2,7,Évaluation,Brest,,.,UVF3B415,IG 3A,CC  PSI,,celeborn.imorcaror@imt-atlantique.fr,iceleborn,,,,,,,,,,26/01/2018
+15671,Comet,Lord,2,8,Jita,Brest,,.,UVF3B415,IG 3A,CC  PSI,,comet.lord@imt-atlantique.fr,lcomet,,,,,,,,,,26/01/2018
+13164,Daedrel,Losimor,2,7,Évaluation,Brest,,.,UVF3B415,IG 3A,CC  MP,,daedrel.losimor@imt-atlantique.fr,ldaedrel,,,,,,,,,,26/01/2018
+15806,Dagger,Curselance,2,8,Jita,Brest,,.,UVF3B415,IG 3A,CC  PSI,,dagger.curselance@imt-atlantique.fr,cdagger,,,,,,,,,,26/01/2018
+9277,Dawn,Amber,2,8,Jita,Brest,,.,UVF3B415,IG 3A,CC  MP,,dawn.amber@imt-atlantique.fr,adawn,,,,,,,,,,26/01/2018
+11576,Dirk,Lordhell,2,9,Téléradiologie,Brest,,.,UVF3B415,IG 3A,ST  EDD,NOUVEAU,dirk.lordhell@imt-atlantique.fr,ldirk,,,,,,,,b1+,B1,26/01/2018
+6852,Disles,Lë,2,6,DDRSE,Brest,,.,UVF3B415,IG 3A,ST  EDD,,disles.lë@imt-atlantique.fr,ldisles,,,,,,,,,,26/01/2018
+12886,Dor,Galadhdrel,1,2,Évaluation,Brest,,.,UVF3B415,IG 3A,ST  CONV,,dor.galadhdrel@imt-atlantique.fr,gdor,,,,,,,,,,26/01/2018
+3020,Duilal,Dhros,1,4,Téléradiologie,Brest,,.,UVF3B415,IG 3A,ST  EDD,,duilal.dhros@imt-atlantique.fr,dduilal,,,,,,,,,,26/01/2018
+15569,Dwyram,Leeana,1,4,Téléradiologie,Brest,,.,UVF3B415,IG 3A,CC  PC,,dwyram.leeana@imt-atlantique.fr,ldwyram,,,,,,,,,,26/01/2018
+5115,Eril,Imormiel,1,3,Jita,Brest,,.,UVF3B415,IG 3A,ST  EDD,,eril.imormiel@imt-atlantique.fr,ieril,,,,,,,,,,26/01/2018
+5149,Ev,Paeril,1,4,Téléradiologie,Brest,,.,UVF3B415,MSC 2A DS,ADO,NOUVEAU,ev.paeril@imt-atlantique.fr,pev,,,,,,,,,,26/01/2018
+13211,Findthal,Drinrin,2,7,Évaluation,Brest,,.,UVF3B415,IG 3A,ST  EDD,NOUVEAU,findthal.drinrin@imt-atlantique.fr,dfindthal,,,,,,,,,,26/01/2018
+11656,Flora,Midnightmagic,2,9,Téléradiologie,Brest,,.,UVF3B415,IG 3A,CC  MP,,flora.midnightmagic@imt-atlantique.fr,mflora,,,,,,,,,,26/01/2018
+8654,Flora,Tomedragon,2,9,Téléradiologie,Brest,,.,UVF3B415,IG 3A,CC  MP,NOUVEAU,flora.tomedragon@imt-atlantique.fr,tflora,,,,,,,,,,26/01/2018
+7794,Grielria,Thelsyl,1,2,Évaluation,Brest,,.,UVF3B415,IG 3A,CC  PSI,NOUVEAU,grielria.thelsyl@imt-atlantique.fr,tgrielria,,,,,,,,,,26/01/2018
+4381,Grimoire,Direjackal,2,9,Téléradiologie,Brest,,.,UVF3B415,IG 3A,CC  PC,,grimoire.direjackal@imt-atlantique.fr,dgrimoire,,,,,,,,,,26/01/2018
+7966,Halnas,Dal,2,7,Évaluation,Brest,,.,UVF3B415,IG 3A,CC  MP,NOUVEAU,halnas.dal@imt-atlantique.fr,dhalnas,,,,,,,,,,26/01/2018
+4472,Imgorsar,Saras,2,5,Formation,Brest,,.,UVF3B415,IG 3A,CC  PC,,imgorsar.saras@imt-atlantique.fr,simgorsar,,,,,,,,c1,C1,26/01/2018
+13753,Jagi,Anornyë,1,3,Jita,Brest,,.,UVF3B415,IG 3A,CC  PSI,,jagi.anornyë@imt-atlantique.fr,ajagi,,,,,,,,,,26/01/2018
+15312,Laae,Losmethran,1,2,Évaluation,Brest,,.,UVF3B415,IG 3A,CC  PSI,,laae.losmethran@imt-atlantique.fr,llaae,,,,,,,,,,26/01/2018
+9723,Leo,Dragon,2,9,Téléradiologie,Brest,,.,UVF3B415,IG 3A,CC  PC,,leo.dragon@imt-atlantique.fr,dleo,,,,,,,,,,26/01/2018
+4394,Lethwing,Danra,2,5,Formation,Brest,,.,UVF3B415,IG 3A,ST  EDD,,lethwing.danra@imt-atlantique.fr,dlethwing,,,,,,,,,,26/01/2018
+7960,Lightning,Knight,2,10,Formation,Brest,,.,UVF3B415,MSC 2A DS,ADO,,lightning.knight@imt-atlantique.fr,klightning,,,,,,,,,,26/01/2018
+14134,Lokur,Viusmoril,2,6,DDRSE,Brest,,.,UVF3B415,IG 3A,ST  EDD,NOUVEAU,lokur.viusmoril@imt-atlantique.fr,vlokur,,,,,,,,,,26/01/2018
+14201,Losfela,Randu,2,7,Évaluation,Brest,,.,UVF3B415,MP ECOTIC,ADO,NOUVEAU,losfela.randu@imt-atlantique.fr,rlosfela,,,,,,,,,,26/01/2018
+4884,Mal'va,Ilra,2,5,Formation,Brest,,.,UVF3B415,MP ECOTIC,ADO,NOUVEAU,mal'va.ilra@imt-atlantique.fr,imal'va,,,,,,,,,,26/01/2018
+7471,Manduilos,Dwyren,1,3,Jita,Brest,,.,UVF3B415,IG 3A,CC  PSI,,manduilos.dwyren@imt-atlantique.fr,dmanduilos,,,,,,,,b2,B1+,26/01/2018
+7848,Midnight,Edenmourner,2,10,Formation,Brest,,.,UVF3B415,IG 3A,CC  PSI,,midnight.edenmourner@imt-atlantique.fr,emidnight,,,,,,,,,,26/01/2018
+11575,Morilce,Ra,1,4,Téléradiologie,Brest,,.,UVF3B415,MSC 2A DS,ADO,NOUVEAU,morilce.ra@imt-atlantique.fr,rmorilce,,,,,,,,b2,B2,26/01/2018
+7800,Mothrond,Gille,1,2,Évaluation,Brest,,.,UVF3B415,IG 3A,CC  PC,,mothrond.gille@imt-atlantique.fr,gmothrond,,,,,,,,,,26/01/2018
+10228,Mystery,Queencurse,2,10,Formation,Brest,,.,UVF3B415,IG 3A,CC  MP,,mystery.queencurse@imt-atlantique.fr,qmystery,,,,,,,,,,26/01/2018
+12406,Nasthe,Leerien,2,5,Formation,Brest,,.,UVF3B415,IG 3A,ST  EDD,,nasthe.leerien@imt-atlantique.fr,lnasthe,,,,,,,,,,26/01/2018
+7239,Rasve,Raenfë,1,4,Téléradiologie,Brest,,.,UVF3B415,IG 3A,CC  MP,,rasve.raenfë@imt-atlantique.fr,rrasve,,,,,,,,,,26/01/2018
+9573,Riae,Kithril,2,6,DDRSE,Brest,,.,UVF3B415,IG 3A,CC  PSI,,riae.kithril@imt-atlantique.fr,kriae,,,,,,,,,,26/01/2018
+4623,Ro,Dandor,2,5,Formation,Brest,,.,UVF3B415,IG 3A,ST  EDD,NOUVEAU,ro.dandor@imt-atlantique.fr,dro,,,,,,,,,,26/01/2018
+11535,Star,Eternity,2,10,Formation,Brest,,.,UVF3B415,MP ECOTIC,ADO,NOUVEAU,star.eternity@imt-atlantique.fr,estar,,,,,,,,,,26/01/2018
+8992,Stiletto,Shroud,2,10,Formation,Brest,,.,UVF3B415,IG 3A,ST  CF,,stiletto.shroud@imt-atlantique.fr,sstiletto,,,,,,,,,,26/01/2018
+4579,Storm,Katana,1,1,DDRSE,Brest,,.,UVF3B415,IG 3A,ST  CONV,NOUVEAU,storm.katana@imt-atlantique.fr,kstorm,,,,,,,,,,26/01/2018
+3095,Sunset,Lionchanter,1,1,DDRSE,Brest,,.,UVF3B415,MSC 2A DS,ADO,NOUVEAU,sunset.lionchanter@imt-atlantique.fr,lsunset,,,,,,,,b1,A2,26/01/2018
+3583,Tari,Nordral,2,6,DDRSE,Brest,,.,UVF3B415,IG 3A,CC  PC,,tari.nordral@imt-atlantique.fr,ntari,,,,,,,,,,26/01/2018
+14462,Tempest,Queensong,1,1,DDRSE,Brest,,.,UVF3B415,IG 3A,CC  MP,,tempest.queensong@imt-atlantique.fr,qtempest,,,,,,,,,,26/01/2018
+9295,Thognor,Sarbeleg,1,3,Jita,Brest,,.,UVF3B415,MSC 2A DS,ADO,,thognor.sarbeleg@imt-atlantique.fr,sthognor,,,,,,,,,,26/01/2018
+15276,Thranvoduil,Thafin,2,6,DDRSE,Brest,,.,UVF3B415,IG 3A,ST  EDD,,thranvoduil.thafin@imt-atlantique.fr,tthranvoduil,,,,,,,,,,26/01/2018
+13046,Tome,Starfinder,1,1,DDRSE,Brest,,.,UVF3B415,IG 3A,CC  MP,,tome.starfinder@imt-atlantique.fr,stome,,,,,,,,,,26/01/2018
+10315,Tortha,Rohirea,1,3,Jita,Brest,,.,UVF3B415,IG 3A,CC  MP,,tortha.rohirea@imt-atlantique.fr,rtortha,,,,,,,,b2,B1+,26/01/2018
+13089,Typhoon,Honor,1,1,DDRSE,Brest,,.,UVF3B415,IG 3A,CC  MP,NOUVEAU,typhoon.honor@imt-atlantique.fr,htyphoon,,,,,,,,b2,B2,26/01/2018

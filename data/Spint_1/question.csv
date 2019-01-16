@@ -1,0 +1,61 @@
+id_question,categorie,id_qcm,nom_question,sous_categorie
+0,Modélisation dimensionnelle,1,bus3,Architecture en bus
+1,Modélisation dimensionnelle,1,clef2,Clefs
+2,Modélisation dimensionnelle,1,clef5,Clefs
+3,Architecture,1,composants16,Composants
+4,Architecture,1,composants3,Composants
+5,Modélisation dimensionnelle,1,conforme3,Dimension conforme
+6,Tableaux de bord,1,dashboard1,Tableaux de bord
+7,Modélisation dimensionnelle,1,degeneree1,Dimension dégénérée
+8,Modélisation dimensionnelle,1,evolution1,Évolution des dimensions
+9,Modélisation dimensionnelle,1,evolution3,Évolution des dimensions
+10,Modélisation dimensionnelle,1,evolution5,Évolution des dimensions
+11,Modélisation dimensionnelle,1,faits2,Table de fait
+12,Modélisation dimensionnelle,1,faits3,Table de fait
+13,Modélisation dimensionnelle,1,grain4,Grain
+14,Architecture,1,maj3,Mise à jour
+15,Architecture,1,olap4,OLAP
+16,Architecture,1,oltp5,OLTP
+17,Modélisation dimensionnelle,1,redondance2,Redondance
+18,Modélisation dimensionnelle,1,schema2,Schéma
+19,Gestion de projet,1,scrum2,SCRUM
+20,Architecture,2,composants9,Composants
+21,Modélisation dimensionnelle,2,grain1,Grain
+22,Architecture,2,olap9,OLAP
+23,Modélisation dimensionnelle,2,temps1,Dimension temps
+24,Modélisation dimensionnelle,2,redondance1,Redondance
+25,Architecture,2,composants10,Composants
+26,Architecture,2,composants17,Composants
+27,Modélisation dimensionnelle,2,bus1,Architecture en bus
+28,Modélisation dimensionnelle,2,temps2,Dimension temps
+29,Architecture,2,composants3,Composants
+30,Architecture,2,maj6,Mise à jour
+31,Modélisation dimensionnelle,2,degeneree1,Dimension dégénérée
+32,Tableaux de bord,2,dashboard2,Tableaux de bord
+33,Architecture,2,oltp2,OLTP
+34,Architecture,2,composants13,Composants
+35,Modélisation dimensionnelle,2,evolution5,Évolution des dimensions
+36,Modélisation dimensionnelle,2,evolution1,Évolution des dimensions
+37,Architecture,2,composants15,Composants
+38,Entretien,2,entretien1,Mener un entretien
+39,Modélisation dimensionnelle,2,degeneree3,Dimension dégénérée
+40,Modélisation dimensionnelle,3,schema2,Schéma
+41,Modélisation dimensionnelle,3,grain3,Grain
+42,Modélisation dimensionnelle,3,faits2,Table de fait
+43,Modélisation dimensionnelle,3,grain7,Grain
+44,Modélisation dimensionnelle,3,grain4,Grain
+45,Architecture,3,composants15,Composants
+46,Modélisation dimensionnelle,3,clef4,Clefs
+47,Modélisation dimensionnelle,3,fourretout1,Dimension fourre-tout
+48,Architecture,3,maj7,Mise à jour
+49,Entretien,3,guide1,Guide d’entretien
+50,Architecture,3,olap5,OLAP
+51,Architecture,3,olap7,OLAP
+52,Modélisation dimensionnelle,3,mesure1,Mesures et Faits
+53,Entretien,3,entretien1,Mener un entretien
+54,Architecture,3,olap4,OLAP
+55,Architecture,3,olap9,OLAP
+56,Modélisation dimensionnelle,3,faits1,Table de fait
+57,Modélisation dimensionnelle,3,evolution2,Évolution des dimensions
+58,Modélisation dimensionnelle,3,conforme2,Dimension conforme
+59,Modélisation dimensionnelle,3,sansfait3,Table de faits sans fait

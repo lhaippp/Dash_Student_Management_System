@@ -1,0 +1,26 @@
+sous_categorie,categorie,atelier
+Composants,Architecture,2
+Mise à jour,Architecture,3
+OLAP,Architecture,1
+OLTP,Architecture,1
+Tableaux de bord,Tableaux de bord,3
+Mener un entretien,Entretien,1
+Guide d’entretien,Entretien,2
+SCRUM,Gestion de projet,3
+Architecture en bus,Modélisation dimensionnelle,3
+Clefs,Modélisation dimensionnelle,3
+Dimension conforme,Modélisation dimensionnelle,1
+Dimension dégénérée,Modélisation dimensionnelle,2
+Dimension déportée,Modélisation dimensionnelle,3
+Évolution des dimensions,Modélisation dimensionnelle,1
+Table de fait,Modélisation dimensionnelle,2
+Dimension fourre-tout,Modélisation dimensionnelle,3
+Grain,Modélisation dimensionnelle,3
+Hiérarchies,Modélisation dimensionnelle,1
+Dimension à jeu de rôles,Modélisation dimensionnelle,2
+Mesures et Faits,Modélisation dimensionnelle,1
+Table passerelle,Modélisation dimensionnelle,3
+Redondance,Modélisation dimensionnelle,3
+Table de faits sans fait,Modélisation dimensionnelle,1
+Schéma,Modélisation dimensionnelle,1
+Dimension temps,Modélisation dimensionnelle,1

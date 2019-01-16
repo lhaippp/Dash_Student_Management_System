@@ -1,0 +1,26 @@
+code_sous-categorie,code_categorie,nom_sous-categorie,nom_categorie
+composants,architecture,Composants,Architecture
+maj,architecture,Mise à jour,Architecture
+olap,architecture,OLAP,Architecture
+oltp,architecture,OLTP,Architecture
+dashboard,dashboard,Tableaux de bord,Tableaux de bord
+entretien,entretien,Mener un entretien,Entretien
+guide,entretien,Guide d’entretien,Entretien
+scrum,scrum,SCRUM,Gestion de projet
+bus,md,Architecture en bus,Modélisation dimensionnelle
+clef,md,Clefs,Modélisation dimensionnelle
+conforme,md,Dimension conforme,Modélisation dimensionnelle
+degeneree,md,Dimension dégénérée,Modélisation dimensionnelle
+deportee,md,Dimension déportée,Modélisation dimensionnelle
+evolution,md,Évolution des dimensions,Modélisation dimensionnelle
+faits,md,Table de fait,Modélisation dimensionnelle
+fourretout,md,Dimension fourre-tout,Modélisation dimensionnelle
+grain,md,Grain,Modélisation dimensionnelle
+hierarchie,md,Hiérarchies,Modélisation dimensionnelle
+jdr,md,Dimension à jeu de rôles,Modélisation dimensionnelle
+mesure,md,Mesures et Faits,Modélisation dimensionnelle
+passerelle,md,Table passerelle,Modélisation dimensionnelle
+redondance,md,Redondance,Modélisation dimensionnelle
+sansfait,md,Table de faits sans fait,Modélisation dimensionnelle
+schema,md,Schéma,Modélisation dimensionnelle
+temps,md,Dimension temps,Modélisation dimensionnelle
