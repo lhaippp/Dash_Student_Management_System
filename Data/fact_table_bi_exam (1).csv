@@ -1,0 +1,3001 @@
+absence,categorie,id_eleve,id_groupe,id_question,note,sous_categorie
+0,Modélisation dimensionnelle,6536,8,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,6536,8,1,1.0,Clefs
+0,Modélisation dimensionnelle,6536,8,2,1.0,Clefs
+0,Architecture,6536,8,3,1.0,Composants
+0,Architecture,6536,8,4,1.0,Composants
+0,Modélisation dimensionnelle,6536,8,5,1.0,Dimension conforme
+0,Tableaux de bord,6536,8,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,6536,8,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,6536,8,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,6536,8,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,6536,8,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,6536,8,11,1.0,Table de fait
+0,Modélisation dimensionnelle,6536,8,12,0.0,Table de fait
+0,Modélisation dimensionnelle,6536,8,13,1.0,Grain
+0,Architecture,6536,8,14,1.0,Mise à jour
+0,Architecture,6536,8,15,1.0,OLAP
+0,Architecture,6536,8,16,0.0,OLTP
+0,Modélisation dimensionnelle,6536,8,17,0.0,Redondance
+0,Modélisation dimensionnelle,6536,8,18,0.0,Schéma
+0,Gestion de projet,6536,8,19,1.0,SCRUM
+0,Modélisation dimensionnelle,8389,8,0,0.0,Architecture en bus
+0,Modélisation dimensionnelle,8389,8,1,0.0,Clefs
+0,Modélisation dimensionnelle,8389,8,2,1.0,Clefs
+0,Architecture,8389,8,3,1.0,Composants
+0,Architecture,8389,8,4,1.0,Composants
+0,Modélisation dimensionnelle,8389,8,5,1.0,Dimension conforme
+0,Tableaux de bord,8389,8,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,8389,8,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,8389,8,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,8389,8,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,8389,8,10,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,8389,8,11,1.0,Table de fait
+0,Modélisation dimensionnelle,8389,8,12,0.0,Table de fait
+0,Modélisation dimensionnelle,8389,8,13,0.0,Grain
+0,Architecture,8389,8,14,0.0,Mise à jour
+0,Architecture,8389,8,15,1.0,OLAP
+0,Architecture,8389,8,16,1.0,OLTP
+0,Modélisation dimensionnelle,8389,8,17,1.0,Redondance
+0,Modélisation dimensionnelle,8389,8,18,0.0,Schéma
+0,Gestion de projet,8389,8,19,1.0,SCRUM
+0,Modélisation dimensionnelle,6507,2,0,0.0,Architecture en bus
+0,Modélisation dimensionnelle,6507,2,1,1.0,Clefs
+0,Modélisation dimensionnelle,6507,2,2,1.0,Clefs
+0,Architecture,6507,2,3,1.0,Composants
+0,Architecture,6507,2,4,0.0,Composants
+0,Modélisation dimensionnelle,6507,2,5,1.0,Dimension conforme
+0,Tableaux de bord,6507,2,6,0.0,Tableaux de bord
+0,Modélisation dimensionnelle,6507,2,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,6507,2,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,6507,2,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,6507,2,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,6507,2,11,1.0,Table de fait
+0,Modélisation dimensionnelle,6507,2,12,0.0,Table de fait
+0,Modélisation dimensionnelle,6507,2,13,0.0,Grain
+0,Architecture,6507,2,14,1.0,Mise à jour
+0,Architecture,6507,2,15,1.0,OLAP
+0,Architecture,6507,2,16,1.0,OLTP
+0,Modélisation dimensionnelle,6507,2,17,1.0,Redondance
+0,Modélisation dimensionnelle,6507,2,18,1.0,Schéma
+0,Gestion de projet,6507,2,19,1.0,SCRUM
+0,Modélisation dimensionnelle,5961,7,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,5961,7,1,1.0,Clefs
+0,Modélisation dimensionnelle,5961,7,2,1.0,Clefs
+0,Architecture,5961,7,3,1.0,Composants
+0,Architecture,5961,7,4,1.0,Composants
+0,Modélisation dimensionnelle,5961,7,5,0.0,Dimension conforme
+0,Tableaux de bord,5961,7,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,5961,7,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,5961,7,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,5961,7,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,5961,7,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,5961,7,11,1.0,Table de fait
+0,Modélisation dimensionnelle,5961,7,12,0.0,Table de fait
+0,Modélisation dimensionnelle,5961,7,13,0.0,Grain
+0,Architecture,5961,7,14,0.0,Mise à jour
+0,Architecture,5961,7,15,1.0,OLAP
+0,Architecture,5961,7,16,1.0,OLTP
+0,Modélisation dimensionnelle,5961,7,17,0.0,Redondance
+0,Modélisation dimensionnelle,5961,7,18,0.0,Schéma
+0,Gestion de projet,5961,7,19,1.0,SCRUM
+0,Modélisation dimensionnelle,15671,8,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,15671,8,1,0.0,Clefs
+0,Modélisation dimensionnelle,15671,8,2,1.0,Clefs
+0,Architecture,15671,8,3,1.0,Composants
+0,Architecture,15671,8,4,1.0,Composants
+0,Modélisation dimensionnelle,15671,8,5,0.0,Dimension conforme
+0,Tableaux de bord,15671,8,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,15671,8,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,15671,8,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15671,8,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15671,8,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15671,8,11,1.0,Table de fait
+0,Modélisation dimensionnelle,15671,8,12,0.0,Table de fait
+0,Modélisation dimensionnelle,15671,8,13,0.0,Grain
+0,Architecture,15671,8,14,0.0,Mise à jour
+0,Architecture,15671,8,15,1.0,OLAP
+0,Architecture,15671,8,16,1.0,OLTP
+0,Modélisation dimensionnelle,15671,8,17,1.0,Redondance
+0,Modélisation dimensionnelle,15671,8,18,0.0,Schéma
+0,Gestion de projet,15671,8,19,1.0,SCRUM
+0,Modélisation dimensionnelle,13164,7,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,13164,7,1,1.0,Clefs
+0,Modélisation dimensionnelle,13164,7,2,1.0,Clefs
+0,Architecture,13164,7,3,1.0,Composants
+0,Architecture,13164,7,4,1.0,Composants
+0,Modélisation dimensionnelle,13164,7,5,0.0,Dimension conforme
+0,Tableaux de bord,13164,7,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,13164,7,7,1.0,Dimension dégénérée
+0,Modélisation dimensionnelle,13164,7,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13164,7,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13164,7,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13164,7,11,1.0,Table de fait
+0,Modélisation dimensionnelle,13164,7,12,0.0,Table de fait
+0,Modélisation dimensionnelle,13164,7,13,0.0,Grain
+0,Architecture,13164,7,14,0.0,Mise à jour
+0,Architecture,13164,7,15,1.0,OLAP
+0,Architecture,13164,7,16,1.0,OLTP
+0,Modélisation dimensionnelle,13164,7,17,1.0,Redondance
+0,Modélisation dimensionnelle,13164,7,18,0.0,Schéma
+0,Gestion de projet,13164,7,19,1.0,SCRUM
+0,Modélisation dimensionnelle,15806,8,0,0.0,Architecture en bus
+0,Modélisation dimensionnelle,15806,8,1,1.0,Clefs
+0,Modélisation dimensionnelle,15806,8,2,1.0,Clefs
+0,Architecture,15806,8,3,1.0,Composants
+0,Architecture,15806,8,4,1.0,Composants
+0,Modélisation dimensionnelle,15806,8,5,1.0,Dimension conforme
+0,Tableaux de bord,15806,8,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,15806,8,7,1.0,Dimension dégénérée
+0,Modélisation dimensionnelle,15806,8,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15806,8,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15806,8,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15806,8,11,0.0,Table de fait
+0,Modélisation dimensionnelle,15806,8,12,1.0,Table de fait
+0,Modélisation dimensionnelle,15806,8,13,0.0,Grain
+0,Architecture,15806,8,14,1.0,Mise à jour
+0,Architecture,15806,8,15,1.0,OLAP
+0,Architecture,15806,8,16,0.0,OLTP
+0,Modélisation dimensionnelle,15806,8,17,1.0,Redondance
+0,Modélisation dimensionnelle,15806,8,18,1.0,Schéma
+0,Gestion de projet,15806,8,19,1.0,SCRUM
+0,Modélisation dimensionnelle,9277,8,0,0.0,Architecture en bus
+0,Modélisation dimensionnelle,9277,8,1,1.0,Clefs
+0,Modélisation dimensionnelle,9277,8,2,1.0,Clefs
+0,Architecture,9277,8,3,1.0,Composants
+0,Architecture,9277,8,4,1.0,Composants
+0,Modélisation dimensionnelle,9277,8,5,1.0,Dimension conforme
+0,Tableaux de bord,9277,8,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,9277,8,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,9277,8,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9277,8,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9277,8,10,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9277,8,11,1.0,Table de fait
+0,Modélisation dimensionnelle,9277,8,12,0.0,Table de fait
+0,Modélisation dimensionnelle,9277,8,13,0.0,Grain
+0,Architecture,9277,8,14,0.0,Mise à jour
+0,Architecture,9277,8,15,1.0,OLAP
+0,Architecture,9277,8,16,0.0,OLTP
+0,Modélisation dimensionnelle,9277,8,17,1.0,Redondance
+0,Modélisation dimensionnelle,9277,8,18,0.0,Schéma
+0,Gestion de projet,9277,8,19,1.0,SCRUM
+0,Modélisation dimensionnelle,11576,9,0,0.0,Architecture en bus
+0,Modélisation dimensionnelle,11576,9,1,1.0,Clefs
+0,Modélisation dimensionnelle,11576,9,2,1.0,Clefs
+0,Architecture,11576,9,3,1.0,Composants
+0,Architecture,11576,9,4,0.0,Composants
+0,Modélisation dimensionnelle,11576,9,5,1.0,Dimension conforme
+0,Tableaux de bord,11576,9,6,0.0,Tableaux de bord
+0,Modélisation dimensionnelle,11576,9,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,11576,9,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11576,9,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11576,9,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11576,9,11,0.0,Table de fait
+0,Modélisation dimensionnelle,11576,9,12,0.0,Table de fait
+0,Modélisation dimensionnelle,11576,9,13,1.0,Grain
+0,Architecture,11576,9,14,0.0,Mise à jour
+0,Architecture,11576,9,15,1.0,OLAP
+0,Architecture,11576,9,16,0.0,OLTP
+0,Modélisation dimensionnelle,11576,9,17,1.0,Redondance
+0,Modélisation dimensionnelle,11576,9,18,0.0,Schéma
+0,Gestion de projet,11576,9,19,1.0,SCRUM
+0,Modélisation dimensionnelle,6852,6,0,0.0,Architecture en bus
+0,Modélisation dimensionnelle,6852,6,1,1.0,Clefs
+0,Modélisation dimensionnelle,6852,6,2,1.0,Clefs
+0,Architecture,6852,6,3,1.0,Composants
+0,Architecture,6852,6,4,1.0,Composants
+0,Modélisation dimensionnelle,6852,6,5,1.0,Dimension conforme
+0,Tableaux de bord,6852,6,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,6852,6,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,6852,6,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,6852,6,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,6852,6,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,6852,6,11,0.0,Table de fait
+0,Modélisation dimensionnelle,6852,6,12,0.0,Table de fait
+0,Modélisation dimensionnelle,6852,6,13,0.0,Grain
+0,Architecture,6852,6,14,1.0,Mise à jour
+0,Architecture,6852,6,15,1.0,OLAP
+0,Architecture,6852,6,16,0.0,OLTP
+0,Modélisation dimensionnelle,6852,6,17,1.0,Redondance
+0,Modélisation dimensionnelle,6852,6,18,0.0,Schéma
+0,Gestion de projet,6852,6,19,1.0,SCRUM
+0,Modélisation dimensionnelle,12886,2,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,12886,2,1,1.0,Clefs
+0,Modélisation dimensionnelle,12886,2,2,1.0,Clefs
+0,Architecture,12886,2,3,1.0,Composants
+0,Architecture,12886,2,4,1.0,Composants
+0,Modélisation dimensionnelle,12886,2,5,0.0,Dimension conforme
+0,Tableaux de bord,12886,2,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,12886,2,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,12886,2,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,12886,2,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,12886,2,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,12886,2,11,0.0,Table de fait
+0,Modélisation dimensionnelle,12886,2,12,0.0,Table de fait
+0,Modélisation dimensionnelle,12886,2,13,0.0,Grain
+0,Architecture,12886,2,14,0.0,Mise à jour
+0,Architecture,12886,2,15,0.0,OLAP
+0,Architecture,12886,2,16,0.0,OLTP
+0,Modélisation dimensionnelle,12886,2,17,1.0,Redondance
+0,Modélisation dimensionnelle,12886,2,18,0.0,Schéma
+0,Gestion de projet,12886,2,19,0.0,SCRUM
+0,Modélisation dimensionnelle,3020,4,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,3020,4,1,1.0,Clefs
+0,Modélisation dimensionnelle,3020,4,2,1.0,Clefs
+0,Architecture,3020,4,3,1.0,Composants
+0,Architecture,3020,4,4,1.0,Composants
+0,Modélisation dimensionnelle,3020,4,5,1.0,Dimension conforme
+0,Tableaux de bord,3020,4,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,3020,4,7,1.0,Dimension dégénérée
+0,Modélisation dimensionnelle,3020,4,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,3020,4,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,3020,4,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,3020,4,11,1.0,Table de fait
+0,Modélisation dimensionnelle,3020,4,12,0.0,Table de fait
+0,Modélisation dimensionnelle,3020,4,13,0.0,Grain
+0,Architecture,3020,4,14,1.0,Mise à jour
+0,Architecture,3020,4,15,1.0,OLAP
+0,Architecture,3020,4,16,1.0,OLTP
+0,Modélisation dimensionnelle,3020,4,17,1.0,Redondance
+0,Modélisation dimensionnelle,3020,4,18,0.0,Schéma
+0,Gestion de projet,3020,4,19,1.0,SCRUM
+0,Modélisation dimensionnelle,15569,4,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,15569,4,1,1.0,Clefs
+0,Modélisation dimensionnelle,15569,4,2,1.0,Clefs
+0,Architecture,15569,4,3,1.0,Composants
+0,Architecture,15569,4,4,1.0,Composants
+0,Modélisation dimensionnelle,15569,4,5,0.0,Dimension conforme
+0,Tableaux de bord,15569,4,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,15569,4,7,1.0,Dimension dégénérée
+0,Modélisation dimensionnelle,15569,4,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15569,4,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15569,4,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15569,4,11,0.0,Table de fait
+0,Modélisation dimensionnelle,15569,4,12,0.0,Table de fait
+0,Modélisation dimensionnelle,15569,4,13,0.0,Grain
+0,Architecture,15569,4,14,1.0,Mise à jour
+0,Architecture,15569,4,15,1.0,OLAP
+0,Architecture,15569,4,16,1.0,OLTP
+0,Modélisation dimensionnelle,15569,4,17,1.0,Redondance
+0,Modélisation dimensionnelle,15569,4,18,1.0,Schéma
+0,Gestion de projet,15569,4,19,1.0,SCRUM
+0,Modélisation dimensionnelle,5115,3,0,0.0,Architecture en bus
+0,Modélisation dimensionnelle,5115,3,1,1.0,Clefs
+0,Modélisation dimensionnelle,5115,3,2,1.0,Clefs
+0,Architecture,5115,3,3,1.0,Composants
+0,Architecture,5115,3,4,1.0,Composants
+0,Modélisation dimensionnelle,5115,3,5,1.0,Dimension conforme
+0,Tableaux de bord,5115,3,6,0.0,Tableaux de bord
+0,Modélisation dimensionnelle,5115,3,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,5115,3,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,5115,3,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,5115,3,10,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,5115,3,11,0.0,Table de fait
+0,Modélisation dimensionnelle,5115,3,12,0.0,Table de fait
+0,Modélisation dimensionnelle,5115,3,13,0.0,Grain
+0,Architecture,5115,3,14,1.0,Mise à jour
+0,Architecture,5115,3,15,1.0,OLAP
+0,Architecture,5115,3,16,0.0,OLTP
+0,Modélisation dimensionnelle,5115,3,17,1.0,Redondance
+0,Modélisation dimensionnelle,5115,3,18,1.0,Schéma
+0,Gestion de projet,5115,3,19,1.0,SCRUM
+0,Modélisation dimensionnelle,5149,4,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,5149,4,1,1.0,Clefs
+0,Modélisation dimensionnelle,5149,4,2,1.0,Clefs
+0,Architecture,5149,4,3,1.0,Composants
+0,Architecture,5149,4,4,1.0,Composants
+0,Modélisation dimensionnelle,5149,4,5,0.0,Dimension conforme
+0,Tableaux de bord,5149,4,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,5149,4,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,5149,4,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,5149,4,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,5149,4,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,5149,4,11,1.0,Table de fait
+0,Modélisation dimensionnelle,5149,4,12,0.0,Table de fait
+0,Modélisation dimensionnelle,5149,4,13,0.0,Grain
+0,Architecture,5149,4,14,1.0,Mise à jour
+0,Architecture,5149,4,15,1.0,OLAP
+0,Architecture,5149,4,16,1.0,OLTP
+0,Modélisation dimensionnelle,5149,4,17,0.0,Redondance
+0,Modélisation dimensionnelle,5149,4,18,0.0,Schéma
+0,Gestion de projet,5149,4,19,1.0,SCRUM
+0,Modélisation dimensionnelle,13211,7,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,13211,7,1,0.0,Clefs
+0,Modélisation dimensionnelle,13211,7,2,1.0,Clefs
+0,Architecture,13211,7,3,1.0,Composants
+0,Architecture,13211,7,4,1.0,Composants
+0,Modélisation dimensionnelle,13211,7,5,1.0,Dimension conforme
+0,Tableaux de bord,13211,7,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,13211,7,7,1.0,Dimension dégénérée
+0,Modélisation dimensionnelle,13211,7,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13211,7,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13211,7,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13211,7,11,1.0,Table de fait
+0,Modélisation dimensionnelle,13211,7,12,0.0,Table de fait
+0,Modélisation dimensionnelle,13211,7,13,0.0,Grain
+0,Architecture,13211,7,14,0.0,Mise à jour
+0,Architecture,13211,7,15,1.0,OLAP
+0,Architecture,13211,7,16,1.0,OLTP
+0,Modélisation dimensionnelle,13211,7,17,1.0,Redondance
+0,Modélisation dimensionnelle,13211,7,18,0.0,Schéma
+0,Gestion de projet,13211,7,19,1.0,SCRUM
+0,Modélisation dimensionnelle,11656,9,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,11656,9,1,1.0,Clefs
+0,Modélisation dimensionnelle,11656,9,2,1.0,Clefs
+0,Architecture,11656,9,3,1.0,Composants
+0,Architecture,11656,9,4,1.0,Composants
+0,Modélisation dimensionnelle,11656,9,5,1.0,Dimension conforme
+0,Tableaux de bord,11656,9,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,11656,9,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,11656,9,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11656,9,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11656,9,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11656,9,11,1.0,Table de fait
+0,Modélisation dimensionnelle,11656,9,12,0.0,Table de fait
+0,Modélisation dimensionnelle,11656,9,13,1.0,Grain
+0,Architecture,11656,9,14,1.0,Mise à jour
+0,Architecture,11656,9,15,1.0,OLAP
+0,Architecture,11656,9,16,1.0,OLTP
+0,Modélisation dimensionnelle,11656,9,17,1.0,Redondance
+0,Modélisation dimensionnelle,11656,9,18,0.0,Schéma
+0,Gestion de projet,11656,9,19,1.0,SCRUM
+0,Modélisation dimensionnelle,8654,9,0,0.0,Architecture en bus
+0,Modélisation dimensionnelle,8654,9,1,0.0,Clefs
+0,Modélisation dimensionnelle,8654,9,2,1.0,Clefs
+0,Architecture,8654,9,3,1.0,Composants
+0,Architecture,8654,9,4,0.0,Composants
+0,Modélisation dimensionnelle,8654,9,5,0.0,Dimension conforme
+0,Tableaux de bord,8654,9,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,8654,9,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,8654,9,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,8654,9,9,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,8654,9,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,8654,9,11,1.0,Table de fait
+0,Modélisation dimensionnelle,8654,9,12,0.0,Table de fait
+0,Modélisation dimensionnelle,8654,9,13,0.0,Grain
+0,Architecture,8654,9,14,1.0,Mise à jour
+0,Architecture,8654,9,15,1.0,OLAP
+0,Architecture,8654,9,16,0.0,OLTP
+0,Modélisation dimensionnelle,8654,9,17,1.0,Redondance
+0,Modélisation dimensionnelle,8654,9,18,0.0,Schéma
+0,Gestion de projet,8654,9,19,1.0,SCRUM
+0,Modélisation dimensionnelle,7794,2,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,7794,2,1,1.0,Clefs
+0,Modélisation dimensionnelle,7794,2,2,1.0,Clefs
+0,Architecture,7794,2,3,1.0,Composants
+0,Architecture,7794,2,4,0.0,Composants
+0,Modélisation dimensionnelle,7794,2,5,0.0,Dimension conforme
+0,Tableaux de bord,7794,2,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,7794,2,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,7794,2,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7794,2,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7794,2,10,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7794,2,11,1.0,Table de fait
+0,Modélisation dimensionnelle,7794,2,12,0.0,Table de fait
+0,Modélisation dimensionnelle,7794,2,13,0.0,Grain
+0,Architecture,7794,2,14,1.0,Mise à jour
+0,Architecture,7794,2,15,1.0,OLAP
+0,Architecture,7794,2,16,1.0,OLTP
+0,Modélisation dimensionnelle,7794,2,17,1.0,Redondance
+0,Modélisation dimensionnelle,7794,2,18,1.0,Schéma
+0,Gestion de projet,7794,2,19,1.0,SCRUM
+1,Modélisation dimensionnelle,4381,9,0,-1.0,Architecture en bus
+1,Modélisation dimensionnelle,4381,9,1,-1.0,Clefs
+1,Modélisation dimensionnelle,4381,9,2,-1.0,Clefs
+1,Architecture,4381,9,3,-1.0,Composants
+1,Architecture,4381,9,4,-1.0,Composants
+1,Modélisation dimensionnelle,4381,9,5,-1.0,Dimension conforme
+1,Tableaux de bord,4381,9,6,-1.0,Tableaux de bord
+1,Modélisation dimensionnelle,4381,9,7,-1.0,Dimension dégénérée
+1,Modélisation dimensionnelle,4381,9,8,-1.0,Évolution des dimensions
+1,Modélisation dimensionnelle,4381,9,9,-1.0,Évolution des dimensions
+1,Modélisation dimensionnelle,4381,9,10,-1.0,Évolution des dimensions
+1,Modélisation dimensionnelle,4381,9,11,-1.0,Table de fait
+1,Modélisation dimensionnelle,4381,9,12,-1.0,Table de fait
+1,Modélisation dimensionnelle,4381,9,13,-1.0,Grain
+1,Architecture,4381,9,14,-1.0,Mise à jour
+1,Architecture,4381,9,15,-1.0,OLAP
+1,Architecture,4381,9,16,-1.0,OLTP
+1,Modélisation dimensionnelle,4381,9,17,-1.0,Redondance
+1,Modélisation dimensionnelle,4381,9,18,-1.0,Schéma
+1,Gestion de projet,4381,9,19,-1.0,SCRUM
+0,Modélisation dimensionnelle,7966,7,0,0.0,Architecture en bus
+0,Modélisation dimensionnelle,7966,7,1,1.0,Clefs
+0,Modélisation dimensionnelle,7966,7,2,1.0,Clefs
+0,Architecture,7966,7,3,1.0,Composants
+0,Architecture,7966,7,4,0.0,Composants
+0,Modélisation dimensionnelle,7966,7,5,1.0,Dimension conforme
+0,Tableaux de bord,7966,7,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,7966,7,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,7966,7,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7966,7,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7966,7,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7966,7,11,1.0,Table de fait
+0,Modélisation dimensionnelle,7966,7,12,0.0,Table de fait
+0,Modélisation dimensionnelle,7966,7,13,1.0,Grain
+0,Architecture,7966,7,14,0.0,Mise à jour
+0,Architecture,7966,7,15,1.0,OLAP
+0,Architecture,7966,7,16,0.0,OLTP
+0,Modélisation dimensionnelle,7966,7,17,1.0,Redondance
+0,Modélisation dimensionnelle,7966,7,18,0.0,Schéma
+0,Gestion de projet,7966,7,19,0.0,SCRUM
+0,Modélisation dimensionnelle,4472,5,0,0.0,Architecture en bus
+0,Modélisation dimensionnelle,4472,5,1,1.0,Clefs
+0,Modélisation dimensionnelle,4472,5,2,1.0,Clefs
+0,Architecture,4472,5,3,1.0,Composants
+0,Architecture,4472,5,4,1.0,Composants
+0,Modélisation dimensionnelle,4472,5,5,0.0,Dimension conforme
+0,Tableaux de bord,4472,5,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,4472,5,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,4472,5,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4472,5,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4472,5,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4472,5,11,0.0,Table de fait
+0,Modélisation dimensionnelle,4472,5,12,0.0,Table de fait
+0,Modélisation dimensionnelle,4472,5,13,0.0,Grain
+0,Architecture,4472,5,14,0.0,Mise à jour
+0,Architecture,4472,5,15,1.0,OLAP
+0,Architecture,4472,5,16,1.0,OLTP
+0,Modélisation dimensionnelle,4472,5,17,1.0,Redondance
+0,Modélisation dimensionnelle,4472,5,18,0.0,Schéma
+0,Gestion de projet,4472,5,19,1.0,SCRUM
+0,Modélisation dimensionnelle,13753,3,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,13753,3,1,1.0,Clefs
+0,Modélisation dimensionnelle,13753,3,2,1.0,Clefs
+0,Architecture,13753,3,3,1.0,Composants
+0,Architecture,13753,3,4,1.0,Composants
+0,Modélisation dimensionnelle,13753,3,5,1.0,Dimension conforme
+0,Tableaux de bord,13753,3,6,0.0,Tableaux de bord
+0,Modélisation dimensionnelle,13753,3,7,1.0,Dimension dégénérée
+0,Modélisation dimensionnelle,13753,3,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13753,3,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13753,3,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13753,3,11,0.0,Table de fait
+0,Modélisation dimensionnelle,13753,3,12,0.0,Table de fait
+0,Modélisation dimensionnelle,13753,3,13,0.0,Grain
+0,Architecture,13753,3,14,1.0,Mise à jour
+0,Architecture,13753,3,15,1.0,OLAP
+0,Architecture,13753,3,16,0.0,OLTP
+0,Modélisation dimensionnelle,13753,3,17,1.0,Redondance
+0,Modélisation dimensionnelle,13753,3,18,0.0,Schéma
+0,Gestion de projet,13753,3,19,0.0,SCRUM
+0,Modélisation dimensionnelle,15312,2,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,15312,2,1,1.0,Clefs
+0,Modélisation dimensionnelle,15312,2,2,1.0,Clefs
+0,Architecture,15312,2,3,1.0,Composants
+0,Architecture,15312,2,4,0.0,Composants
+0,Modélisation dimensionnelle,15312,2,5,0.0,Dimension conforme
+0,Tableaux de bord,15312,2,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,15312,2,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,15312,2,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15312,2,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15312,2,10,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15312,2,11,1.0,Table de fait
+0,Modélisation dimensionnelle,15312,2,12,0.0,Table de fait
+0,Modélisation dimensionnelle,15312,2,13,1.0,Grain
+0,Architecture,15312,2,14,0.0,Mise à jour
+0,Architecture,15312,2,15,1.0,OLAP
+0,Architecture,15312,2,16,0.0,OLTP
+0,Modélisation dimensionnelle,15312,2,17,1.0,Redondance
+0,Modélisation dimensionnelle,15312,2,18,0.0,Schéma
+0,Gestion de projet,15312,2,19,1.0,SCRUM
+0,Modélisation dimensionnelle,9723,9,0,0.0,Architecture en bus
+0,Modélisation dimensionnelle,9723,9,1,0.0,Clefs
+0,Modélisation dimensionnelle,9723,9,2,1.0,Clefs
+0,Architecture,9723,9,3,1.0,Composants
+0,Architecture,9723,9,4,1.0,Composants
+0,Modélisation dimensionnelle,9723,9,5,1.0,Dimension conforme
+0,Tableaux de bord,9723,9,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,9723,9,7,1.0,Dimension dégénérée
+0,Modélisation dimensionnelle,9723,9,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9723,9,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9723,9,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9723,9,11,1.0,Table de fait
+0,Modélisation dimensionnelle,9723,9,12,1.0,Table de fait
+0,Modélisation dimensionnelle,9723,9,13,1.0,Grain
+0,Architecture,9723,9,14,0.0,Mise à jour
+0,Architecture,9723,9,15,1.0,OLAP
+0,Architecture,9723,9,16,1.0,OLTP
+0,Modélisation dimensionnelle,9723,9,17,0.0,Redondance
+0,Modélisation dimensionnelle,9723,9,18,1.0,Schéma
+0,Gestion de projet,9723,9,19,1.0,SCRUM
+0,Modélisation dimensionnelle,4394,5,0,0.0,Architecture en bus
+0,Modélisation dimensionnelle,4394,5,1,1.0,Clefs
+0,Modélisation dimensionnelle,4394,5,2,0.0,Clefs
+0,Architecture,4394,5,3,1.0,Composants
+0,Architecture,4394,5,4,0.0,Composants
+0,Modélisation dimensionnelle,4394,5,5,0.0,Dimension conforme
+0,Tableaux de bord,4394,5,6,0.0,Tableaux de bord
+0,Modélisation dimensionnelle,4394,5,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,4394,5,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4394,5,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4394,5,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4394,5,11,0.0,Table de fait
+0,Modélisation dimensionnelle,4394,5,12,1.0,Table de fait
+0,Modélisation dimensionnelle,4394,5,13,0.0,Grain
+0,Architecture,4394,5,14,0.0,Mise à jour
+0,Architecture,4394,5,15,0.0,OLAP
+0,Architecture,4394,5,16,0.0,OLTP
+0,Modélisation dimensionnelle,4394,5,17,1.0,Redondance
+0,Modélisation dimensionnelle,4394,5,18,0.0,Schéma
+0,Gestion de projet,4394,5,19,0.0,SCRUM
+0,Modélisation dimensionnelle,7960,10,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,7960,10,1,1.0,Clefs
+0,Modélisation dimensionnelle,7960,10,2,1.0,Clefs
+0,Architecture,7960,10,3,1.0,Composants
+0,Architecture,7960,10,4,1.0,Composants
+0,Modélisation dimensionnelle,7960,10,5,0.0,Dimension conforme
+0,Tableaux de bord,7960,10,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,7960,10,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,7960,10,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7960,10,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7960,10,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7960,10,11,1.0,Table de fait
+0,Modélisation dimensionnelle,7960,10,12,1.0,Table de fait
+0,Modélisation dimensionnelle,7960,10,13,0.0,Grain
+0,Architecture,7960,10,14,0.0,Mise à jour
+0,Architecture,7960,10,15,1.0,OLAP
+0,Architecture,7960,10,16,0.0,OLTP
+0,Modélisation dimensionnelle,7960,10,17,0.0,Redondance
+0,Modélisation dimensionnelle,7960,10,18,0.0,Schéma
+0,Gestion de projet,7960,10,19,1.0,SCRUM
+0,Modélisation dimensionnelle,14134,6,0,0.0,Architecture en bus
+0,Modélisation dimensionnelle,14134,6,1,1.0,Clefs
+0,Modélisation dimensionnelle,14134,6,2,1.0,Clefs
+0,Architecture,14134,6,3,1.0,Composants
+0,Architecture,14134,6,4,1.0,Composants
+0,Modélisation dimensionnelle,14134,6,5,1.0,Dimension conforme
+0,Tableaux de bord,14134,6,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,14134,6,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,14134,6,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,14134,6,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,14134,6,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,14134,6,11,0.0,Table de fait
+0,Modélisation dimensionnelle,14134,6,12,0.0,Table de fait
+0,Modélisation dimensionnelle,14134,6,13,1.0,Grain
+0,Architecture,14134,6,14,1.0,Mise à jour
+0,Architecture,14134,6,15,1.0,OLAP
+0,Architecture,14134,6,16,0.0,OLTP
+0,Modélisation dimensionnelle,14134,6,17,0.0,Redondance
+0,Modélisation dimensionnelle,14134,6,18,0.0,Schéma
+0,Gestion de projet,14134,6,19,1.0,SCRUM
+0,Modélisation dimensionnelle,14201,7,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,14201,7,1,0.0,Clefs
+0,Modélisation dimensionnelle,14201,7,2,1.0,Clefs
+0,Architecture,14201,7,3,1.0,Composants
+0,Architecture,14201,7,4,1.0,Composants
+0,Modélisation dimensionnelle,14201,7,5,1.0,Dimension conforme
+0,Tableaux de bord,14201,7,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,14201,7,7,1.0,Dimension dégénérée
+0,Modélisation dimensionnelle,14201,7,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,14201,7,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,14201,7,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,14201,7,11,1.0,Table de fait
+0,Modélisation dimensionnelle,14201,7,12,0.0,Table de fait
+0,Modélisation dimensionnelle,14201,7,13,1.0,Grain
+0,Architecture,14201,7,14,0.0,Mise à jour
+0,Architecture,14201,7,15,1.0,OLAP
+0,Architecture,14201,7,16,1.0,OLTP
+0,Modélisation dimensionnelle,14201,7,17,1.0,Redondance
+0,Modélisation dimensionnelle,14201,7,18,0.0,Schéma
+0,Gestion de projet,14201,7,19,1.0,SCRUM
+0,Modélisation dimensionnelle,4884,5,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,4884,5,1,1.0,Clefs
+0,Modélisation dimensionnelle,4884,5,2,0.0,Clefs
+0,Architecture,4884,5,3,1.0,Composants
+0,Architecture,4884,5,4,1.0,Composants
+0,Modélisation dimensionnelle,4884,5,5,1.0,Dimension conforme
+0,Tableaux de bord,4884,5,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,4884,5,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,4884,5,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4884,5,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4884,5,10,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4884,5,11,1.0,Table de fait
+0,Modélisation dimensionnelle,4884,5,12,1.0,Table de fait
+0,Modélisation dimensionnelle,4884,5,13,0.0,Grain
+0,Architecture,4884,5,14,0.0,Mise à jour
+0,Architecture,4884,5,15,1.0,OLAP
+0,Architecture,4884,5,16,0.0,OLTP
+0,Modélisation dimensionnelle,4884,5,17,1.0,Redondance
+0,Modélisation dimensionnelle,4884,5,18,1.0,Schéma
+0,Gestion de projet,4884,5,19,1.0,SCRUM
+0,Modélisation dimensionnelle,7471,3,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,7471,3,1,1.0,Clefs
+0,Modélisation dimensionnelle,7471,3,2,1.0,Clefs
+0,Architecture,7471,3,3,1.0,Composants
+0,Architecture,7471,3,4,1.0,Composants
+0,Modélisation dimensionnelle,7471,3,5,1.0,Dimension conforme
+0,Tableaux de bord,7471,3,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,7471,3,7,1.0,Dimension dégénérée
+0,Modélisation dimensionnelle,7471,3,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7471,3,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7471,3,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7471,3,11,1.0,Table de fait
+0,Modélisation dimensionnelle,7471,3,12,1.0,Table de fait
+0,Modélisation dimensionnelle,7471,3,13,0.0,Grain
+0,Architecture,7471,3,14,1.0,Mise à jour
+0,Architecture,7471,3,15,1.0,OLAP
+0,Architecture,7471,3,16,1.0,OLTP
+0,Modélisation dimensionnelle,7471,3,17,1.0,Redondance
+0,Modélisation dimensionnelle,7471,3,18,1.0,Schéma
+0,Gestion de projet,7471,3,19,1.0,SCRUM
+0,Modélisation dimensionnelle,7848,10,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,7848,10,1,1.0,Clefs
+0,Modélisation dimensionnelle,7848,10,2,1.0,Clefs
+0,Architecture,7848,10,3,1.0,Composants
+0,Architecture,7848,10,4,1.0,Composants
+0,Modélisation dimensionnelle,7848,10,5,1.0,Dimension conforme
+0,Tableaux de bord,7848,10,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,7848,10,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,7848,10,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7848,10,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7848,10,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7848,10,11,1.0,Table de fait
+0,Modélisation dimensionnelle,7848,10,12,1.0,Table de fait
+0,Modélisation dimensionnelle,7848,10,13,1.0,Grain
+0,Architecture,7848,10,14,0.0,Mise à jour
+0,Architecture,7848,10,15,0.0,OLAP
+0,Architecture,7848,10,16,0.0,OLTP
+0,Modélisation dimensionnelle,7848,10,17,0.0,Redondance
+0,Modélisation dimensionnelle,7848,10,18,1.0,Schéma
+0,Gestion de projet,7848,10,19,1.0,SCRUM
+0,Modélisation dimensionnelle,11575,4,0,0.0,Architecture en bus
+0,Modélisation dimensionnelle,11575,4,1,1.0,Clefs
+0,Modélisation dimensionnelle,11575,4,2,1.0,Clefs
+0,Architecture,11575,4,3,1.0,Composants
+0,Architecture,11575,4,4,1.0,Composants
+0,Modélisation dimensionnelle,11575,4,5,0.0,Dimension conforme
+0,Tableaux de bord,11575,4,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,11575,4,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,11575,4,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11575,4,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11575,4,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11575,4,11,1.0,Table de fait
+0,Modélisation dimensionnelle,11575,4,12,0.0,Table de fait
+0,Modélisation dimensionnelle,11575,4,13,1.0,Grain
+0,Architecture,11575,4,14,1.0,Mise à jour
+0,Architecture,11575,4,15,1.0,OLAP
+0,Architecture,11575,4,16,1.0,OLTP
+0,Modélisation dimensionnelle,11575,4,17,1.0,Redondance
+0,Modélisation dimensionnelle,11575,4,18,0.0,Schéma
+0,Gestion de projet,11575,4,19,1.0,SCRUM
+0,Modélisation dimensionnelle,7800,2,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,7800,2,1,1.0,Clefs
+0,Modélisation dimensionnelle,7800,2,2,1.0,Clefs
+0,Architecture,7800,2,3,1.0,Composants
+0,Architecture,7800,2,4,0.0,Composants
+0,Modélisation dimensionnelle,7800,2,5,0.0,Dimension conforme
+0,Tableaux de bord,7800,2,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,7800,2,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,7800,2,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7800,2,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7800,2,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7800,2,11,1.0,Table de fait
+0,Modélisation dimensionnelle,7800,2,12,0.0,Table de fait
+0,Modélisation dimensionnelle,7800,2,13,0.0,Grain
+0,Architecture,7800,2,14,1.0,Mise à jour
+0,Architecture,7800,2,15,1.0,OLAP
+0,Architecture,7800,2,16,0.0,OLTP
+0,Modélisation dimensionnelle,7800,2,17,1.0,Redondance
+0,Modélisation dimensionnelle,7800,2,18,0.0,Schéma
+0,Gestion de projet,7800,2,19,1.0,SCRUM
+0,Modélisation dimensionnelle,10228,10,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,10228,10,1,1.0,Clefs
+0,Modélisation dimensionnelle,10228,10,2,1.0,Clefs
+0,Architecture,10228,10,3,1.0,Composants
+0,Architecture,10228,10,4,0.0,Composants
+0,Modélisation dimensionnelle,10228,10,5,1.0,Dimension conforme
+0,Tableaux de bord,10228,10,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,10228,10,7,1.0,Dimension dégénérée
+0,Modélisation dimensionnelle,10228,10,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,10228,10,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,10228,10,10,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,10228,10,11,1.0,Table de fait
+0,Modélisation dimensionnelle,10228,10,12,1.0,Table de fait
+0,Modélisation dimensionnelle,10228,10,13,1.0,Grain
+0,Architecture,10228,10,14,0.0,Mise à jour
+0,Architecture,10228,10,15,1.0,OLAP
+0,Architecture,10228,10,16,0.0,OLTP
+0,Modélisation dimensionnelle,10228,10,17,1.0,Redondance
+0,Modélisation dimensionnelle,10228,10,18,1.0,Schéma
+0,Gestion de projet,10228,10,19,1.0,SCRUM
+0,Modélisation dimensionnelle,12406,5,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,12406,5,1,1.0,Clefs
+0,Modélisation dimensionnelle,12406,5,2,1.0,Clefs
+0,Architecture,12406,5,3,1.0,Composants
+0,Architecture,12406,5,4,1.0,Composants
+0,Modélisation dimensionnelle,12406,5,5,1.0,Dimension conforme
+0,Tableaux de bord,12406,5,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,12406,5,7,1.0,Dimension dégénérée
+0,Modélisation dimensionnelle,12406,5,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,12406,5,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,12406,5,10,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,12406,5,11,1.0,Table de fait
+0,Modélisation dimensionnelle,12406,5,12,0.0,Table de fait
+0,Modélisation dimensionnelle,12406,5,13,1.0,Grain
+0,Architecture,12406,5,14,0.0,Mise à jour
+0,Architecture,12406,5,15,1.0,OLAP
+0,Architecture,12406,5,16,1.0,OLTP
+0,Modélisation dimensionnelle,12406,5,17,1.0,Redondance
+0,Modélisation dimensionnelle,12406,5,18,1.0,Schéma
+0,Gestion de projet,12406,5,19,1.0,SCRUM
+0,Modélisation dimensionnelle,7239,4,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,7239,4,1,1.0,Clefs
+0,Modélisation dimensionnelle,7239,4,2,1.0,Clefs
+0,Architecture,7239,4,3,1.0,Composants
+0,Architecture,7239,4,4,1.0,Composants
+0,Modélisation dimensionnelle,7239,4,5,1.0,Dimension conforme
+0,Tableaux de bord,7239,4,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,7239,4,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,7239,4,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7239,4,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7239,4,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7239,4,11,0.0,Table de fait
+0,Modélisation dimensionnelle,7239,4,12,0.0,Table de fait
+0,Modélisation dimensionnelle,7239,4,13,1.0,Grain
+0,Architecture,7239,4,14,1.0,Mise à jour
+0,Architecture,7239,4,15,1.0,OLAP
+0,Architecture,7239,4,16,1.0,OLTP
+0,Modélisation dimensionnelle,7239,4,17,1.0,Redondance
+0,Modélisation dimensionnelle,7239,4,18,0.0,Schéma
+0,Gestion de projet,7239,4,19,1.0,SCRUM
+0,Modélisation dimensionnelle,9573,6,0,0.0,Architecture en bus
+0,Modélisation dimensionnelle,9573,6,1,1.0,Clefs
+0,Modélisation dimensionnelle,9573,6,2,1.0,Clefs
+0,Architecture,9573,6,3,1.0,Composants
+0,Architecture,9573,6,4,0.0,Composants
+0,Modélisation dimensionnelle,9573,6,5,0.0,Dimension conforme
+0,Tableaux de bord,9573,6,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,9573,6,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,9573,6,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9573,6,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9573,6,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9573,6,11,1.0,Table de fait
+0,Modélisation dimensionnelle,9573,6,12,0.0,Table de fait
+0,Modélisation dimensionnelle,9573,6,13,1.0,Grain
+0,Architecture,9573,6,14,1.0,Mise à jour
+0,Architecture,9573,6,15,1.0,OLAP
+0,Architecture,9573,6,16,0.0,OLTP
+0,Modélisation dimensionnelle,9573,6,17,1.0,Redondance
+0,Modélisation dimensionnelle,9573,6,18,0.0,Schéma
+0,Gestion de projet,9573,6,19,1.0,SCRUM
+0,Modélisation dimensionnelle,4623,5,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,4623,5,1,1.0,Clefs
+0,Modélisation dimensionnelle,4623,5,2,1.0,Clefs
+0,Architecture,4623,5,3,1.0,Composants
+0,Architecture,4623,5,4,1.0,Composants
+0,Modélisation dimensionnelle,4623,5,5,0.0,Dimension conforme
+0,Tableaux de bord,4623,5,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,4623,5,7,1.0,Dimension dégénérée
+0,Modélisation dimensionnelle,4623,5,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4623,5,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4623,5,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4623,5,11,1.0,Table de fait
+0,Modélisation dimensionnelle,4623,5,12,1.0,Table de fait
+0,Modélisation dimensionnelle,4623,5,13,1.0,Grain
+0,Architecture,4623,5,14,0.0,Mise à jour
+0,Architecture,4623,5,15,1.0,OLAP
+0,Architecture,4623,5,16,1.0,OLTP
+0,Modélisation dimensionnelle,4623,5,17,0.0,Redondance
+0,Modélisation dimensionnelle,4623,5,18,1.0,Schéma
+0,Gestion de projet,4623,5,19,1.0,SCRUM
+0,Modélisation dimensionnelle,11535,10,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,11535,10,1,1.0,Clefs
+0,Modélisation dimensionnelle,11535,10,2,1.0,Clefs
+0,Architecture,11535,10,3,1.0,Composants
+0,Architecture,11535,10,4,1.0,Composants
+0,Modélisation dimensionnelle,11535,10,5,1.0,Dimension conforme
+0,Tableaux de bord,11535,10,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,11535,10,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,11535,10,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11535,10,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11535,10,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11535,10,11,1.0,Table de fait
+0,Modélisation dimensionnelle,11535,10,12,0.0,Table de fait
+0,Modélisation dimensionnelle,11535,10,13,1.0,Grain
+0,Architecture,11535,10,14,0.0,Mise à jour
+0,Architecture,11535,10,15,1.0,OLAP
+0,Architecture,11535,10,16,0.0,OLTP
+0,Modélisation dimensionnelle,11535,10,17,1.0,Redondance
+0,Modélisation dimensionnelle,11535,10,18,1.0,Schéma
+0,Gestion de projet,11535,10,19,1.0,SCRUM
+0,Modélisation dimensionnelle,8992,10,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,8992,10,1,1.0,Clefs
+0,Modélisation dimensionnelle,8992,10,2,1.0,Clefs
+0,Architecture,8992,10,3,1.0,Composants
+0,Architecture,8992,10,4,1.0,Composants
+0,Modélisation dimensionnelle,8992,10,5,1.0,Dimension conforme
+0,Tableaux de bord,8992,10,6,0.0,Tableaux de bord
+0,Modélisation dimensionnelle,8992,10,7,1.0,Dimension dégénérée
+0,Modélisation dimensionnelle,8992,10,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,8992,10,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,8992,10,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,8992,10,11,1.0,Table de fait
+0,Modélisation dimensionnelle,8992,10,12,0.0,Table de fait
+0,Modélisation dimensionnelle,8992,10,13,1.0,Grain
+0,Architecture,8992,10,14,0.0,Mise à jour
+0,Architecture,8992,10,15,1.0,OLAP
+0,Architecture,8992,10,16,1.0,OLTP
+0,Modélisation dimensionnelle,8992,10,17,1.0,Redondance
+0,Modélisation dimensionnelle,8992,10,18,0.0,Schéma
+0,Gestion de projet,8992,10,19,1.0,SCRUM
+0,Modélisation dimensionnelle,4579,1,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,4579,1,1,0.0,Clefs
+0,Modélisation dimensionnelle,4579,1,2,1.0,Clefs
+0,Architecture,4579,1,3,1.0,Composants
+0,Architecture,4579,1,4,1.0,Composants
+0,Modélisation dimensionnelle,4579,1,5,0.0,Dimension conforme
+0,Tableaux de bord,4579,1,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,4579,1,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,4579,1,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4579,1,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4579,1,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4579,1,11,1.0,Table de fait
+0,Modélisation dimensionnelle,4579,1,12,0.0,Table de fait
+0,Modélisation dimensionnelle,4579,1,13,0.0,Grain
+0,Architecture,4579,1,14,1.0,Mise à jour
+0,Architecture,4579,1,15,1.0,OLAP
+0,Architecture,4579,1,16,1.0,OLTP
+0,Modélisation dimensionnelle,4579,1,17,1.0,Redondance
+0,Modélisation dimensionnelle,4579,1,18,1.0,Schéma
+0,Gestion de projet,4579,1,19,1.0,SCRUM
+0,Modélisation dimensionnelle,3095,1,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,3095,1,1,1.0,Clefs
+0,Modélisation dimensionnelle,3095,1,2,1.0,Clefs
+0,Architecture,3095,1,3,1.0,Composants
+0,Architecture,3095,1,4,1.0,Composants
+0,Modélisation dimensionnelle,3095,1,5,1.0,Dimension conforme
+0,Tableaux de bord,3095,1,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,3095,1,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,3095,1,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,3095,1,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,3095,1,10,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,3095,1,11,1.0,Table de fait
+0,Modélisation dimensionnelle,3095,1,12,0.0,Table de fait
+0,Modélisation dimensionnelle,3095,1,13,0.0,Grain
+0,Architecture,3095,1,14,1.0,Mise à jour
+0,Architecture,3095,1,15,1.0,OLAP
+0,Architecture,3095,1,16,1.0,OLTP
+0,Modélisation dimensionnelle,3095,1,17,1.0,Redondance
+0,Modélisation dimensionnelle,3095,1,18,1.0,Schéma
+0,Gestion de projet,3095,1,19,1.0,SCRUM
+0,Modélisation dimensionnelle,3583,6,0,0.0,Architecture en bus
+0,Modélisation dimensionnelle,3583,6,1,1.0,Clefs
+0,Modélisation dimensionnelle,3583,6,2,1.0,Clefs
+0,Architecture,3583,6,3,1.0,Composants
+0,Architecture,3583,6,4,0.0,Composants
+0,Modélisation dimensionnelle,3583,6,5,1.0,Dimension conforme
+0,Tableaux de bord,3583,6,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,3583,6,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,3583,6,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,3583,6,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,3583,6,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,3583,6,11,0.0,Table de fait
+0,Modélisation dimensionnelle,3583,6,12,0.0,Table de fait
+0,Modélisation dimensionnelle,3583,6,13,0.0,Grain
+0,Architecture,3583,6,14,1.0,Mise à jour
+0,Architecture,3583,6,15,1.0,OLAP
+0,Architecture,3583,6,16,0.0,OLTP
+0,Modélisation dimensionnelle,3583,6,17,1.0,Redondance
+0,Modélisation dimensionnelle,3583,6,18,1.0,Schéma
+0,Gestion de projet,3583,6,19,1.0,SCRUM
+0,Modélisation dimensionnelle,14462,1,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,14462,1,1,1.0,Clefs
+0,Modélisation dimensionnelle,14462,1,2,1.0,Clefs
+0,Architecture,14462,1,3,1.0,Composants
+0,Architecture,14462,1,4,0.0,Composants
+0,Modélisation dimensionnelle,14462,1,5,1.0,Dimension conforme
+0,Tableaux de bord,14462,1,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,14462,1,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,14462,1,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,14462,1,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,14462,1,10,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,14462,1,11,1.0,Table de fait
+0,Modélisation dimensionnelle,14462,1,12,1.0,Table de fait
+0,Modélisation dimensionnelle,14462,1,13,0.0,Grain
+0,Architecture,14462,1,14,1.0,Mise à jour
+0,Architecture,14462,1,15,1.0,OLAP
+0,Architecture,14462,1,16,1.0,OLTP
+0,Modélisation dimensionnelle,14462,1,17,1.0,Redondance
+0,Modélisation dimensionnelle,14462,1,18,1.0,Schéma
+0,Gestion de projet,14462,1,19,1.0,SCRUM
+0,Modélisation dimensionnelle,9295,3,0,0.0,Architecture en bus
+0,Modélisation dimensionnelle,9295,3,1,0.0,Clefs
+0,Modélisation dimensionnelle,9295,3,2,0.0,Clefs
+0,Architecture,9295,3,3,1.0,Composants
+0,Architecture,9295,3,4,1.0,Composants
+0,Modélisation dimensionnelle,9295,3,5,0.0,Dimension conforme
+0,Tableaux de bord,9295,3,6,0.0,Tableaux de bord
+0,Modélisation dimensionnelle,9295,3,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,9295,3,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9295,3,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9295,3,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9295,3,11,0.0,Table de fait
+0,Modélisation dimensionnelle,9295,3,12,0.0,Table de fait
+0,Modélisation dimensionnelle,9295,3,13,0.0,Grain
+0,Architecture,9295,3,14,0.0,Mise à jour
+0,Architecture,9295,3,15,1.0,OLAP
+0,Architecture,9295,3,16,1.0,OLTP
+0,Modélisation dimensionnelle,9295,3,17,1.0,Redondance
+0,Modélisation dimensionnelle,9295,3,18,0.0,Schéma
+0,Gestion de projet,9295,3,19,1.0,SCRUM
+0,Modélisation dimensionnelle,15276,6,0,0.0,Architecture en bus
+0,Modélisation dimensionnelle,15276,6,1,1.0,Clefs
+0,Modélisation dimensionnelle,15276,6,2,1.0,Clefs
+0,Architecture,15276,6,3,1.0,Composants
+0,Architecture,15276,6,4,0.0,Composants
+0,Modélisation dimensionnelle,15276,6,5,1.0,Dimension conforme
+0,Tableaux de bord,15276,6,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,15276,6,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,15276,6,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15276,6,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15276,6,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15276,6,11,0.0,Table de fait
+0,Modélisation dimensionnelle,15276,6,12,0.0,Table de fait
+0,Modélisation dimensionnelle,15276,6,13,0.0,Grain
+0,Architecture,15276,6,14,1.0,Mise à jour
+0,Architecture,15276,6,15,1.0,OLAP
+0,Architecture,15276,6,16,0.0,OLTP
+0,Modélisation dimensionnelle,15276,6,17,1.0,Redondance
+0,Modélisation dimensionnelle,15276,6,18,1.0,Schéma
+0,Gestion de projet,15276,6,19,1.0,SCRUM
+0,Modélisation dimensionnelle,13046,1,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,13046,1,1,0.0,Clefs
+0,Modélisation dimensionnelle,13046,1,2,1.0,Clefs
+0,Architecture,13046,1,3,1.0,Composants
+0,Architecture,13046,1,4,0.0,Composants
+0,Modélisation dimensionnelle,13046,1,5,1.0,Dimension conforme
+0,Tableaux de bord,13046,1,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,13046,1,7,1.0,Dimension dégénérée
+0,Modélisation dimensionnelle,13046,1,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13046,1,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13046,1,10,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13046,1,11,0.0,Table de fait
+0,Modélisation dimensionnelle,13046,1,12,1.0,Table de fait
+0,Modélisation dimensionnelle,13046,1,13,0.0,Grain
+0,Architecture,13046,1,14,0.0,Mise à jour
+0,Architecture,13046,1,15,1.0,OLAP
+0,Architecture,13046,1,16,1.0,OLTP
+0,Modélisation dimensionnelle,13046,1,17,1.0,Redondance
+0,Modélisation dimensionnelle,13046,1,18,1.0,Schéma
+0,Gestion de projet,13046,1,19,1.0,SCRUM
+0,Modélisation dimensionnelle,10315,3,0,1.0,Architecture en bus
+0,Modélisation dimensionnelle,10315,3,1,1.0,Clefs
+0,Modélisation dimensionnelle,10315,3,2,1.0,Clefs
+0,Architecture,10315,3,3,1.0,Composants
+0,Architecture,10315,3,4,1.0,Composants
+0,Modélisation dimensionnelle,10315,3,5,0.0,Dimension conforme
+0,Tableaux de bord,10315,3,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,10315,3,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,10315,3,8,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,10315,3,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,10315,3,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,10315,3,11,0.0,Table de fait
+0,Modélisation dimensionnelle,10315,3,12,0.0,Table de fait
+0,Modélisation dimensionnelle,10315,3,13,0.0,Grain
+0,Architecture,10315,3,14,1.0,Mise à jour
+0,Architecture,10315,3,15,1.0,OLAP
+0,Architecture,10315,3,16,0.0,OLTP
+0,Modélisation dimensionnelle,10315,3,17,0.0,Redondance
+0,Modélisation dimensionnelle,10315,3,18,0.0,Schéma
+0,Gestion de projet,10315,3,19,0.0,SCRUM
+0,Modélisation dimensionnelle,13089,1,0,0.0,Architecture en bus
+0,Modélisation dimensionnelle,13089,1,1,1.0,Clefs
+0,Modélisation dimensionnelle,13089,1,2,1.0,Clefs
+0,Architecture,13089,1,3,1.0,Composants
+0,Architecture,13089,1,4,0.0,Composants
+0,Modélisation dimensionnelle,13089,1,5,1.0,Dimension conforme
+0,Tableaux de bord,13089,1,6,1.0,Tableaux de bord
+0,Modélisation dimensionnelle,13089,1,7,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,13089,1,8,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13089,1,9,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13089,1,10,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13089,1,11,1.0,Table de fait
+0,Modélisation dimensionnelle,13089,1,12,1.0,Table de fait
+0,Modélisation dimensionnelle,13089,1,13,0.0,Grain
+0,Architecture,13089,1,14,1.0,Mise à jour
+0,Architecture,13089,1,15,1.0,OLAP
+0,Architecture,13089,1,16,0.0,OLTP
+0,Modélisation dimensionnelle,13089,1,17,1.0,Redondance
+0,Modélisation dimensionnelle,13089,1,18,1.0,Schéma
+0,Gestion de projet,13089,1,19,1.0,SCRUM
+0,Architecture,6536,8,20,1.0,Composants
+0,Modélisation dimensionnelle,6536,8,21,0.0,Grain
+0,Architecture,6536,8,22,1.0,OLAP
+0,Modélisation dimensionnelle,6536,8,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,6536,8,24,1.0,Redondance
+0,Architecture,6536,8,25,0.0,Composants
+0,Architecture,6536,8,26,0.0,Composants
+0,Modélisation dimensionnelle,6536,8,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,6536,8,28,0.0,Dimension temps
+0,Architecture,6536,8,29,1.0,Composants
+0,Architecture,6536,8,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,6536,8,31,1.0,Dimension dégénérée
+0,Tableaux de bord,6536,8,32,0.0,Tableaux de bord
+0,Architecture,6536,8,33,1.0,OLTP
+0,Architecture,6536,8,34,1.0,Composants
+0,Modélisation dimensionnelle,6536,8,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,6536,8,36,1.0,Évolution des dimensions
+0,Architecture,6536,8,37,1.0,Composants
+0,Entretien,6536,8,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,6536,8,39,1.0,Dimension dégénérée
+0,Architecture,8389,8,20,1.0,Composants
+0,Modélisation dimensionnelle,8389,8,21,1.0,Grain
+0,Architecture,8389,8,22,1.0,OLAP
+0,Modélisation dimensionnelle,8389,8,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,8389,8,24,0.0,Redondance
+0,Architecture,8389,8,25,0.0,Composants
+0,Architecture,8389,8,26,0.0,Composants
+0,Modélisation dimensionnelle,8389,8,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,8389,8,28,1.0,Dimension temps
+0,Architecture,8389,8,29,0.0,Composants
+0,Architecture,8389,8,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,8389,8,31,1.0,Dimension dégénérée
+0,Tableaux de bord,8389,8,32,0.0,Tableaux de bord
+0,Architecture,8389,8,33,0.0,OLTP
+0,Architecture,8389,8,34,0.0,Composants
+0,Modélisation dimensionnelle,8389,8,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,8389,8,36,1.0,Évolution des dimensions
+0,Architecture,8389,8,37,1.0,Composants
+0,Entretien,8389,8,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,8389,8,39,1.0,Dimension dégénérée
+0,Architecture,6507,2,20,0.0,Composants
+0,Modélisation dimensionnelle,6507,2,21,1.0,Grain
+0,Architecture,6507,2,22,1.0,OLAP
+0,Modélisation dimensionnelle,6507,2,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,6507,2,24,1.0,Redondance
+0,Architecture,6507,2,25,0.0,Composants
+0,Architecture,6507,2,26,0.0,Composants
+0,Modélisation dimensionnelle,6507,2,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,6507,2,28,0.0,Dimension temps
+0,Architecture,6507,2,29,1.0,Composants
+0,Architecture,6507,2,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,6507,2,31,1.0,Dimension dégénérée
+0,Tableaux de bord,6507,2,32,0.0,Tableaux de bord
+0,Architecture,6507,2,33,0.0,OLTP
+0,Architecture,6507,2,34,1.0,Composants
+0,Modélisation dimensionnelle,6507,2,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,6507,2,36,0.0,Évolution des dimensions
+0,Architecture,6507,2,37,0.0,Composants
+0,Entretien,6507,2,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,6507,2,39,1.0,Dimension dégénérée
+0,Architecture,5961,7,20,1.0,Composants
+0,Modélisation dimensionnelle,5961,7,21,0.0,Grain
+0,Architecture,5961,7,22,0.0,OLAP
+0,Modélisation dimensionnelle,5961,7,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,5961,7,24,0.0,Redondance
+0,Architecture,5961,7,25,0.0,Composants
+0,Architecture,5961,7,26,1.0,Composants
+0,Modélisation dimensionnelle,5961,7,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,5961,7,28,1.0,Dimension temps
+0,Architecture,5961,7,29,1.0,Composants
+0,Architecture,5961,7,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,5961,7,31,0.0,Dimension dégénérée
+0,Tableaux de bord,5961,7,32,0.0,Tableaux de bord
+0,Architecture,5961,7,33,0.0,OLTP
+0,Architecture,5961,7,34,1.0,Composants
+0,Modélisation dimensionnelle,5961,7,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,5961,7,36,0.0,Évolution des dimensions
+0,Architecture,5961,7,37,0.0,Composants
+0,Entretien,5961,7,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,5961,7,39,1.0,Dimension dégénérée
+0,Architecture,15671,8,20,0.0,Composants
+0,Modélisation dimensionnelle,15671,8,21,1.0,Grain
+0,Architecture,15671,8,22,1.0,OLAP
+0,Modélisation dimensionnelle,15671,8,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,15671,8,24,0.0,Redondance
+0,Architecture,15671,8,25,1.0,Composants
+0,Architecture,15671,8,26,0.0,Composants
+0,Modélisation dimensionnelle,15671,8,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,15671,8,28,0.0,Dimension temps
+0,Architecture,15671,8,29,1.0,Composants
+0,Architecture,15671,8,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,15671,8,31,0.0,Dimension dégénérée
+0,Tableaux de bord,15671,8,32,0.0,Tableaux de bord
+0,Architecture,15671,8,33,0.0,OLTP
+0,Architecture,15671,8,34,1.0,Composants
+0,Modélisation dimensionnelle,15671,8,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15671,8,36,1.0,Évolution des dimensions
+0,Architecture,15671,8,37,1.0,Composants
+0,Entretien,15671,8,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,15671,8,39,0.0,Dimension dégénérée
+1,Architecture,13164,7,20,-1.0,Composants
+1,Modélisation dimensionnelle,13164,7,21,-1.0,Grain
+1,Architecture,13164,7,22,-1.0,OLAP
+1,Modélisation dimensionnelle,13164,7,23,-1.0,Dimension temps
+1,Modélisation dimensionnelle,13164,7,24,-1.0,Redondance
+1,Architecture,13164,7,25,-1.0,Composants
+1,Architecture,13164,7,26,-1.0,Composants
+1,Modélisation dimensionnelle,13164,7,27,-1.0,Architecture en bus
+1,Modélisation dimensionnelle,13164,7,28,-1.0,Dimension temps
+1,Architecture,13164,7,29,-1.0,Composants
+1,Architecture,13164,7,30,-1.0,Mise à jour
+1,Modélisation dimensionnelle,13164,7,31,-1.0,Dimension dégénérée
+1,Tableaux de bord,13164,7,32,-1.0,Tableaux de bord
+1,Architecture,13164,7,33,-1.0,OLTP
+1,Architecture,13164,7,34,-1.0,Composants
+1,Modélisation dimensionnelle,13164,7,35,-1.0,Évolution des dimensions
+1,Modélisation dimensionnelle,13164,7,36,-1.0,Évolution des dimensions
+1,Architecture,13164,7,37,-1.0,Composants
+1,Entretien,13164,7,38,-1.0,Mener un entretien
+1,Modélisation dimensionnelle,13164,7,39,-1.0,Dimension dégénérée
+0,Architecture,15806,8,20,1.0,Composants
+0,Modélisation dimensionnelle,15806,8,21,1.0,Grain
+0,Architecture,15806,8,22,1.0,OLAP
+0,Modélisation dimensionnelle,15806,8,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,15806,8,24,0.0,Redondance
+0,Architecture,15806,8,25,1.0,Composants
+0,Architecture,15806,8,26,0.0,Composants
+0,Modélisation dimensionnelle,15806,8,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,15806,8,28,0.0,Dimension temps
+0,Architecture,15806,8,29,0.0,Composants
+0,Architecture,15806,8,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,15806,8,31,1.0,Dimension dégénérée
+0,Tableaux de bord,15806,8,32,0.0,Tableaux de bord
+0,Architecture,15806,8,33,1.0,OLTP
+0,Architecture,15806,8,34,0.0,Composants
+0,Modélisation dimensionnelle,15806,8,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15806,8,36,1.0,Évolution des dimensions
+0,Architecture,15806,8,37,1.0,Composants
+0,Entretien,15806,8,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,15806,8,39,1.0,Dimension dégénérée
+0,Architecture,9277,8,20,1.0,Composants
+0,Modélisation dimensionnelle,9277,8,21,1.0,Grain
+0,Architecture,9277,8,22,0.0,OLAP
+0,Modélisation dimensionnelle,9277,8,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,9277,8,24,0.0,Redondance
+0,Architecture,9277,8,25,1.0,Composants
+0,Architecture,9277,8,26,0.0,Composants
+0,Modélisation dimensionnelle,9277,8,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,9277,8,28,1.0,Dimension temps
+0,Architecture,9277,8,29,0.0,Composants
+0,Architecture,9277,8,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,9277,8,31,1.0,Dimension dégénérée
+0,Tableaux de bord,9277,8,32,0.0,Tableaux de bord
+0,Architecture,9277,8,33,0.0,OLTP
+0,Architecture,9277,8,34,0.0,Composants
+0,Modélisation dimensionnelle,9277,8,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9277,8,36,1.0,Évolution des dimensions
+0,Architecture,9277,8,37,1.0,Composants
+0,Entretien,9277,8,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,9277,8,39,1.0,Dimension dégénérée
+0,Architecture,11576,9,20,0.0,Composants
+0,Modélisation dimensionnelle,11576,9,21,1.0,Grain
+0,Architecture,11576,9,22,1.0,OLAP
+0,Modélisation dimensionnelle,11576,9,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,11576,9,24,0.0,Redondance
+0,Architecture,11576,9,25,1.0,Composants
+0,Architecture,11576,9,26,1.0,Composants
+0,Modélisation dimensionnelle,11576,9,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,11576,9,28,1.0,Dimension temps
+0,Architecture,11576,9,29,0.0,Composants
+0,Architecture,11576,9,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,11576,9,31,0.0,Dimension dégénérée
+0,Tableaux de bord,11576,9,32,1.0,Tableaux de bord
+0,Architecture,11576,9,33,1.0,OLTP
+0,Architecture,11576,9,34,0.0,Composants
+0,Modélisation dimensionnelle,11576,9,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11576,9,36,1.0,Évolution des dimensions
+0,Architecture,11576,9,37,1.0,Composants
+0,Entretien,11576,9,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,11576,9,39,1.0,Dimension dégénérée
+0,Architecture,6852,6,20,0.0,Composants
+0,Modélisation dimensionnelle,6852,6,21,1.0,Grain
+0,Architecture,6852,6,22,1.0,OLAP
+0,Modélisation dimensionnelle,6852,6,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,6852,6,24,1.0,Redondance
+0,Architecture,6852,6,25,0.0,Composants
+0,Architecture,6852,6,26,0.0,Composants
+0,Modélisation dimensionnelle,6852,6,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,6852,6,28,0.0,Dimension temps
+0,Architecture,6852,6,29,1.0,Composants
+0,Architecture,6852,6,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,6852,6,31,1.0,Dimension dégénérée
+0,Tableaux de bord,6852,6,32,0.0,Tableaux de bord
+0,Architecture,6852,6,33,0.0,OLTP
+0,Architecture,6852,6,34,1.0,Composants
+0,Modélisation dimensionnelle,6852,6,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,6852,6,36,1.0,Évolution des dimensions
+0,Architecture,6852,6,37,1.0,Composants
+0,Entretien,6852,6,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,6852,6,39,0.0,Dimension dégénérée
+0,Architecture,12886,2,20,0.0,Composants
+0,Modélisation dimensionnelle,12886,2,21,0.0,Grain
+0,Architecture,12886,2,22,0.0,OLAP
+0,Modélisation dimensionnelle,12886,2,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,12886,2,24,1.0,Redondance
+0,Architecture,12886,2,25,1.0,Composants
+0,Architecture,12886,2,26,1.0,Composants
+0,Modélisation dimensionnelle,12886,2,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,12886,2,28,0.0,Dimension temps
+0,Architecture,12886,2,29,0.0,Composants
+0,Architecture,12886,2,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,12886,2,31,1.0,Dimension dégénérée
+0,Tableaux de bord,12886,2,32,1.0,Tableaux de bord
+0,Architecture,12886,2,33,0.0,OLTP
+0,Architecture,12886,2,34,1.0,Composants
+0,Modélisation dimensionnelle,12886,2,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,12886,2,36,1.0,Évolution des dimensions
+0,Architecture,12886,2,37,1.0,Composants
+0,Entretien,12886,2,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,12886,2,39,0.0,Dimension dégénérée
+0,Architecture,3020,4,20,0.0,Composants
+0,Modélisation dimensionnelle,3020,4,21,1.0,Grain
+0,Architecture,3020,4,22,1.0,OLAP
+0,Modélisation dimensionnelle,3020,4,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,3020,4,24,0.0,Redondance
+0,Architecture,3020,4,25,1.0,Composants
+0,Architecture,3020,4,26,1.0,Composants
+0,Modélisation dimensionnelle,3020,4,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,3020,4,28,1.0,Dimension temps
+0,Architecture,3020,4,29,1.0,Composants
+0,Architecture,3020,4,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,3020,4,31,0.0,Dimension dégénérée
+0,Tableaux de bord,3020,4,32,1.0,Tableaux de bord
+0,Architecture,3020,4,33,0.0,OLTP
+0,Architecture,3020,4,34,1.0,Composants
+0,Modélisation dimensionnelle,3020,4,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,3020,4,36,1.0,Évolution des dimensions
+0,Architecture,3020,4,37,1.0,Composants
+0,Entretien,3020,4,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,3020,4,39,0.0,Dimension dégénérée
+0,Architecture,15569,4,20,1.0,Composants
+0,Modélisation dimensionnelle,15569,4,21,1.0,Grain
+0,Architecture,15569,4,22,0.0,OLAP
+0,Modélisation dimensionnelle,15569,4,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,15569,4,24,0.0,Redondance
+0,Architecture,15569,4,25,0.0,Composants
+0,Architecture,15569,4,26,0.0,Composants
+0,Modélisation dimensionnelle,15569,4,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,15569,4,28,0.0,Dimension temps
+0,Architecture,15569,4,29,1.0,Composants
+0,Architecture,15569,4,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,15569,4,31,0.0,Dimension dégénérée
+0,Tableaux de bord,15569,4,32,1.0,Tableaux de bord
+0,Architecture,15569,4,33,0.0,OLTP
+0,Architecture,15569,4,34,0.0,Composants
+0,Modélisation dimensionnelle,15569,4,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15569,4,36,0.0,Évolution des dimensions
+0,Architecture,15569,4,37,0.0,Composants
+0,Entretien,15569,4,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,15569,4,39,0.0,Dimension dégénérée
+0,Architecture,5115,3,20,0.0,Composants
+0,Modélisation dimensionnelle,5115,3,21,1.0,Grain
+0,Architecture,5115,3,22,1.0,OLAP
+0,Modélisation dimensionnelle,5115,3,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,5115,3,24,0.0,Redondance
+0,Architecture,5115,3,25,1.0,Composants
+0,Architecture,5115,3,26,0.0,Composants
+0,Modélisation dimensionnelle,5115,3,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,5115,3,28,0.0,Dimension temps
+0,Architecture,5115,3,29,0.0,Composants
+0,Architecture,5115,3,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,5115,3,31,1.0,Dimension dégénérée
+0,Tableaux de bord,5115,3,32,1.0,Tableaux de bord
+0,Architecture,5115,3,33,0.0,OLTP
+0,Architecture,5115,3,34,0.0,Composants
+0,Modélisation dimensionnelle,5115,3,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,5115,3,36,1.0,Évolution des dimensions
+0,Architecture,5115,3,37,0.0,Composants
+0,Entretien,5115,3,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,5115,3,39,1.0,Dimension dégénérée
+0,Architecture,5149,4,20,1.0,Composants
+0,Modélisation dimensionnelle,5149,4,21,1.0,Grain
+0,Architecture,5149,4,22,0.0,OLAP
+0,Modélisation dimensionnelle,5149,4,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,5149,4,24,0.0,Redondance
+0,Architecture,5149,4,25,1.0,Composants
+0,Architecture,5149,4,26,0.0,Composants
+0,Modélisation dimensionnelle,5149,4,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,5149,4,28,0.0,Dimension temps
+0,Architecture,5149,4,29,0.0,Composants
+0,Architecture,5149,4,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,5149,4,31,0.0,Dimension dégénérée
+0,Tableaux de bord,5149,4,32,1.0,Tableaux de bord
+0,Architecture,5149,4,33,0.0,OLTP
+0,Architecture,5149,4,34,1.0,Composants
+0,Modélisation dimensionnelle,5149,4,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,5149,4,36,1.0,Évolution des dimensions
+0,Architecture,5149,4,37,0.0,Composants
+0,Entretien,5149,4,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,5149,4,39,1.0,Dimension dégénérée
+0,Architecture,13211,7,20,1.0,Composants
+0,Modélisation dimensionnelle,13211,7,21,0.0,Grain
+0,Architecture,13211,7,22,0.0,OLAP
+0,Modélisation dimensionnelle,13211,7,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,13211,7,24,0.0,Redondance
+0,Architecture,13211,7,25,1.0,Composants
+0,Architecture,13211,7,26,1.0,Composants
+0,Modélisation dimensionnelle,13211,7,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,13211,7,28,0.0,Dimension temps
+0,Architecture,13211,7,29,1.0,Composants
+0,Architecture,13211,7,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,13211,7,31,0.0,Dimension dégénérée
+0,Tableaux de bord,13211,7,32,0.0,Tableaux de bord
+0,Architecture,13211,7,33,0.0,OLTP
+0,Architecture,13211,7,34,0.0,Composants
+0,Modélisation dimensionnelle,13211,7,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13211,7,36,0.0,Évolution des dimensions
+0,Architecture,13211,7,37,0.0,Composants
+0,Entretien,13211,7,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,13211,7,39,1.0,Dimension dégénérée
+0,Architecture,11656,9,20,0.0,Composants
+0,Modélisation dimensionnelle,11656,9,21,1.0,Grain
+0,Architecture,11656,9,22,1.0,OLAP
+0,Modélisation dimensionnelle,11656,9,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,11656,9,24,1.0,Redondance
+0,Architecture,11656,9,25,0.0,Composants
+0,Architecture,11656,9,26,0.0,Composants
+0,Modélisation dimensionnelle,11656,9,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,11656,9,28,0.0,Dimension temps
+0,Architecture,11656,9,29,1.0,Composants
+0,Architecture,11656,9,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,11656,9,31,0.0,Dimension dégénérée
+0,Tableaux de bord,11656,9,32,1.0,Tableaux de bord
+0,Architecture,11656,9,33,0.0,OLTP
+0,Architecture,11656,9,34,0.0,Composants
+0,Modélisation dimensionnelle,11656,9,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11656,9,36,1.0,Évolution des dimensions
+0,Architecture,11656,9,37,1.0,Composants
+0,Entretien,11656,9,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,11656,9,39,0.0,Dimension dégénérée
+0,Architecture,8654,9,20,1.0,Composants
+0,Modélisation dimensionnelle,8654,9,21,1.0,Grain
+0,Architecture,8654,9,22,0.0,OLAP
+0,Modélisation dimensionnelle,8654,9,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,8654,9,24,1.0,Redondance
+0,Architecture,8654,9,25,0.0,Composants
+0,Architecture,8654,9,26,1.0,Composants
+0,Modélisation dimensionnelle,8654,9,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,8654,9,28,1.0,Dimension temps
+0,Architecture,8654,9,29,0.0,Composants
+0,Architecture,8654,9,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,8654,9,31,0.0,Dimension dégénérée
+0,Tableaux de bord,8654,9,32,1.0,Tableaux de bord
+0,Architecture,8654,9,33,0.0,OLTP
+0,Architecture,8654,9,34,0.0,Composants
+0,Modélisation dimensionnelle,8654,9,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,8654,9,36,0.0,Évolution des dimensions
+0,Architecture,8654,9,37,1.0,Composants
+0,Entretien,8654,9,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,8654,9,39,1.0,Dimension dégénérée
+0,Architecture,7794,2,20,0.0,Composants
+0,Modélisation dimensionnelle,7794,2,21,1.0,Grain
+0,Architecture,7794,2,22,1.0,OLAP
+0,Modélisation dimensionnelle,7794,2,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,7794,2,24,1.0,Redondance
+0,Architecture,7794,2,25,0.0,Composants
+0,Architecture,7794,2,26,0.0,Composants
+0,Modélisation dimensionnelle,7794,2,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,7794,2,28,0.0,Dimension temps
+0,Architecture,7794,2,29,1.0,Composants
+0,Architecture,7794,2,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,7794,2,31,1.0,Dimension dégénérée
+0,Tableaux de bord,7794,2,32,1.0,Tableaux de bord
+0,Architecture,7794,2,33,0.0,OLTP
+0,Architecture,7794,2,34,1.0,Composants
+0,Modélisation dimensionnelle,7794,2,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7794,2,36,1.0,Évolution des dimensions
+0,Architecture,7794,2,37,0.0,Composants
+0,Entretien,7794,2,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,7794,2,39,0.0,Dimension dégénérée
+0,Architecture,4381,9,20,1.0,Composants
+0,Modélisation dimensionnelle,4381,9,21,0.0,Grain
+0,Architecture,4381,9,22,1.0,OLAP
+0,Modélisation dimensionnelle,4381,9,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,4381,9,24,1.0,Redondance
+0,Architecture,4381,9,25,0.0,Composants
+0,Architecture,4381,9,26,1.0,Composants
+0,Modélisation dimensionnelle,4381,9,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,4381,9,28,1.0,Dimension temps
+0,Architecture,4381,9,29,0.0,Composants
+0,Architecture,4381,9,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,4381,9,31,1.0,Dimension dégénérée
+0,Tableaux de bord,4381,9,32,0.0,Tableaux de bord
+0,Architecture,4381,9,33,1.0,OLTP
+0,Architecture,4381,9,34,0.0,Composants
+0,Modélisation dimensionnelle,4381,9,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4381,9,36,1.0,Évolution des dimensions
+0,Architecture,4381,9,37,0.0,Composants
+0,Entretien,4381,9,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,4381,9,39,1.0,Dimension dégénérée
+0,Architecture,7966,7,20,1.0,Composants
+0,Modélisation dimensionnelle,7966,7,21,0.0,Grain
+0,Architecture,7966,7,22,0.0,OLAP
+0,Modélisation dimensionnelle,7966,7,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,7966,7,24,1.0,Redondance
+0,Architecture,7966,7,25,0.0,Composants
+0,Architecture,7966,7,26,0.0,Composants
+0,Modélisation dimensionnelle,7966,7,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,7966,7,28,0.0,Dimension temps
+0,Architecture,7966,7,29,0.0,Composants
+0,Architecture,7966,7,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,7966,7,31,1.0,Dimension dégénérée
+0,Tableaux de bord,7966,7,32,1.0,Tableaux de bord
+0,Architecture,7966,7,33,1.0,OLTP
+0,Architecture,7966,7,34,0.0,Composants
+0,Modélisation dimensionnelle,7966,7,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7966,7,36,0.0,Évolution des dimensions
+0,Architecture,7966,7,37,1.0,Composants
+0,Entretien,7966,7,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,7966,7,39,0.0,Dimension dégénérée
+0,Architecture,4472,5,20,0.0,Composants
+0,Modélisation dimensionnelle,4472,5,21,0.0,Grain
+0,Architecture,4472,5,22,0.0,OLAP
+0,Modélisation dimensionnelle,4472,5,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,4472,5,24,1.0,Redondance
+0,Architecture,4472,5,25,0.0,Composants
+0,Architecture,4472,5,26,1.0,Composants
+0,Modélisation dimensionnelle,4472,5,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,4472,5,28,1.0,Dimension temps
+0,Architecture,4472,5,29,1.0,Composants
+0,Architecture,4472,5,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,4472,5,31,1.0,Dimension dégénérée
+0,Tableaux de bord,4472,5,32,0.0,Tableaux de bord
+0,Architecture,4472,5,33,0.0,OLTP
+0,Architecture,4472,5,34,0.0,Composants
+0,Modélisation dimensionnelle,4472,5,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4472,5,36,1.0,Évolution des dimensions
+0,Architecture,4472,5,37,1.0,Composants
+0,Entretien,4472,5,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,4472,5,39,1.0,Dimension dégénérée
+0,Architecture,13753,3,20,0.0,Composants
+0,Modélisation dimensionnelle,13753,3,21,0.0,Grain
+0,Architecture,13753,3,22,1.0,OLAP
+0,Modélisation dimensionnelle,13753,3,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,13753,3,24,1.0,Redondance
+0,Architecture,13753,3,25,0.0,Composants
+0,Architecture,13753,3,26,1.0,Composants
+0,Modélisation dimensionnelle,13753,3,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,13753,3,28,0.0,Dimension temps
+0,Architecture,13753,3,29,0.0,Composants
+0,Architecture,13753,3,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,13753,3,31,1.0,Dimension dégénérée
+0,Tableaux de bord,13753,3,32,0.0,Tableaux de bord
+0,Architecture,13753,3,33,0.0,OLTP
+0,Architecture,13753,3,34,1.0,Composants
+0,Modélisation dimensionnelle,13753,3,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13753,3,36,1.0,Évolution des dimensions
+0,Architecture,13753,3,37,0.0,Composants
+0,Entretien,13753,3,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,13753,3,39,0.0,Dimension dégénérée
+0,Architecture,15312,2,20,0.0,Composants
+0,Modélisation dimensionnelle,15312,2,21,0.0,Grain
+0,Architecture,15312,2,22,1.0,OLAP
+0,Modélisation dimensionnelle,15312,2,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,15312,2,24,1.0,Redondance
+0,Architecture,15312,2,25,1.0,Composants
+0,Architecture,15312,2,26,0.0,Composants
+0,Modélisation dimensionnelle,15312,2,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,15312,2,28,1.0,Dimension temps
+0,Architecture,15312,2,29,0.0,Composants
+0,Architecture,15312,2,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,15312,2,31,1.0,Dimension dégénérée
+0,Tableaux de bord,15312,2,32,0.0,Tableaux de bord
+0,Architecture,15312,2,33,1.0,OLTP
+0,Architecture,15312,2,34,0.0,Composants
+0,Modélisation dimensionnelle,15312,2,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15312,2,36,0.0,Évolution des dimensions
+0,Architecture,15312,2,37,1.0,Composants
+0,Entretien,15312,2,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,15312,2,39,0.0,Dimension dégénérée
+0,Architecture,9723,9,20,1.0,Composants
+0,Modélisation dimensionnelle,9723,9,21,1.0,Grain
+0,Architecture,9723,9,22,0.0,OLAP
+0,Modélisation dimensionnelle,9723,9,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,9723,9,24,1.0,Redondance
+0,Architecture,9723,9,25,0.0,Composants
+0,Architecture,9723,9,26,1.0,Composants
+0,Modélisation dimensionnelle,9723,9,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,9723,9,28,1.0,Dimension temps
+0,Architecture,9723,9,29,1.0,Composants
+0,Architecture,9723,9,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,9723,9,31,0.0,Dimension dégénérée
+0,Tableaux de bord,9723,9,32,1.0,Tableaux de bord
+0,Architecture,9723,9,33,0.0,OLTP
+0,Architecture,9723,9,34,1.0,Composants
+0,Modélisation dimensionnelle,9723,9,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9723,9,36,1.0,Évolution des dimensions
+0,Architecture,9723,9,37,1.0,Composants
+0,Entretien,9723,9,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,9723,9,39,1.0,Dimension dégénérée
+0,Architecture,4394,5,20,0.0,Composants
+0,Modélisation dimensionnelle,4394,5,21,1.0,Grain
+0,Architecture,4394,5,22,0.0,OLAP
+0,Modélisation dimensionnelle,4394,5,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,4394,5,24,1.0,Redondance
+0,Architecture,4394,5,25,1.0,Composants
+0,Architecture,4394,5,26,0.0,Composants
+0,Modélisation dimensionnelle,4394,5,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,4394,5,28,0.0,Dimension temps
+0,Architecture,4394,5,29,0.0,Composants
+0,Architecture,4394,5,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,4394,5,31,1.0,Dimension dégénérée
+0,Tableaux de bord,4394,5,32,0.0,Tableaux de bord
+0,Architecture,4394,5,33,0.0,OLTP
+0,Architecture,4394,5,34,1.0,Composants
+0,Modélisation dimensionnelle,4394,5,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4394,5,36,0.0,Évolution des dimensions
+0,Architecture,4394,5,37,1.0,Composants
+0,Entretien,4394,5,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,4394,5,39,1.0,Dimension dégénérée
+0,Architecture,7960,10,20,1.0,Composants
+0,Modélisation dimensionnelle,7960,10,21,1.0,Grain
+0,Architecture,7960,10,22,1.0,OLAP
+0,Modélisation dimensionnelle,7960,10,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,7960,10,24,1.0,Redondance
+0,Architecture,7960,10,25,1.0,Composants
+0,Architecture,7960,10,26,0.0,Composants
+0,Modélisation dimensionnelle,7960,10,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,7960,10,28,0.0,Dimension temps
+0,Architecture,7960,10,29,1.0,Composants
+0,Architecture,7960,10,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,7960,10,31,1.0,Dimension dégénérée
+0,Tableaux de bord,7960,10,32,0.0,Tableaux de bord
+0,Architecture,7960,10,33,1.0,OLTP
+0,Architecture,7960,10,34,1.0,Composants
+0,Modélisation dimensionnelle,7960,10,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7960,10,36,0.0,Évolution des dimensions
+0,Architecture,7960,10,37,1.0,Composants
+0,Entretien,7960,10,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,7960,10,39,1.0,Dimension dégénérée
+0,Architecture,14134,6,20,0.0,Composants
+0,Modélisation dimensionnelle,14134,6,21,0.0,Grain
+0,Architecture,14134,6,22,0.0,OLAP
+0,Modélisation dimensionnelle,14134,6,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,14134,6,24,1.0,Redondance
+0,Architecture,14134,6,25,0.0,Composants
+0,Architecture,14134,6,26,1.0,Composants
+0,Modélisation dimensionnelle,14134,6,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,14134,6,28,1.0,Dimension temps
+0,Architecture,14134,6,29,0.0,Composants
+0,Architecture,14134,6,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,14134,6,31,0.0,Dimension dégénérée
+0,Tableaux de bord,14134,6,32,1.0,Tableaux de bord
+0,Architecture,14134,6,33,1.0,OLTP
+0,Architecture,14134,6,34,0.0,Composants
+0,Modélisation dimensionnelle,14134,6,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,14134,6,36,0.0,Évolution des dimensions
+0,Architecture,14134,6,37,0.0,Composants
+0,Entretien,14134,6,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,14134,6,39,0.0,Dimension dégénérée
+0,Architecture,14201,7,20,1.0,Composants
+0,Modélisation dimensionnelle,14201,7,21,1.0,Grain
+0,Architecture,14201,7,22,1.0,OLAP
+0,Modélisation dimensionnelle,14201,7,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,14201,7,24,0.0,Redondance
+0,Architecture,14201,7,25,1.0,Composants
+0,Architecture,14201,7,26,1.0,Composants
+0,Modélisation dimensionnelle,14201,7,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,14201,7,28,0.0,Dimension temps
+0,Architecture,14201,7,29,0.0,Composants
+0,Architecture,14201,7,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,14201,7,31,0.0,Dimension dégénérée
+0,Tableaux de bord,14201,7,32,0.0,Tableaux de bord
+0,Architecture,14201,7,33,1.0,OLTP
+0,Architecture,14201,7,34,0.0,Composants
+0,Modélisation dimensionnelle,14201,7,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,14201,7,36,0.0,Évolution des dimensions
+0,Architecture,14201,7,37,1.0,Composants
+0,Entretien,14201,7,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,14201,7,39,0.0,Dimension dégénérée
+1,Architecture,4884,5,20,-1.0,Composants
+1,Modélisation dimensionnelle,4884,5,21,-1.0,Grain
+1,Architecture,4884,5,22,-1.0,OLAP
+1,Modélisation dimensionnelle,4884,5,23,-1.0,Dimension temps
+1,Modélisation dimensionnelle,4884,5,24,-1.0,Redondance
+1,Architecture,4884,5,25,-1.0,Composants
+1,Architecture,4884,5,26,-1.0,Composants
+1,Modélisation dimensionnelle,4884,5,27,-1.0,Architecture en bus
+1,Modélisation dimensionnelle,4884,5,28,-1.0,Dimension temps
+1,Architecture,4884,5,29,-1.0,Composants
+1,Architecture,4884,5,30,-1.0,Mise à jour
+1,Modélisation dimensionnelle,4884,5,31,-1.0,Dimension dégénérée
+1,Tableaux de bord,4884,5,32,-1.0,Tableaux de bord
+1,Architecture,4884,5,33,-1.0,OLTP
+1,Architecture,4884,5,34,-1.0,Composants
+1,Modélisation dimensionnelle,4884,5,35,-1.0,Évolution des dimensions
+1,Modélisation dimensionnelle,4884,5,36,-1.0,Évolution des dimensions
+1,Architecture,4884,5,37,-1.0,Composants
+1,Entretien,4884,5,38,-1.0,Mener un entretien
+1,Modélisation dimensionnelle,4884,5,39,-1.0,Dimension dégénérée
+1,Architecture,7471,3,20,-1.0,Composants
+1,Modélisation dimensionnelle,7471,3,21,-1.0,Grain
+1,Architecture,7471,3,22,-1.0,OLAP
+1,Modélisation dimensionnelle,7471,3,23,-1.0,Dimension temps
+1,Modélisation dimensionnelle,7471,3,24,-1.0,Redondance
+1,Architecture,7471,3,25,-1.0,Composants
+1,Architecture,7471,3,26,-1.0,Composants
+1,Modélisation dimensionnelle,7471,3,27,-1.0,Architecture en bus
+1,Modélisation dimensionnelle,7471,3,28,-1.0,Dimension temps
+1,Architecture,7471,3,29,-1.0,Composants
+1,Architecture,7471,3,30,-1.0,Mise à jour
+1,Modélisation dimensionnelle,7471,3,31,-1.0,Dimension dégénérée
+1,Tableaux de bord,7471,3,32,-1.0,Tableaux de bord
+1,Architecture,7471,3,33,-1.0,OLTP
+1,Architecture,7471,3,34,-1.0,Composants
+1,Modélisation dimensionnelle,7471,3,35,-1.0,Évolution des dimensions
+1,Modélisation dimensionnelle,7471,3,36,-1.0,Évolution des dimensions
+1,Architecture,7471,3,37,-1.0,Composants
+1,Entretien,7471,3,38,-1.0,Mener un entretien
+1,Modélisation dimensionnelle,7471,3,39,-1.0,Dimension dégénérée
+0,Architecture,7848,10,20,0.0,Composants
+0,Modélisation dimensionnelle,7848,10,21,1.0,Grain
+0,Architecture,7848,10,22,0.0,OLAP
+0,Modélisation dimensionnelle,7848,10,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,7848,10,24,1.0,Redondance
+0,Architecture,7848,10,25,0.0,Composants
+0,Architecture,7848,10,26,1.0,Composants
+0,Modélisation dimensionnelle,7848,10,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,7848,10,28,1.0,Dimension temps
+0,Architecture,7848,10,29,0.0,Composants
+0,Architecture,7848,10,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,7848,10,31,1.0,Dimension dégénérée
+0,Tableaux de bord,7848,10,32,0.0,Tableaux de bord
+0,Architecture,7848,10,33,0.0,OLTP
+0,Architecture,7848,10,34,0.0,Composants
+0,Modélisation dimensionnelle,7848,10,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7848,10,36,0.0,Évolution des dimensions
+0,Architecture,7848,10,37,1.0,Composants
+0,Entretien,7848,10,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,7848,10,39,1.0,Dimension dégénérée
+0,Architecture,11575,4,20,0.0,Composants
+0,Modélisation dimensionnelle,11575,4,21,0.0,Grain
+0,Architecture,11575,4,22,0.0,OLAP
+0,Modélisation dimensionnelle,11575,4,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,11575,4,24,0.0,Redondance
+0,Architecture,11575,4,25,1.0,Composants
+0,Architecture,11575,4,26,0.0,Composants
+0,Modélisation dimensionnelle,11575,4,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,11575,4,28,1.0,Dimension temps
+0,Architecture,11575,4,29,1.0,Composants
+0,Architecture,11575,4,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,11575,4,31,0.0,Dimension dégénérée
+0,Tableaux de bord,11575,4,32,1.0,Tableaux de bord
+0,Architecture,11575,4,33,1.0,OLTP
+0,Architecture,11575,4,34,1.0,Composants
+0,Modélisation dimensionnelle,11575,4,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11575,4,36,1.0,Évolution des dimensions
+0,Architecture,11575,4,37,1.0,Composants
+0,Entretien,11575,4,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,11575,4,39,1.0,Dimension dégénérée
+1,Architecture,7800,2,20,-1.0,Composants
+1,Modélisation dimensionnelle,7800,2,21,-1.0,Grain
+1,Architecture,7800,2,22,-1.0,OLAP
+1,Modélisation dimensionnelle,7800,2,23,-1.0,Dimension temps
+1,Modélisation dimensionnelle,7800,2,24,-1.0,Redondance
+1,Architecture,7800,2,25,-1.0,Composants
+1,Architecture,7800,2,26,-1.0,Composants
+1,Modélisation dimensionnelle,7800,2,27,-1.0,Architecture en bus
+1,Modélisation dimensionnelle,7800,2,28,-1.0,Dimension temps
+1,Architecture,7800,2,29,-1.0,Composants
+1,Architecture,7800,2,30,-1.0,Mise à jour
+1,Modélisation dimensionnelle,7800,2,31,-1.0,Dimension dégénérée
+1,Tableaux de bord,7800,2,32,-1.0,Tableaux de bord
+1,Architecture,7800,2,33,-1.0,OLTP
+1,Architecture,7800,2,34,-1.0,Composants
+1,Modélisation dimensionnelle,7800,2,35,-1.0,Évolution des dimensions
+1,Modélisation dimensionnelle,7800,2,36,-1.0,Évolution des dimensions
+1,Architecture,7800,2,37,-1.0,Composants
+1,Entretien,7800,2,38,-1.0,Mener un entretien
+1,Modélisation dimensionnelle,7800,2,39,-1.0,Dimension dégénérée
+0,Architecture,10228,10,20,1.0,Composants
+0,Modélisation dimensionnelle,10228,10,21,1.0,Grain
+0,Architecture,10228,10,22,0.0,OLAP
+0,Modélisation dimensionnelle,10228,10,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,10228,10,24,0.0,Redondance
+0,Architecture,10228,10,25,1.0,Composants
+0,Architecture,10228,10,26,1.0,Composants
+0,Modélisation dimensionnelle,10228,10,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,10228,10,28,1.0,Dimension temps
+0,Architecture,10228,10,29,0.0,Composants
+0,Architecture,10228,10,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,10228,10,31,0.0,Dimension dégénérée
+0,Tableaux de bord,10228,10,32,1.0,Tableaux de bord
+0,Architecture,10228,10,33,0.0,OLTP
+0,Architecture,10228,10,34,0.0,Composants
+0,Modélisation dimensionnelle,10228,10,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,10228,10,36,0.0,Évolution des dimensions
+0,Architecture,10228,10,37,1.0,Composants
+0,Entretien,10228,10,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,10228,10,39,1.0,Dimension dégénérée
+0,Architecture,12406,5,20,0.0,Composants
+0,Modélisation dimensionnelle,12406,5,21,1.0,Grain
+0,Architecture,12406,5,22,0.0,OLAP
+0,Modélisation dimensionnelle,12406,5,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,12406,5,24,1.0,Redondance
+0,Architecture,12406,5,25,1.0,Composants
+0,Architecture,12406,5,26,1.0,Composants
+0,Modélisation dimensionnelle,12406,5,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,12406,5,28,1.0,Dimension temps
+0,Architecture,12406,5,29,0.0,Composants
+0,Architecture,12406,5,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,12406,5,31,1.0,Dimension dégénérée
+0,Tableaux de bord,12406,5,32,1.0,Tableaux de bord
+0,Architecture,12406,5,33,0.0,OLTP
+0,Architecture,12406,5,34,1.0,Composants
+0,Modélisation dimensionnelle,12406,5,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,12406,5,36,1.0,Évolution des dimensions
+0,Architecture,12406,5,37,0.0,Composants
+0,Entretien,12406,5,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,12406,5,39,0.0,Dimension dégénérée
+0,Architecture,7239,4,20,0.0,Composants
+0,Modélisation dimensionnelle,7239,4,21,1.0,Grain
+0,Architecture,7239,4,22,1.0,OLAP
+0,Modélisation dimensionnelle,7239,4,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,7239,4,24,0.0,Redondance
+0,Architecture,7239,4,25,0.0,Composants
+0,Architecture,7239,4,26,1.0,Composants
+0,Modélisation dimensionnelle,7239,4,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,7239,4,28,0.0,Dimension temps
+0,Architecture,7239,4,29,1.0,Composants
+0,Architecture,7239,4,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,7239,4,31,1.0,Dimension dégénérée
+0,Tableaux de bord,7239,4,32,1.0,Tableaux de bord
+0,Architecture,7239,4,33,0.0,OLTP
+0,Architecture,7239,4,34,1.0,Composants
+0,Modélisation dimensionnelle,7239,4,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7239,4,36,0.0,Évolution des dimensions
+0,Architecture,7239,4,37,1.0,Composants
+0,Entretien,7239,4,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,7239,4,39,0.0,Dimension dégénérée
+0,Architecture,9573,6,20,1.0,Composants
+0,Modélisation dimensionnelle,9573,6,21,0.0,Grain
+0,Architecture,9573,6,22,1.0,OLAP
+0,Modélisation dimensionnelle,9573,6,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,9573,6,24,1.0,Redondance
+0,Architecture,9573,6,25,1.0,Composants
+0,Architecture,9573,6,26,1.0,Composants
+0,Modélisation dimensionnelle,9573,6,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,9573,6,28,0.0,Dimension temps
+0,Architecture,9573,6,29,1.0,Composants
+0,Architecture,9573,6,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,9573,6,31,0.0,Dimension dégénérée
+0,Tableaux de bord,9573,6,32,1.0,Tableaux de bord
+0,Architecture,9573,6,33,0.0,OLTP
+0,Architecture,9573,6,34,1.0,Composants
+0,Modélisation dimensionnelle,9573,6,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9573,6,36,0.0,Évolution des dimensions
+0,Architecture,9573,6,37,0.0,Composants
+0,Entretien,9573,6,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,9573,6,39,1.0,Dimension dégénérée
+0,Architecture,4623,5,20,1.0,Composants
+0,Modélisation dimensionnelle,4623,5,21,1.0,Grain
+0,Architecture,4623,5,22,0.0,OLAP
+0,Modélisation dimensionnelle,4623,5,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,4623,5,24,0.0,Redondance
+0,Architecture,4623,5,25,1.0,Composants
+0,Architecture,4623,5,26,0.0,Composants
+0,Modélisation dimensionnelle,4623,5,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,4623,5,28,1.0,Dimension temps
+0,Architecture,4623,5,29,1.0,Composants
+0,Architecture,4623,5,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,4623,5,31,0.0,Dimension dégénérée
+0,Tableaux de bord,4623,5,32,1.0,Tableaux de bord
+0,Architecture,4623,5,33,1.0,OLTP
+0,Architecture,4623,5,34,0.0,Composants
+0,Modélisation dimensionnelle,4623,5,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4623,5,36,1.0,Évolution des dimensions
+0,Architecture,4623,5,37,1.0,Composants
+0,Entretien,4623,5,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,4623,5,39,1.0,Dimension dégénérée
+0,Architecture,11535,10,20,1.0,Composants
+0,Modélisation dimensionnelle,11535,10,21,0.0,Grain
+0,Architecture,11535,10,22,1.0,OLAP
+0,Modélisation dimensionnelle,11535,10,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,11535,10,24,0.0,Redondance
+0,Architecture,11535,10,25,1.0,Composants
+0,Architecture,11535,10,26,0.0,Composants
+0,Modélisation dimensionnelle,11535,10,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,11535,10,28,0.0,Dimension temps
+0,Architecture,11535,10,29,0.0,Composants
+0,Architecture,11535,10,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,11535,10,31,0.0,Dimension dégénérée
+0,Tableaux de bord,11535,10,32,0.0,Tableaux de bord
+0,Architecture,11535,10,33,1.0,OLTP
+0,Architecture,11535,10,34,0.0,Composants
+0,Modélisation dimensionnelle,11535,10,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11535,10,36,0.0,Évolution des dimensions
+0,Architecture,11535,10,37,0.0,Composants
+0,Entretien,11535,10,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,11535,10,39,1.0,Dimension dégénérée
+0,Architecture,8992,10,20,0.0,Composants
+0,Modélisation dimensionnelle,8992,10,21,1.0,Grain
+0,Architecture,8992,10,22,0.0,OLAP
+0,Modélisation dimensionnelle,8992,10,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,8992,10,24,1.0,Redondance
+0,Architecture,8992,10,25,0.0,Composants
+0,Architecture,8992,10,26,0.0,Composants
+0,Modélisation dimensionnelle,8992,10,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,8992,10,28,0.0,Dimension temps
+0,Architecture,8992,10,29,0.0,Composants
+0,Architecture,8992,10,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,8992,10,31,1.0,Dimension dégénérée
+0,Tableaux de bord,8992,10,32,0.0,Tableaux de bord
+0,Architecture,8992,10,33,1.0,OLTP
+0,Architecture,8992,10,34,1.0,Composants
+0,Modélisation dimensionnelle,8992,10,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,8992,10,36,1.0,Évolution des dimensions
+0,Architecture,8992,10,37,0.0,Composants
+0,Entretien,8992,10,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,8992,10,39,1.0,Dimension dégénérée
+0,Architecture,4579,1,20,1.0,Composants
+0,Modélisation dimensionnelle,4579,1,21,0.0,Grain
+0,Architecture,4579,1,22,0.0,OLAP
+0,Modélisation dimensionnelle,4579,1,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,4579,1,24,1.0,Redondance
+0,Architecture,4579,1,25,1.0,Composants
+0,Architecture,4579,1,26,0.0,Composants
+0,Modélisation dimensionnelle,4579,1,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,4579,1,28,1.0,Dimension temps
+0,Architecture,4579,1,29,0.0,Composants
+0,Architecture,4579,1,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,4579,1,31,0.0,Dimension dégénérée
+0,Tableaux de bord,4579,1,32,0.0,Tableaux de bord
+0,Architecture,4579,1,33,0.0,OLTP
+0,Architecture,4579,1,34,1.0,Composants
+0,Modélisation dimensionnelle,4579,1,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4579,1,36,1.0,Évolution des dimensions
+0,Architecture,4579,1,37,1.0,Composants
+0,Entretien,4579,1,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,4579,1,39,0.0,Dimension dégénérée
+1,Architecture,3095,1,20,-1.0,Composants
+1,Modélisation dimensionnelle,3095,1,21,-1.0,Grain
+1,Architecture,3095,1,22,-1.0,OLAP
+1,Modélisation dimensionnelle,3095,1,23,-1.0,Dimension temps
+1,Modélisation dimensionnelle,3095,1,24,-1.0,Redondance
+1,Architecture,3095,1,25,-1.0,Composants
+1,Architecture,3095,1,26,-1.0,Composants
+1,Modélisation dimensionnelle,3095,1,27,-1.0,Architecture en bus
+1,Modélisation dimensionnelle,3095,1,28,-1.0,Dimension temps
+1,Architecture,3095,1,29,-1.0,Composants
+1,Architecture,3095,1,30,-1.0,Mise à jour
+1,Modélisation dimensionnelle,3095,1,31,-1.0,Dimension dégénérée
+1,Tableaux de bord,3095,1,32,-1.0,Tableaux de bord
+1,Architecture,3095,1,33,-1.0,OLTP
+1,Architecture,3095,1,34,-1.0,Composants
+1,Modélisation dimensionnelle,3095,1,35,-1.0,Évolution des dimensions
+1,Modélisation dimensionnelle,3095,1,36,-1.0,Évolution des dimensions
+1,Architecture,3095,1,37,-1.0,Composants
+1,Entretien,3095,1,38,-1.0,Mener un entretien
+1,Modélisation dimensionnelle,3095,1,39,-1.0,Dimension dégénérée
+0,Architecture,3583,6,20,0.0,Composants
+0,Modélisation dimensionnelle,3583,6,21,0.0,Grain
+0,Architecture,3583,6,22,1.0,OLAP
+0,Modélisation dimensionnelle,3583,6,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,3583,6,24,1.0,Redondance
+0,Architecture,3583,6,25,0.0,Composants
+0,Architecture,3583,6,26,0.0,Composants
+0,Modélisation dimensionnelle,3583,6,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,3583,6,28,1.0,Dimension temps
+0,Architecture,3583,6,29,0.0,Composants
+0,Architecture,3583,6,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,3583,6,31,0.0,Dimension dégénérée
+0,Tableaux de bord,3583,6,32,1.0,Tableaux de bord
+0,Architecture,3583,6,33,0.0,OLTP
+0,Architecture,3583,6,34,1.0,Composants
+0,Modélisation dimensionnelle,3583,6,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,3583,6,36,1.0,Évolution des dimensions
+0,Architecture,3583,6,37,1.0,Composants
+0,Entretien,3583,6,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,3583,6,39,0.0,Dimension dégénérée
+0,Architecture,14462,1,20,0.0,Composants
+0,Modélisation dimensionnelle,14462,1,21,1.0,Grain
+0,Architecture,14462,1,22,0.0,OLAP
+0,Modélisation dimensionnelle,14462,1,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,14462,1,24,0.0,Redondance
+0,Architecture,14462,1,25,0.0,Composants
+0,Architecture,14462,1,26,1.0,Composants
+0,Modélisation dimensionnelle,14462,1,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,14462,1,28,0.0,Dimension temps
+0,Architecture,14462,1,29,0.0,Composants
+0,Architecture,14462,1,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,14462,1,31,1.0,Dimension dégénérée
+0,Tableaux de bord,14462,1,32,1.0,Tableaux de bord
+0,Architecture,14462,1,33,0.0,OLTP
+0,Architecture,14462,1,34,0.0,Composants
+0,Modélisation dimensionnelle,14462,1,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,14462,1,36,1.0,Évolution des dimensions
+0,Architecture,14462,1,37,0.0,Composants
+0,Entretien,14462,1,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,14462,1,39,1.0,Dimension dégénérée
+0,Architecture,9295,3,20,1.0,Composants
+0,Modélisation dimensionnelle,9295,3,21,0.0,Grain
+0,Architecture,9295,3,22,1.0,OLAP
+0,Modélisation dimensionnelle,9295,3,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,9295,3,24,1.0,Redondance
+0,Architecture,9295,3,25,1.0,Composants
+0,Architecture,9295,3,26,0.0,Composants
+0,Modélisation dimensionnelle,9295,3,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,9295,3,28,0.0,Dimension temps
+0,Architecture,9295,3,29,0.0,Composants
+0,Architecture,9295,3,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,9295,3,31,1.0,Dimension dégénérée
+0,Tableaux de bord,9295,3,32,0.0,Tableaux de bord
+0,Architecture,9295,3,33,0.0,OLTP
+0,Architecture,9295,3,34,1.0,Composants
+0,Modélisation dimensionnelle,9295,3,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9295,3,36,0.0,Évolution des dimensions
+0,Architecture,9295,3,37,0.0,Composants
+0,Entretien,9295,3,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,9295,3,39,0.0,Dimension dégénérée
+0,Architecture,15276,6,20,0.0,Composants
+0,Modélisation dimensionnelle,15276,6,21,0.0,Grain
+0,Architecture,15276,6,22,1.0,OLAP
+0,Modélisation dimensionnelle,15276,6,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,15276,6,24,0.0,Redondance
+0,Architecture,15276,6,25,1.0,Composants
+0,Architecture,15276,6,26,0.0,Composants
+0,Modélisation dimensionnelle,15276,6,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,15276,6,28,0.0,Dimension temps
+0,Architecture,15276,6,29,1.0,Composants
+0,Architecture,15276,6,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,15276,6,31,1.0,Dimension dégénérée
+0,Tableaux de bord,15276,6,32,1.0,Tableaux de bord
+0,Architecture,15276,6,33,1.0,OLTP
+0,Architecture,15276,6,34,0.0,Composants
+0,Modélisation dimensionnelle,15276,6,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15276,6,36,1.0,Évolution des dimensions
+0,Architecture,15276,6,37,1.0,Composants
+0,Entretien,15276,6,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,15276,6,39,0.0,Dimension dégénérée
+0,Architecture,13046,1,20,0.0,Composants
+0,Modélisation dimensionnelle,13046,1,21,1.0,Grain
+0,Architecture,13046,1,22,1.0,OLAP
+0,Modélisation dimensionnelle,13046,1,23,0.0,Dimension temps
+0,Modélisation dimensionnelle,13046,1,24,1.0,Redondance
+0,Architecture,13046,1,25,0.0,Composants
+0,Architecture,13046,1,26,1.0,Composants
+0,Modélisation dimensionnelle,13046,1,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,13046,1,28,0.0,Dimension temps
+0,Architecture,13046,1,29,1.0,Composants
+0,Architecture,13046,1,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,13046,1,31,0.0,Dimension dégénérée
+0,Tableaux de bord,13046,1,32,1.0,Tableaux de bord
+0,Architecture,13046,1,33,0.0,OLTP
+0,Architecture,13046,1,34,0.0,Composants
+0,Modélisation dimensionnelle,13046,1,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13046,1,36,1.0,Évolution des dimensions
+0,Architecture,13046,1,37,0.0,Composants
+0,Entretien,13046,1,38,0.0,Mener un entretien
+0,Modélisation dimensionnelle,13046,1,39,1.0,Dimension dégénérée
+0,Architecture,10315,3,20,1.0,Composants
+0,Modélisation dimensionnelle,10315,3,21,0.0,Grain
+0,Architecture,10315,3,22,1.0,OLAP
+0,Modélisation dimensionnelle,10315,3,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,10315,3,24,1.0,Redondance
+0,Architecture,10315,3,25,1.0,Composants
+0,Architecture,10315,3,26,1.0,Composants
+0,Modélisation dimensionnelle,10315,3,27,1.0,Architecture en bus
+0,Modélisation dimensionnelle,10315,3,28,0.0,Dimension temps
+0,Architecture,10315,3,29,0.0,Composants
+0,Architecture,10315,3,30,1.0,Mise à jour
+0,Modélisation dimensionnelle,10315,3,31,0.0,Dimension dégénérée
+0,Tableaux de bord,10315,3,32,0.0,Tableaux de bord
+0,Architecture,10315,3,33,1.0,OLTP
+0,Architecture,10315,3,34,1.0,Composants
+0,Modélisation dimensionnelle,10315,3,35,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,10315,3,36,1.0,Évolution des dimensions
+0,Architecture,10315,3,37,1.0,Composants
+0,Entretien,10315,3,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,10315,3,39,0.0,Dimension dégénérée
+0,Architecture,13089,1,20,1.0,Composants
+0,Modélisation dimensionnelle,13089,1,21,1.0,Grain
+0,Architecture,13089,1,22,1.0,OLAP
+0,Modélisation dimensionnelle,13089,1,23,1.0,Dimension temps
+0,Modélisation dimensionnelle,13089,1,24,0.0,Redondance
+0,Architecture,13089,1,25,0.0,Composants
+0,Architecture,13089,1,26,1.0,Composants
+0,Modélisation dimensionnelle,13089,1,27,0.0,Architecture en bus
+0,Modélisation dimensionnelle,13089,1,28,0.0,Dimension temps
+0,Architecture,13089,1,29,1.0,Composants
+0,Architecture,13089,1,30,0.0,Mise à jour
+0,Modélisation dimensionnelle,13089,1,31,0.0,Dimension dégénérée
+0,Tableaux de bord,13089,1,32,0.0,Tableaux de bord
+0,Architecture,13089,1,33,1.0,OLTP
+0,Architecture,13089,1,34,1.0,Composants
+0,Modélisation dimensionnelle,13089,1,35,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13089,1,36,1.0,Évolution des dimensions
+0,Architecture,13089,1,37,0.0,Composants
+0,Entretien,13089,1,38,1.0,Mener un entretien
+0,Modélisation dimensionnelle,13089,1,39,0.0,Dimension dégénérée
+0,Modélisation dimensionnelle,6536,8,40,0.0,Schéma
+0,Modélisation dimensionnelle,6536,8,41,1.0,Grain
+0,Modélisation dimensionnelle,6536,8,42,0.0,Table de fait
+0,Modélisation dimensionnelle,6536,8,43,1.0,Grain
+0,Modélisation dimensionnelle,6536,8,44,0.0,Grain
+0,Architecture,6536,8,45,0.0,Composants
+0,Modélisation dimensionnelle,6536,8,46,0.0,Clefs
+0,Modélisation dimensionnelle,6536,8,47,0.0,Dimension fourre-tout
+0,Architecture,6536,8,48,1.0,Mise à jour
+0,Entretien,6536,8,49,0.0,Guide d’entretien
+0,Architecture,6536,8,50,0.0,OLAP
+0,Architecture,6536,8,51,0.0,OLAP
+0,Modélisation dimensionnelle,6536,8,52,1.0,Mesures et Faits
+0,Entretien,6536,8,53,0.0,Mener un entretien
+0,Architecture,6536,8,54,1.0,OLAP
+0,Architecture,6536,8,55,1.0,OLAP
+0,Modélisation dimensionnelle,6536,8,56,0.0,Table de fait
+0,Modélisation dimensionnelle,6536,8,57,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,6536,8,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,6536,8,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,8389,8,40,0.0,Schéma
+0,Modélisation dimensionnelle,8389,8,41,1.0,Grain
+0,Modélisation dimensionnelle,8389,8,42,0.0,Table de fait
+0,Modélisation dimensionnelle,8389,8,43,0.0,Grain
+0,Modélisation dimensionnelle,8389,8,44,0.0,Grain
+0,Architecture,8389,8,45,1.0,Composants
+0,Modélisation dimensionnelle,8389,8,46,1.0,Clefs
+0,Modélisation dimensionnelle,8389,8,47,1.0,Dimension fourre-tout
+0,Architecture,8389,8,48,0.0,Mise à jour
+0,Entretien,8389,8,49,0.0,Guide d’entretien
+0,Architecture,8389,8,50,0.0,OLAP
+0,Architecture,8389,8,51,0.0,OLAP
+0,Modélisation dimensionnelle,8389,8,52,0.0,Mesures et Faits
+0,Entretien,8389,8,53,1.0,Mener un entretien
+0,Architecture,8389,8,54,1.0,OLAP
+0,Architecture,8389,8,55,0.0,OLAP
+0,Modélisation dimensionnelle,8389,8,56,1.0,Table de fait
+0,Modélisation dimensionnelle,8389,8,57,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,8389,8,58,1.0,Dimension conforme
+0,Modélisation dimensionnelle,8389,8,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,6507,2,40,1.0,Schéma
+0,Modélisation dimensionnelle,6507,2,41,0.0,Grain
+0,Modélisation dimensionnelle,6507,2,42,1.0,Table de fait
+0,Modélisation dimensionnelle,6507,2,43,1.0,Grain
+0,Modélisation dimensionnelle,6507,2,44,1.0,Grain
+0,Architecture,6507,2,45,0.0,Composants
+0,Modélisation dimensionnelle,6507,2,46,0.0,Clefs
+0,Modélisation dimensionnelle,6507,2,47,0.0,Dimension fourre-tout
+0,Architecture,6507,2,48,1.0,Mise à jour
+0,Entretien,6507,2,49,0.0,Guide d’entretien
+0,Architecture,6507,2,50,1.0,OLAP
+0,Architecture,6507,2,51,1.0,OLAP
+0,Modélisation dimensionnelle,6507,2,52,0.0,Mesures et Faits
+0,Entretien,6507,2,53,1.0,Mener un entretien
+0,Architecture,6507,2,54,0.0,OLAP
+0,Architecture,6507,2,55,1.0,OLAP
+0,Modélisation dimensionnelle,6507,2,56,0.0,Table de fait
+0,Modélisation dimensionnelle,6507,2,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,6507,2,58,1.0,Dimension conforme
+0,Modélisation dimensionnelle,6507,2,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,5961,7,40,0.0,Schéma
+0,Modélisation dimensionnelle,5961,7,41,1.0,Grain
+0,Modélisation dimensionnelle,5961,7,42,1.0,Table de fait
+0,Modélisation dimensionnelle,5961,7,43,1.0,Grain
+0,Modélisation dimensionnelle,5961,7,44,0.0,Grain
+0,Architecture,5961,7,45,0.0,Composants
+0,Modélisation dimensionnelle,5961,7,46,1.0,Clefs
+0,Modélisation dimensionnelle,5961,7,47,1.0,Dimension fourre-tout
+0,Architecture,5961,7,48,0.0,Mise à jour
+0,Entretien,5961,7,49,0.0,Guide d’entretien
+0,Architecture,5961,7,50,1.0,OLAP
+0,Architecture,5961,7,51,0.0,OLAP
+0,Modélisation dimensionnelle,5961,7,52,1.0,Mesures et Faits
+0,Entretien,5961,7,53,0.0,Mener un entretien
+0,Architecture,5961,7,54,0.0,OLAP
+0,Architecture,5961,7,55,1.0,OLAP
+0,Modélisation dimensionnelle,5961,7,56,1.0,Table de fait
+0,Modélisation dimensionnelle,5961,7,57,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,5961,7,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,5961,7,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,15671,8,40,1.0,Schéma
+0,Modélisation dimensionnelle,15671,8,41,0.0,Grain
+0,Modélisation dimensionnelle,15671,8,42,1.0,Table de fait
+0,Modélisation dimensionnelle,15671,8,43,1.0,Grain
+0,Modélisation dimensionnelle,15671,8,44,1.0,Grain
+0,Architecture,15671,8,45,1.0,Composants
+0,Modélisation dimensionnelle,15671,8,46,1.0,Clefs
+0,Modélisation dimensionnelle,15671,8,47,0.0,Dimension fourre-tout
+0,Architecture,15671,8,48,1.0,Mise à jour
+0,Entretien,15671,8,49,1.0,Guide d’entretien
+0,Architecture,15671,8,50,0.0,OLAP
+0,Architecture,15671,8,51,0.0,OLAP
+0,Modélisation dimensionnelle,15671,8,52,0.0,Mesures et Faits
+0,Entretien,15671,8,53,0.0,Mener un entretien
+0,Architecture,15671,8,54,1.0,OLAP
+0,Architecture,15671,8,55,1.0,OLAP
+0,Modélisation dimensionnelle,15671,8,56,1.0,Table de fait
+0,Modélisation dimensionnelle,15671,8,57,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15671,8,58,1.0,Dimension conforme
+0,Modélisation dimensionnelle,15671,8,59,0.0,Table de faits sans fait
+1,Modélisation dimensionnelle,13164,7,40,-1.0,Schéma
+1,Modélisation dimensionnelle,13164,7,41,-1.0,Grain
+1,Modélisation dimensionnelle,13164,7,42,-1.0,Table de fait
+1,Modélisation dimensionnelle,13164,7,43,-1.0,Grain
+1,Modélisation dimensionnelle,13164,7,44,-1.0,Grain
+1,Architecture,13164,7,45,-1.0,Composants
+1,Modélisation dimensionnelle,13164,7,46,-1.0,Clefs
+1,Modélisation dimensionnelle,13164,7,47,-1.0,Dimension fourre-tout
+1,Architecture,13164,7,48,-1.0,Mise à jour
+1,Entretien,13164,7,49,-1.0,Guide d’entretien
+1,Architecture,13164,7,50,-1.0,OLAP
+1,Architecture,13164,7,51,-1.0,OLAP
+1,Modélisation dimensionnelle,13164,7,52,-1.0,Mesures et Faits
+1,Entretien,13164,7,53,-1.0,Mener un entretien
+1,Architecture,13164,7,54,-1.0,OLAP
+1,Architecture,13164,7,55,-1.0,OLAP
+1,Modélisation dimensionnelle,13164,7,56,-1.0,Table de fait
+1,Modélisation dimensionnelle,13164,7,57,-1.0,Évolution des dimensions
+1,Modélisation dimensionnelle,13164,7,58,-1.0,Dimension conforme
+1,Modélisation dimensionnelle,13164,7,59,-1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,15806,8,40,0.0,Schéma
+0,Modélisation dimensionnelle,15806,8,41,0.0,Grain
+0,Modélisation dimensionnelle,15806,8,42,0.0,Table de fait
+0,Modélisation dimensionnelle,15806,8,43,0.0,Grain
+0,Modélisation dimensionnelle,15806,8,44,0.0,Grain
+0,Architecture,15806,8,45,1.0,Composants
+0,Modélisation dimensionnelle,15806,8,46,0.0,Clefs
+0,Modélisation dimensionnelle,15806,8,47,0.0,Dimension fourre-tout
+0,Architecture,15806,8,48,1.0,Mise à jour
+0,Entretien,15806,8,49,0.0,Guide d’entretien
+0,Architecture,15806,8,50,1.0,OLAP
+0,Architecture,15806,8,51,1.0,OLAP
+0,Modélisation dimensionnelle,15806,8,52,0.0,Mesures et Faits
+0,Entretien,15806,8,53,1.0,Mener un entretien
+0,Architecture,15806,8,54,0.0,OLAP
+0,Architecture,15806,8,55,1.0,OLAP
+0,Modélisation dimensionnelle,15806,8,56,1.0,Table de fait
+0,Modélisation dimensionnelle,15806,8,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15806,8,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,15806,8,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,9277,8,40,1.0,Schéma
+0,Modélisation dimensionnelle,9277,8,41,0.0,Grain
+0,Modélisation dimensionnelle,9277,8,42,0.0,Table de fait
+0,Modélisation dimensionnelle,9277,8,43,1.0,Grain
+0,Modélisation dimensionnelle,9277,8,44,1.0,Grain
+0,Architecture,9277,8,45,0.0,Composants
+0,Modélisation dimensionnelle,9277,8,46,1.0,Clefs
+0,Modélisation dimensionnelle,9277,8,47,0.0,Dimension fourre-tout
+0,Architecture,9277,8,48,0.0,Mise à jour
+0,Entretien,9277,8,49,1.0,Guide d’entretien
+0,Architecture,9277,8,50,0.0,OLAP
+0,Architecture,9277,8,51,1.0,OLAP
+0,Modélisation dimensionnelle,9277,8,52,0.0,Mesures et Faits
+0,Entretien,9277,8,53,0.0,Mener un entretien
+0,Architecture,9277,8,54,1.0,OLAP
+0,Architecture,9277,8,55,1.0,OLAP
+0,Modélisation dimensionnelle,9277,8,56,1.0,Table de fait
+0,Modélisation dimensionnelle,9277,8,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9277,8,58,1.0,Dimension conforme
+0,Modélisation dimensionnelle,9277,8,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,11576,9,40,1.0,Schéma
+0,Modélisation dimensionnelle,11576,9,41,0.0,Grain
+0,Modélisation dimensionnelle,11576,9,42,0.0,Table de fait
+0,Modélisation dimensionnelle,11576,9,43,0.0,Grain
+0,Modélisation dimensionnelle,11576,9,44,0.0,Grain
+0,Architecture,11576,9,45,0.0,Composants
+0,Modélisation dimensionnelle,11576,9,46,1.0,Clefs
+0,Modélisation dimensionnelle,11576,9,47,1.0,Dimension fourre-tout
+0,Architecture,11576,9,48,1.0,Mise à jour
+0,Entretien,11576,9,49,1.0,Guide d’entretien
+0,Architecture,11576,9,50,1.0,OLAP
+0,Architecture,11576,9,51,1.0,OLAP
+0,Modélisation dimensionnelle,11576,9,52,1.0,Mesures et Faits
+0,Entretien,11576,9,53,0.0,Mener un entretien
+0,Architecture,11576,9,54,1.0,OLAP
+0,Architecture,11576,9,55,0.0,OLAP
+0,Modélisation dimensionnelle,11576,9,56,0.0,Table de fait
+0,Modélisation dimensionnelle,11576,9,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11576,9,58,1.0,Dimension conforme
+0,Modélisation dimensionnelle,11576,9,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,6852,6,40,1.0,Schéma
+0,Modélisation dimensionnelle,6852,6,41,0.0,Grain
+0,Modélisation dimensionnelle,6852,6,42,0.0,Table de fait
+0,Modélisation dimensionnelle,6852,6,43,1.0,Grain
+0,Modélisation dimensionnelle,6852,6,44,0.0,Grain
+0,Architecture,6852,6,45,0.0,Composants
+0,Modélisation dimensionnelle,6852,6,46,0.0,Clefs
+0,Modélisation dimensionnelle,6852,6,47,0.0,Dimension fourre-tout
+0,Architecture,6852,6,48,1.0,Mise à jour
+0,Entretien,6852,6,49,0.0,Guide d’entretien
+0,Architecture,6852,6,50,1.0,OLAP
+0,Architecture,6852,6,51,1.0,OLAP
+0,Modélisation dimensionnelle,6852,6,52,0.0,Mesures et Faits
+0,Entretien,6852,6,53,0.0,Mener un entretien
+0,Architecture,6852,6,54,1.0,OLAP
+0,Architecture,6852,6,55,1.0,OLAP
+0,Modélisation dimensionnelle,6852,6,56,1.0,Table de fait
+0,Modélisation dimensionnelle,6852,6,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,6852,6,58,1.0,Dimension conforme
+0,Modélisation dimensionnelle,6852,6,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,12886,2,40,1.0,Schéma
+0,Modélisation dimensionnelle,12886,2,41,0.0,Grain
+0,Modélisation dimensionnelle,12886,2,42,1.0,Table de fait
+0,Modélisation dimensionnelle,12886,2,43,0.0,Grain
+0,Modélisation dimensionnelle,12886,2,44,1.0,Grain
+0,Architecture,12886,2,45,1.0,Composants
+0,Modélisation dimensionnelle,12886,2,46,0.0,Clefs
+0,Modélisation dimensionnelle,12886,2,47,1.0,Dimension fourre-tout
+0,Architecture,12886,2,48,1.0,Mise à jour
+0,Entretien,12886,2,49,1.0,Guide d’entretien
+0,Architecture,12886,2,50,0.0,OLAP
+0,Architecture,12886,2,51,1.0,OLAP
+0,Modélisation dimensionnelle,12886,2,52,0.0,Mesures et Faits
+0,Entretien,12886,2,53,0.0,Mener un entretien
+0,Architecture,12886,2,54,1.0,OLAP
+0,Architecture,12886,2,55,0.0,OLAP
+0,Modélisation dimensionnelle,12886,2,56,0.0,Table de fait
+0,Modélisation dimensionnelle,12886,2,57,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,12886,2,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,12886,2,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,3020,4,40,0.0,Schéma
+0,Modélisation dimensionnelle,3020,4,41,0.0,Grain
+0,Modélisation dimensionnelle,3020,4,42,0.0,Table de fait
+0,Modélisation dimensionnelle,3020,4,43,0.0,Grain
+0,Modélisation dimensionnelle,3020,4,44,0.0,Grain
+0,Architecture,3020,4,45,0.0,Composants
+0,Modélisation dimensionnelle,3020,4,46,1.0,Clefs
+0,Modélisation dimensionnelle,3020,4,47,0.0,Dimension fourre-tout
+0,Architecture,3020,4,48,0.0,Mise à jour
+0,Entretien,3020,4,49,1.0,Guide d’entretien
+0,Architecture,3020,4,50,1.0,OLAP
+0,Architecture,3020,4,51,0.0,OLAP
+0,Modélisation dimensionnelle,3020,4,52,0.0,Mesures et Faits
+0,Entretien,3020,4,53,1.0,Mener un entretien
+0,Architecture,3020,4,54,0.0,OLAP
+0,Architecture,3020,4,55,0.0,OLAP
+0,Modélisation dimensionnelle,3020,4,56,1.0,Table de fait
+0,Modélisation dimensionnelle,3020,4,57,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,3020,4,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,3020,4,59,0.0,Table de faits sans fait
+0,Modélisation dimensionnelle,15569,4,40,0.0,Schéma
+0,Modélisation dimensionnelle,15569,4,41,0.0,Grain
+0,Modélisation dimensionnelle,15569,4,42,0.0,Table de fait
+0,Modélisation dimensionnelle,15569,4,43,1.0,Grain
+0,Modélisation dimensionnelle,15569,4,44,1.0,Grain
+0,Architecture,15569,4,45,1.0,Composants
+0,Modélisation dimensionnelle,15569,4,46,1.0,Clefs
+0,Modélisation dimensionnelle,15569,4,47,0.0,Dimension fourre-tout
+0,Architecture,15569,4,48,0.0,Mise à jour
+0,Entretien,15569,4,49,1.0,Guide d’entretien
+0,Architecture,15569,4,50,1.0,OLAP
+0,Architecture,15569,4,51,1.0,OLAP
+0,Modélisation dimensionnelle,15569,4,52,1.0,Mesures et Faits
+0,Entretien,15569,4,53,0.0,Mener un entretien
+0,Architecture,15569,4,54,0.0,OLAP
+0,Architecture,15569,4,55,0.0,OLAP
+0,Modélisation dimensionnelle,15569,4,56,0.0,Table de fait
+0,Modélisation dimensionnelle,15569,4,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15569,4,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,15569,4,59,1.0,Table de faits sans fait
+1,Modélisation dimensionnelle,5115,3,40,-1.0,Schéma
+1,Modélisation dimensionnelle,5115,3,41,-1.0,Grain
+1,Modélisation dimensionnelle,5115,3,42,-1.0,Table de fait
+1,Modélisation dimensionnelle,5115,3,43,-1.0,Grain
+1,Modélisation dimensionnelle,5115,3,44,-1.0,Grain
+1,Architecture,5115,3,45,-1.0,Composants
+1,Modélisation dimensionnelle,5115,3,46,-1.0,Clefs
+1,Modélisation dimensionnelle,5115,3,47,-1.0,Dimension fourre-tout
+1,Architecture,5115,3,48,-1.0,Mise à jour
+1,Entretien,5115,3,49,-1.0,Guide d’entretien
+1,Architecture,5115,3,50,-1.0,OLAP
+1,Architecture,5115,3,51,-1.0,OLAP
+1,Modélisation dimensionnelle,5115,3,52,-1.0,Mesures et Faits
+1,Entretien,5115,3,53,-1.0,Mener un entretien
+1,Architecture,5115,3,54,-1.0,OLAP
+1,Architecture,5115,3,55,-1.0,OLAP
+1,Modélisation dimensionnelle,5115,3,56,-1.0,Table de fait
+1,Modélisation dimensionnelle,5115,3,57,-1.0,Évolution des dimensions
+1,Modélisation dimensionnelle,5115,3,58,-1.0,Dimension conforme
+1,Modélisation dimensionnelle,5115,3,59,-1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,5149,4,40,0.0,Schéma
+0,Modélisation dimensionnelle,5149,4,41,1.0,Grain
+0,Modélisation dimensionnelle,5149,4,42,1.0,Table de fait
+0,Modélisation dimensionnelle,5149,4,43,0.0,Grain
+0,Modélisation dimensionnelle,5149,4,44,0.0,Grain
+0,Architecture,5149,4,45,0.0,Composants
+0,Modélisation dimensionnelle,5149,4,46,0.0,Clefs
+0,Modélisation dimensionnelle,5149,4,47,1.0,Dimension fourre-tout
+0,Architecture,5149,4,48,0.0,Mise à jour
+0,Entretien,5149,4,49,1.0,Guide d’entretien
+0,Architecture,5149,4,50,0.0,OLAP
+0,Architecture,5149,4,51,1.0,OLAP
+0,Modélisation dimensionnelle,5149,4,52,0.0,Mesures et Faits
+0,Entretien,5149,4,53,0.0,Mener un entretien
+0,Architecture,5149,4,54,1.0,OLAP
+0,Architecture,5149,4,55,1.0,OLAP
+0,Modélisation dimensionnelle,5149,4,56,0.0,Table de fait
+0,Modélisation dimensionnelle,5149,4,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,5149,4,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,5149,4,59,0.0,Table de faits sans fait
+0,Modélisation dimensionnelle,13211,7,40,0.0,Schéma
+0,Modélisation dimensionnelle,13211,7,41,0.0,Grain
+0,Modélisation dimensionnelle,13211,7,42,0.0,Table de fait
+0,Modélisation dimensionnelle,13211,7,43,0.0,Grain
+0,Modélisation dimensionnelle,13211,7,44,0.0,Grain
+0,Architecture,13211,7,45,0.0,Composants
+0,Modélisation dimensionnelle,13211,7,46,0.0,Clefs
+0,Modélisation dimensionnelle,13211,7,47,1.0,Dimension fourre-tout
+0,Architecture,13211,7,48,0.0,Mise à jour
+0,Entretien,13211,7,49,0.0,Guide d’entretien
+0,Architecture,13211,7,50,0.0,OLAP
+0,Architecture,13211,7,51,1.0,OLAP
+0,Modélisation dimensionnelle,13211,7,52,0.0,Mesures et Faits
+0,Entretien,13211,7,53,1.0,Mener un entretien
+0,Architecture,13211,7,54,1.0,OLAP
+0,Architecture,13211,7,55,1.0,OLAP
+0,Modélisation dimensionnelle,13211,7,56,0.0,Table de fait
+0,Modélisation dimensionnelle,13211,7,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13211,7,58,1.0,Dimension conforme
+0,Modélisation dimensionnelle,13211,7,59,0.0,Table de faits sans fait
+0,Modélisation dimensionnelle,11656,9,40,0.0,Schéma
+0,Modélisation dimensionnelle,11656,9,41,0.0,Grain
+0,Modélisation dimensionnelle,11656,9,42,1.0,Table de fait
+0,Modélisation dimensionnelle,11656,9,43,1.0,Grain
+0,Modélisation dimensionnelle,11656,9,44,0.0,Grain
+0,Architecture,11656,9,45,1.0,Composants
+0,Modélisation dimensionnelle,11656,9,46,0.0,Clefs
+0,Modélisation dimensionnelle,11656,9,47,0.0,Dimension fourre-tout
+0,Architecture,11656,9,48,0.0,Mise à jour
+0,Entretien,11656,9,49,0.0,Guide d’entretien
+0,Architecture,11656,9,50,0.0,OLAP
+0,Architecture,11656,9,51,0.0,OLAP
+0,Modélisation dimensionnelle,11656,9,52,0.0,Mesures et Faits
+0,Entretien,11656,9,53,0.0,Mener un entretien
+0,Architecture,11656,9,54,0.0,OLAP
+0,Architecture,11656,9,55,1.0,OLAP
+0,Modélisation dimensionnelle,11656,9,56,1.0,Table de fait
+0,Modélisation dimensionnelle,11656,9,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11656,9,58,1.0,Dimension conforme
+0,Modélisation dimensionnelle,11656,9,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,8654,9,40,1.0,Schéma
+0,Modélisation dimensionnelle,8654,9,41,0.0,Grain
+0,Modélisation dimensionnelle,8654,9,42,1.0,Table de fait
+0,Modélisation dimensionnelle,8654,9,43,1.0,Grain
+0,Modélisation dimensionnelle,8654,9,44,0.0,Grain
+0,Architecture,8654,9,45,0.0,Composants
+0,Modélisation dimensionnelle,8654,9,46,0.0,Clefs
+0,Modélisation dimensionnelle,8654,9,47,0.0,Dimension fourre-tout
+0,Architecture,8654,9,48,1.0,Mise à jour
+0,Entretien,8654,9,49,0.0,Guide d’entretien
+0,Architecture,8654,9,50,0.0,OLAP
+0,Architecture,8654,9,51,1.0,OLAP
+0,Modélisation dimensionnelle,8654,9,52,1.0,Mesures et Faits
+0,Entretien,8654,9,53,1.0,Mener un entretien
+0,Architecture,8654,9,54,1.0,OLAP
+0,Architecture,8654,9,55,1.0,OLAP
+0,Modélisation dimensionnelle,8654,9,56,0.0,Table de fait
+0,Modélisation dimensionnelle,8654,9,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,8654,9,58,1.0,Dimension conforme
+0,Modélisation dimensionnelle,8654,9,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,7794,2,40,1.0,Schéma
+0,Modélisation dimensionnelle,7794,2,41,0.0,Grain
+0,Modélisation dimensionnelle,7794,2,42,0.0,Table de fait
+0,Modélisation dimensionnelle,7794,2,43,0.0,Grain
+0,Modélisation dimensionnelle,7794,2,44,0.0,Grain
+0,Architecture,7794,2,45,0.0,Composants
+0,Modélisation dimensionnelle,7794,2,46,0.0,Clefs
+0,Modélisation dimensionnelle,7794,2,47,1.0,Dimension fourre-tout
+0,Architecture,7794,2,48,0.0,Mise à jour
+0,Entretien,7794,2,49,0.0,Guide d’entretien
+0,Architecture,7794,2,50,0.0,OLAP
+0,Architecture,7794,2,51,1.0,OLAP
+0,Modélisation dimensionnelle,7794,2,52,0.0,Mesures et Faits
+0,Entretien,7794,2,53,1.0,Mener un entretien
+0,Architecture,7794,2,54,1.0,OLAP
+0,Architecture,7794,2,55,1.0,OLAP
+0,Modélisation dimensionnelle,7794,2,56,1.0,Table de fait
+0,Modélisation dimensionnelle,7794,2,57,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7794,2,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,7794,2,59,0.0,Table de faits sans fait
+0,Modélisation dimensionnelle,4381,9,40,1.0,Schéma
+0,Modélisation dimensionnelle,4381,9,41,1.0,Grain
+0,Modélisation dimensionnelle,4381,9,42,1.0,Table de fait
+0,Modélisation dimensionnelle,4381,9,43,1.0,Grain
+0,Modélisation dimensionnelle,4381,9,44,1.0,Grain
+0,Architecture,4381,9,45,0.0,Composants
+0,Modélisation dimensionnelle,4381,9,46,1.0,Clefs
+0,Modélisation dimensionnelle,4381,9,47,0.0,Dimension fourre-tout
+0,Architecture,4381,9,48,0.0,Mise à jour
+0,Entretien,4381,9,49,0.0,Guide d’entretien
+0,Architecture,4381,9,50,1.0,OLAP
+0,Architecture,4381,9,51,0.0,OLAP
+0,Modélisation dimensionnelle,4381,9,52,1.0,Mesures et Faits
+0,Entretien,4381,9,53,0.0,Mener un entretien
+0,Architecture,4381,9,54,1.0,OLAP
+0,Architecture,4381,9,55,1.0,OLAP
+0,Modélisation dimensionnelle,4381,9,56,1.0,Table de fait
+0,Modélisation dimensionnelle,4381,9,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4381,9,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,4381,9,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,7966,7,40,0.0,Schéma
+0,Modélisation dimensionnelle,7966,7,41,1.0,Grain
+0,Modélisation dimensionnelle,7966,7,42,0.0,Table de fait
+0,Modélisation dimensionnelle,7966,7,43,1.0,Grain
+0,Modélisation dimensionnelle,7966,7,44,0.0,Grain
+0,Architecture,7966,7,45,1.0,Composants
+0,Modélisation dimensionnelle,7966,7,46,1.0,Clefs
+0,Modélisation dimensionnelle,7966,7,47,1.0,Dimension fourre-tout
+0,Architecture,7966,7,48,0.0,Mise à jour
+0,Entretien,7966,7,49,0.0,Guide d’entretien
+0,Architecture,7966,7,50,1.0,OLAP
+0,Architecture,7966,7,51,0.0,OLAP
+0,Modélisation dimensionnelle,7966,7,52,0.0,Mesures et Faits
+0,Entretien,7966,7,53,0.0,Mener un entretien
+0,Architecture,7966,7,54,0.0,OLAP
+0,Architecture,7966,7,55,0.0,OLAP
+0,Modélisation dimensionnelle,7966,7,56,1.0,Table de fait
+0,Modélisation dimensionnelle,7966,7,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7966,7,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,7966,7,59,1.0,Table de faits sans fait
+1,Modélisation dimensionnelle,4472,5,40,-1.0,Schéma
+1,Modélisation dimensionnelle,4472,5,41,-1.0,Grain
+1,Modélisation dimensionnelle,4472,5,42,-1.0,Table de fait
+1,Modélisation dimensionnelle,4472,5,43,-1.0,Grain
+1,Modélisation dimensionnelle,4472,5,44,-1.0,Grain
+1,Architecture,4472,5,45,-1.0,Composants
+1,Modélisation dimensionnelle,4472,5,46,-1.0,Clefs
+1,Modélisation dimensionnelle,4472,5,47,-1.0,Dimension fourre-tout
+1,Architecture,4472,5,48,-1.0,Mise à jour
+1,Entretien,4472,5,49,-1.0,Guide d’entretien
+1,Architecture,4472,5,50,-1.0,OLAP
+1,Architecture,4472,5,51,-1.0,OLAP
+1,Modélisation dimensionnelle,4472,5,52,-1.0,Mesures et Faits
+1,Entretien,4472,5,53,-1.0,Mener un entretien
+1,Architecture,4472,5,54,-1.0,OLAP
+1,Architecture,4472,5,55,-1.0,OLAP
+1,Modélisation dimensionnelle,4472,5,56,-1.0,Table de fait
+1,Modélisation dimensionnelle,4472,5,57,-1.0,Évolution des dimensions
+1,Modélisation dimensionnelle,4472,5,58,-1.0,Dimension conforme
+1,Modélisation dimensionnelle,4472,5,59,-1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,13753,3,40,0.0,Schéma
+0,Modélisation dimensionnelle,13753,3,41,1.0,Grain
+0,Modélisation dimensionnelle,13753,3,42,0.0,Table de fait
+0,Modélisation dimensionnelle,13753,3,43,1.0,Grain
+0,Modélisation dimensionnelle,13753,3,44,1.0,Grain
+0,Architecture,13753,3,45,1.0,Composants
+0,Modélisation dimensionnelle,13753,3,46,1.0,Clefs
+0,Modélisation dimensionnelle,13753,3,47,1.0,Dimension fourre-tout
+0,Architecture,13753,3,48,0.0,Mise à jour
+0,Entretien,13753,3,49,0.0,Guide d’entretien
+0,Architecture,13753,3,50,1.0,OLAP
+0,Architecture,13753,3,51,1.0,OLAP
+0,Modélisation dimensionnelle,13753,3,52,1.0,Mesures et Faits
+0,Entretien,13753,3,53,0.0,Mener un entretien
+0,Architecture,13753,3,54,1.0,OLAP
+0,Architecture,13753,3,55,0.0,OLAP
+0,Modélisation dimensionnelle,13753,3,56,0.0,Table de fait
+0,Modélisation dimensionnelle,13753,3,57,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13753,3,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,13753,3,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,15312,2,40,1.0,Schéma
+0,Modélisation dimensionnelle,15312,2,41,1.0,Grain
+0,Modélisation dimensionnelle,15312,2,42,1.0,Table de fait
+0,Modélisation dimensionnelle,15312,2,43,1.0,Grain
+0,Modélisation dimensionnelle,15312,2,44,0.0,Grain
+0,Architecture,15312,2,45,0.0,Composants
+0,Modélisation dimensionnelle,15312,2,46,1.0,Clefs
+0,Modélisation dimensionnelle,15312,2,47,1.0,Dimension fourre-tout
+0,Architecture,15312,2,48,0.0,Mise à jour
+0,Entretien,15312,2,49,0.0,Guide d’entretien
+0,Architecture,15312,2,50,0.0,OLAP
+0,Architecture,15312,2,51,1.0,OLAP
+0,Modélisation dimensionnelle,15312,2,52,1.0,Mesures et Faits
+0,Entretien,15312,2,53,0.0,Mener un entretien
+0,Architecture,15312,2,54,1.0,OLAP
+0,Architecture,15312,2,55,0.0,OLAP
+0,Modélisation dimensionnelle,15312,2,56,0.0,Table de fait
+0,Modélisation dimensionnelle,15312,2,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15312,2,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,15312,2,59,0.0,Table de faits sans fait
+0,Modélisation dimensionnelle,9723,9,40,0.0,Schéma
+0,Modélisation dimensionnelle,9723,9,41,1.0,Grain
+0,Modélisation dimensionnelle,9723,9,42,0.0,Table de fait
+0,Modélisation dimensionnelle,9723,9,43,0.0,Grain
+0,Modélisation dimensionnelle,9723,9,44,1.0,Grain
+0,Architecture,9723,9,45,1.0,Composants
+0,Modélisation dimensionnelle,9723,9,46,1.0,Clefs
+0,Modélisation dimensionnelle,9723,9,47,0.0,Dimension fourre-tout
+0,Architecture,9723,9,48,0.0,Mise à jour
+0,Entretien,9723,9,49,1.0,Guide d’entretien
+0,Architecture,9723,9,50,0.0,OLAP
+0,Architecture,9723,9,51,0.0,OLAP
+0,Modélisation dimensionnelle,9723,9,52,1.0,Mesures et Faits
+0,Entretien,9723,9,53,0.0,Mener un entretien
+0,Architecture,9723,9,54,0.0,OLAP
+0,Architecture,9723,9,55,1.0,OLAP
+0,Modélisation dimensionnelle,9723,9,56,0.0,Table de fait
+0,Modélisation dimensionnelle,9723,9,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9723,9,58,1.0,Dimension conforme
+0,Modélisation dimensionnelle,9723,9,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,4394,5,40,1.0,Schéma
+0,Modélisation dimensionnelle,4394,5,41,1.0,Grain
+0,Modélisation dimensionnelle,4394,5,42,0.0,Table de fait
+0,Modélisation dimensionnelle,4394,5,43,1.0,Grain
+0,Modélisation dimensionnelle,4394,5,44,1.0,Grain
+0,Architecture,4394,5,45,0.0,Composants
+0,Modélisation dimensionnelle,4394,5,46,1.0,Clefs
+0,Modélisation dimensionnelle,4394,5,47,0.0,Dimension fourre-tout
+0,Architecture,4394,5,48,0.0,Mise à jour
+0,Entretien,4394,5,49,0.0,Guide d’entretien
+0,Architecture,4394,5,50,0.0,OLAP
+0,Architecture,4394,5,51,0.0,OLAP
+0,Modélisation dimensionnelle,4394,5,52,0.0,Mesures et Faits
+0,Entretien,4394,5,53,1.0,Mener un entretien
+0,Architecture,4394,5,54,1.0,OLAP
+0,Architecture,4394,5,55,0.0,OLAP
+0,Modélisation dimensionnelle,4394,5,56,1.0,Table de fait
+0,Modélisation dimensionnelle,4394,5,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4394,5,58,1.0,Dimension conforme
+0,Modélisation dimensionnelle,4394,5,59,0.0,Table de faits sans fait
+0,Modélisation dimensionnelle,7960,10,40,0.0,Schéma
+0,Modélisation dimensionnelle,7960,10,41,1.0,Grain
+0,Modélisation dimensionnelle,7960,10,42,1.0,Table de fait
+0,Modélisation dimensionnelle,7960,10,43,1.0,Grain
+0,Modélisation dimensionnelle,7960,10,44,1.0,Grain
+0,Architecture,7960,10,45,0.0,Composants
+0,Modélisation dimensionnelle,7960,10,46,0.0,Clefs
+0,Modélisation dimensionnelle,7960,10,47,1.0,Dimension fourre-tout
+0,Architecture,7960,10,48,1.0,Mise à jour
+0,Entretien,7960,10,49,1.0,Guide d’entretien
+0,Architecture,7960,10,50,0.0,OLAP
+0,Architecture,7960,10,51,0.0,OLAP
+0,Modélisation dimensionnelle,7960,10,52,0.0,Mesures et Faits
+0,Entretien,7960,10,53,1.0,Mener un entretien
+0,Architecture,7960,10,54,0.0,OLAP
+0,Architecture,7960,10,55,1.0,OLAP
+0,Modélisation dimensionnelle,7960,10,56,1.0,Table de fait
+0,Modélisation dimensionnelle,7960,10,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7960,10,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,7960,10,59,0.0,Table de faits sans fait
+0,Modélisation dimensionnelle,14134,6,40,0.0,Schéma
+0,Modélisation dimensionnelle,14134,6,41,0.0,Grain
+0,Modélisation dimensionnelle,14134,6,42,0.0,Table de fait
+0,Modélisation dimensionnelle,14134,6,43,1.0,Grain
+0,Modélisation dimensionnelle,14134,6,44,0.0,Grain
+0,Architecture,14134,6,45,1.0,Composants
+0,Modélisation dimensionnelle,14134,6,46,1.0,Clefs
+0,Modélisation dimensionnelle,14134,6,47,1.0,Dimension fourre-tout
+0,Architecture,14134,6,48,1.0,Mise à jour
+0,Entretien,14134,6,49,1.0,Guide d’entretien
+0,Architecture,14134,6,50,0.0,OLAP
+0,Architecture,14134,6,51,0.0,OLAP
+0,Modélisation dimensionnelle,14134,6,52,0.0,Mesures et Faits
+0,Entretien,14134,6,53,0.0,Mener un entretien
+0,Architecture,14134,6,54,0.0,OLAP
+0,Architecture,14134,6,55,0.0,OLAP
+0,Modélisation dimensionnelle,14134,6,56,1.0,Table de fait
+0,Modélisation dimensionnelle,14134,6,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,14134,6,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,14134,6,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,14201,7,40,1.0,Schéma
+0,Modélisation dimensionnelle,14201,7,41,1.0,Grain
+0,Modélisation dimensionnelle,14201,7,42,1.0,Table de fait
+0,Modélisation dimensionnelle,14201,7,43,0.0,Grain
+0,Modélisation dimensionnelle,14201,7,44,0.0,Grain
+0,Architecture,14201,7,45,1.0,Composants
+0,Modélisation dimensionnelle,14201,7,46,0.0,Clefs
+0,Modélisation dimensionnelle,14201,7,47,0.0,Dimension fourre-tout
+0,Architecture,14201,7,48,1.0,Mise à jour
+0,Entretien,14201,7,49,1.0,Guide d’entretien
+0,Architecture,14201,7,50,0.0,OLAP
+0,Architecture,14201,7,51,0.0,OLAP
+0,Modélisation dimensionnelle,14201,7,52,0.0,Mesures et Faits
+0,Entretien,14201,7,53,1.0,Mener un entretien
+0,Architecture,14201,7,54,1.0,OLAP
+0,Architecture,14201,7,55,0.0,OLAP
+0,Modélisation dimensionnelle,14201,7,56,0.0,Table de fait
+0,Modélisation dimensionnelle,14201,7,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,14201,7,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,14201,7,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,4884,5,40,0.0,Schéma
+0,Modélisation dimensionnelle,4884,5,41,0.0,Grain
+0,Modélisation dimensionnelle,4884,5,42,1.0,Table de fait
+0,Modélisation dimensionnelle,4884,5,43,1.0,Grain
+0,Modélisation dimensionnelle,4884,5,44,0.0,Grain
+0,Architecture,4884,5,45,1.0,Composants
+0,Modélisation dimensionnelle,4884,5,46,1.0,Clefs
+0,Modélisation dimensionnelle,4884,5,47,0.0,Dimension fourre-tout
+0,Architecture,4884,5,48,1.0,Mise à jour
+0,Entretien,4884,5,49,0.0,Guide d’entretien
+0,Architecture,4884,5,50,1.0,OLAP
+0,Architecture,4884,5,51,1.0,OLAP
+0,Modélisation dimensionnelle,4884,5,52,0.0,Mesures et Faits
+0,Entretien,4884,5,53,1.0,Mener un entretien
+0,Architecture,4884,5,54,1.0,OLAP
+0,Architecture,4884,5,55,1.0,OLAP
+0,Modélisation dimensionnelle,4884,5,56,0.0,Table de fait
+0,Modélisation dimensionnelle,4884,5,57,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4884,5,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,4884,5,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,7471,3,40,1.0,Schéma
+0,Modélisation dimensionnelle,7471,3,41,1.0,Grain
+0,Modélisation dimensionnelle,7471,3,42,1.0,Table de fait
+0,Modélisation dimensionnelle,7471,3,43,0.0,Grain
+0,Modélisation dimensionnelle,7471,3,44,1.0,Grain
+0,Architecture,7471,3,45,0.0,Composants
+0,Modélisation dimensionnelle,7471,3,46,0.0,Clefs
+0,Modélisation dimensionnelle,7471,3,47,0.0,Dimension fourre-tout
+0,Architecture,7471,3,48,0.0,Mise à jour
+0,Entretien,7471,3,49,1.0,Guide d’entretien
+0,Architecture,7471,3,50,1.0,OLAP
+0,Architecture,7471,3,51,1.0,OLAP
+0,Modélisation dimensionnelle,7471,3,52,0.0,Mesures et Faits
+0,Entretien,7471,3,53,1.0,Mener un entretien
+0,Architecture,7471,3,54,1.0,OLAP
+0,Architecture,7471,3,55,0.0,OLAP
+0,Modélisation dimensionnelle,7471,3,56,0.0,Table de fait
+0,Modélisation dimensionnelle,7471,3,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7471,3,58,1.0,Dimension conforme
+0,Modélisation dimensionnelle,7471,3,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,7848,10,40,0.0,Schéma
+0,Modélisation dimensionnelle,7848,10,41,1.0,Grain
+0,Modélisation dimensionnelle,7848,10,42,1.0,Table de fait
+0,Modélisation dimensionnelle,7848,10,43,1.0,Grain
+0,Modélisation dimensionnelle,7848,10,44,1.0,Grain
+0,Architecture,7848,10,45,1.0,Composants
+0,Modélisation dimensionnelle,7848,10,46,0.0,Clefs
+0,Modélisation dimensionnelle,7848,10,47,1.0,Dimension fourre-tout
+0,Architecture,7848,10,48,0.0,Mise à jour
+0,Entretien,7848,10,49,0.0,Guide d’entretien
+0,Architecture,7848,10,50,1.0,OLAP
+0,Architecture,7848,10,51,0.0,OLAP
+0,Modélisation dimensionnelle,7848,10,52,0.0,Mesures et Faits
+0,Entretien,7848,10,53,1.0,Mener un entretien
+0,Architecture,7848,10,54,0.0,OLAP
+0,Architecture,7848,10,55,0.0,OLAP
+0,Modélisation dimensionnelle,7848,10,56,0.0,Table de fait
+0,Modélisation dimensionnelle,7848,10,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7848,10,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,7848,10,59,0.0,Table de faits sans fait
+0,Modélisation dimensionnelle,11575,4,40,0.0,Schéma
+0,Modélisation dimensionnelle,11575,4,41,0.0,Grain
+0,Modélisation dimensionnelle,11575,4,42,1.0,Table de fait
+0,Modélisation dimensionnelle,11575,4,43,1.0,Grain
+0,Modélisation dimensionnelle,11575,4,44,0.0,Grain
+0,Architecture,11575,4,45,1.0,Composants
+0,Modélisation dimensionnelle,11575,4,46,0.0,Clefs
+0,Modélisation dimensionnelle,11575,4,47,1.0,Dimension fourre-tout
+0,Architecture,11575,4,48,0.0,Mise à jour
+0,Entretien,11575,4,49,0.0,Guide d’entretien
+0,Architecture,11575,4,50,0.0,OLAP
+0,Architecture,11575,4,51,1.0,OLAP
+0,Modélisation dimensionnelle,11575,4,52,1.0,Mesures et Faits
+0,Entretien,11575,4,53,1.0,Mener un entretien
+0,Architecture,11575,4,54,1.0,OLAP
+0,Architecture,11575,4,55,0.0,OLAP
+0,Modélisation dimensionnelle,11575,4,56,0.0,Table de fait
+0,Modélisation dimensionnelle,11575,4,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11575,4,58,1.0,Dimension conforme
+0,Modélisation dimensionnelle,11575,4,59,0.0,Table de faits sans fait
+0,Modélisation dimensionnelle,7800,2,40,1.0,Schéma
+0,Modélisation dimensionnelle,7800,2,41,1.0,Grain
+0,Modélisation dimensionnelle,7800,2,42,0.0,Table de fait
+0,Modélisation dimensionnelle,7800,2,43,0.0,Grain
+0,Modélisation dimensionnelle,7800,2,44,1.0,Grain
+0,Architecture,7800,2,45,1.0,Composants
+0,Modélisation dimensionnelle,7800,2,46,0.0,Clefs
+0,Modélisation dimensionnelle,7800,2,47,0.0,Dimension fourre-tout
+0,Architecture,7800,2,48,1.0,Mise à jour
+0,Entretien,7800,2,49,0.0,Guide d’entretien
+0,Architecture,7800,2,50,1.0,OLAP
+0,Architecture,7800,2,51,0.0,OLAP
+0,Modélisation dimensionnelle,7800,2,52,0.0,Mesures et Faits
+0,Entretien,7800,2,53,0.0,Mener un entretien
+0,Architecture,7800,2,54,0.0,OLAP
+0,Architecture,7800,2,55,0.0,OLAP
+0,Modélisation dimensionnelle,7800,2,56,0.0,Table de fait
+0,Modélisation dimensionnelle,7800,2,57,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,7800,2,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,7800,2,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,10228,10,40,0.0,Schéma
+0,Modélisation dimensionnelle,10228,10,41,0.0,Grain
+0,Modélisation dimensionnelle,10228,10,42,0.0,Table de fait
+0,Modélisation dimensionnelle,10228,10,43,1.0,Grain
+0,Modélisation dimensionnelle,10228,10,44,1.0,Grain
+0,Architecture,10228,10,45,0.0,Composants
+0,Modélisation dimensionnelle,10228,10,46,0.0,Clefs
+0,Modélisation dimensionnelle,10228,10,47,0.0,Dimension fourre-tout
+0,Architecture,10228,10,48,0.0,Mise à jour
+0,Entretien,10228,10,49,0.0,Guide d’entretien
+0,Architecture,10228,10,50,1.0,OLAP
+0,Architecture,10228,10,51,0.0,OLAP
+0,Modélisation dimensionnelle,10228,10,52,1.0,Mesures et Faits
+0,Entretien,10228,10,53,0.0,Mener un entretien
+0,Architecture,10228,10,54,0.0,OLAP
+0,Architecture,10228,10,55,0.0,OLAP
+0,Modélisation dimensionnelle,10228,10,56,1.0,Table de fait
+0,Modélisation dimensionnelle,10228,10,57,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,10228,10,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,10228,10,59,0.0,Table de faits sans fait
+0,Modélisation dimensionnelle,12406,5,40,1.0,Schéma
+0,Modélisation dimensionnelle,12406,5,41,0.0,Grain
+0,Modélisation dimensionnelle,12406,5,42,1.0,Table de fait
+0,Modélisation dimensionnelle,12406,5,43,1.0,Grain
+0,Modélisation dimensionnelle,12406,5,44,1.0,Grain
+0,Architecture,12406,5,45,0.0,Composants
+0,Modélisation dimensionnelle,12406,5,46,0.0,Clefs
+0,Modélisation dimensionnelle,12406,5,47,1.0,Dimension fourre-tout
+0,Architecture,12406,5,48,0.0,Mise à jour
+0,Entretien,12406,5,49,0.0,Guide d’entretien
+0,Architecture,12406,5,50,1.0,OLAP
+0,Architecture,12406,5,51,0.0,OLAP
+0,Modélisation dimensionnelle,12406,5,52,0.0,Mesures et Faits
+0,Entretien,12406,5,53,1.0,Mener un entretien
+0,Architecture,12406,5,54,1.0,OLAP
+0,Architecture,12406,5,55,1.0,OLAP
+0,Modélisation dimensionnelle,12406,5,56,0.0,Table de fait
+0,Modélisation dimensionnelle,12406,5,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,12406,5,58,1.0,Dimension conforme
+0,Modélisation dimensionnelle,12406,5,59,1.0,Table de faits sans fait
+1,Modélisation dimensionnelle,7239,4,40,-1.0,Schéma
+1,Modélisation dimensionnelle,7239,4,41,-1.0,Grain
+1,Modélisation dimensionnelle,7239,4,42,-1.0,Table de fait
+1,Modélisation dimensionnelle,7239,4,43,-1.0,Grain
+1,Modélisation dimensionnelle,7239,4,44,-1.0,Grain
+1,Architecture,7239,4,45,-1.0,Composants
+1,Modélisation dimensionnelle,7239,4,46,-1.0,Clefs
+1,Modélisation dimensionnelle,7239,4,47,-1.0,Dimension fourre-tout
+1,Architecture,7239,4,48,-1.0,Mise à jour
+1,Entretien,7239,4,49,-1.0,Guide d’entretien
+1,Architecture,7239,4,50,-1.0,OLAP
+1,Architecture,7239,4,51,-1.0,OLAP
+1,Modélisation dimensionnelle,7239,4,52,-1.0,Mesures et Faits
+1,Entretien,7239,4,53,-1.0,Mener un entretien
+1,Architecture,7239,4,54,-1.0,OLAP
+1,Architecture,7239,4,55,-1.0,OLAP
+1,Modélisation dimensionnelle,7239,4,56,-1.0,Table de fait
+1,Modélisation dimensionnelle,7239,4,57,-1.0,Évolution des dimensions
+1,Modélisation dimensionnelle,7239,4,58,-1.0,Dimension conforme
+1,Modélisation dimensionnelle,7239,4,59,-1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,9573,6,40,0.0,Schéma
+0,Modélisation dimensionnelle,9573,6,41,1.0,Grain
+0,Modélisation dimensionnelle,9573,6,42,1.0,Table de fait
+0,Modélisation dimensionnelle,9573,6,43,1.0,Grain
+0,Modélisation dimensionnelle,9573,6,44,1.0,Grain
+0,Architecture,9573,6,45,0.0,Composants
+0,Modélisation dimensionnelle,9573,6,46,1.0,Clefs
+0,Modélisation dimensionnelle,9573,6,47,0.0,Dimension fourre-tout
+0,Architecture,9573,6,48,0.0,Mise à jour
+0,Entretien,9573,6,49,0.0,Guide d’entretien
+0,Architecture,9573,6,50,1.0,OLAP
+0,Architecture,9573,6,51,1.0,OLAP
+0,Modélisation dimensionnelle,9573,6,52,0.0,Mesures et Faits
+0,Entretien,9573,6,53,1.0,Mener un entretien
+0,Architecture,9573,6,54,0.0,OLAP
+0,Architecture,9573,6,55,1.0,OLAP
+0,Modélisation dimensionnelle,9573,6,56,0.0,Table de fait
+0,Modélisation dimensionnelle,9573,6,57,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9573,6,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,9573,6,59,0.0,Table de faits sans fait
+0,Modélisation dimensionnelle,4623,5,40,0.0,Schéma
+0,Modélisation dimensionnelle,4623,5,41,0.0,Grain
+0,Modélisation dimensionnelle,4623,5,42,0.0,Table de fait
+0,Modélisation dimensionnelle,4623,5,43,0.0,Grain
+0,Modélisation dimensionnelle,4623,5,44,1.0,Grain
+0,Architecture,4623,5,45,1.0,Composants
+0,Modélisation dimensionnelle,4623,5,46,1.0,Clefs
+0,Modélisation dimensionnelle,4623,5,47,1.0,Dimension fourre-tout
+0,Architecture,4623,5,48,1.0,Mise à jour
+0,Entretien,4623,5,49,1.0,Guide d’entretien
+0,Architecture,4623,5,50,1.0,OLAP
+0,Architecture,4623,5,51,1.0,OLAP
+0,Modélisation dimensionnelle,4623,5,52,0.0,Mesures et Faits
+0,Entretien,4623,5,53,0.0,Mener un entretien
+0,Architecture,4623,5,54,1.0,OLAP
+0,Architecture,4623,5,55,0.0,OLAP
+0,Modélisation dimensionnelle,4623,5,56,0.0,Table de fait
+0,Modélisation dimensionnelle,4623,5,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4623,5,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,4623,5,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,11535,10,40,0.0,Schéma
+0,Modélisation dimensionnelle,11535,10,41,0.0,Grain
+0,Modélisation dimensionnelle,11535,10,42,1.0,Table de fait
+0,Modélisation dimensionnelle,11535,10,43,0.0,Grain
+0,Modélisation dimensionnelle,11535,10,44,1.0,Grain
+0,Architecture,11535,10,45,1.0,Composants
+0,Modélisation dimensionnelle,11535,10,46,1.0,Clefs
+0,Modélisation dimensionnelle,11535,10,47,0.0,Dimension fourre-tout
+0,Architecture,11535,10,48,0.0,Mise à jour
+0,Entretien,11535,10,49,1.0,Guide d’entretien
+0,Architecture,11535,10,50,0.0,OLAP
+0,Architecture,11535,10,51,1.0,OLAP
+0,Modélisation dimensionnelle,11535,10,52,0.0,Mesures et Faits
+0,Entretien,11535,10,53,1.0,Mener un entretien
+0,Architecture,11535,10,54,1.0,OLAP
+0,Architecture,11535,10,55,1.0,OLAP
+0,Modélisation dimensionnelle,11535,10,56,0.0,Table de fait
+0,Modélisation dimensionnelle,11535,10,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,11535,10,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,11535,10,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,8992,10,40,1.0,Schéma
+0,Modélisation dimensionnelle,8992,10,41,0.0,Grain
+0,Modélisation dimensionnelle,8992,10,42,1.0,Table de fait
+0,Modélisation dimensionnelle,8992,10,43,0.0,Grain
+0,Modélisation dimensionnelle,8992,10,44,0.0,Grain
+0,Architecture,8992,10,45,1.0,Composants
+0,Modélisation dimensionnelle,8992,10,46,0.0,Clefs
+0,Modélisation dimensionnelle,8992,10,47,0.0,Dimension fourre-tout
+0,Architecture,8992,10,48,1.0,Mise à jour
+0,Entretien,8992,10,49,1.0,Guide d’entretien
+0,Architecture,8992,10,50,0.0,OLAP
+0,Architecture,8992,10,51,1.0,OLAP
+0,Modélisation dimensionnelle,8992,10,52,1.0,Mesures et Faits
+0,Entretien,8992,10,53,0.0,Mener un entretien
+0,Architecture,8992,10,54,0.0,OLAP
+0,Architecture,8992,10,55,1.0,OLAP
+0,Modélisation dimensionnelle,8992,10,56,1.0,Table de fait
+0,Modélisation dimensionnelle,8992,10,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,8992,10,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,8992,10,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,4579,1,40,0.0,Schéma
+0,Modélisation dimensionnelle,4579,1,41,1.0,Grain
+0,Modélisation dimensionnelle,4579,1,42,0.0,Table de fait
+0,Modélisation dimensionnelle,4579,1,43,1.0,Grain
+0,Modélisation dimensionnelle,4579,1,44,1.0,Grain
+0,Architecture,4579,1,45,0.0,Composants
+0,Modélisation dimensionnelle,4579,1,46,1.0,Clefs
+0,Modélisation dimensionnelle,4579,1,47,0.0,Dimension fourre-tout
+0,Architecture,4579,1,48,0.0,Mise à jour
+0,Entretien,4579,1,49,0.0,Guide d’entretien
+0,Architecture,4579,1,50,0.0,OLAP
+0,Architecture,4579,1,51,1.0,OLAP
+0,Modélisation dimensionnelle,4579,1,52,1.0,Mesures et Faits
+0,Entretien,4579,1,53,1.0,Mener un entretien
+0,Architecture,4579,1,54,0.0,OLAP
+0,Architecture,4579,1,55,0.0,OLAP
+0,Modélisation dimensionnelle,4579,1,56,0.0,Table de fait
+0,Modélisation dimensionnelle,4579,1,57,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,4579,1,58,1.0,Dimension conforme
+0,Modélisation dimensionnelle,4579,1,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,3095,1,40,0.0,Schéma
+0,Modélisation dimensionnelle,3095,1,41,1.0,Grain
+0,Modélisation dimensionnelle,3095,1,42,0.0,Table de fait
+0,Modélisation dimensionnelle,3095,1,43,0.0,Grain
+0,Modélisation dimensionnelle,3095,1,44,0.0,Grain
+0,Architecture,3095,1,45,0.0,Composants
+0,Modélisation dimensionnelle,3095,1,46,1.0,Clefs
+0,Modélisation dimensionnelle,3095,1,47,1.0,Dimension fourre-tout
+0,Architecture,3095,1,48,0.0,Mise à jour
+0,Entretien,3095,1,49,0.0,Guide d’entretien
+0,Architecture,3095,1,50,0.0,OLAP
+0,Architecture,3095,1,51,1.0,OLAP
+0,Modélisation dimensionnelle,3095,1,52,1.0,Mesures et Faits
+0,Entretien,3095,1,53,1.0,Mener un entretien
+0,Architecture,3095,1,54,0.0,OLAP
+0,Architecture,3095,1,55,0.0,OLAP
+0,Modélisation dimensionnelle,3095,1,56,0.0,Table de fait
+0,Modélisation dimensionnelle,3095,1,57,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,3095,1,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,3095,1,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,3583,6,40,0.0,Schéma
+0,Modélisation dimensionnelle,3583,6,41,1.0,Grain
+0,Modélisation dimensionnelle,3583,6,42,1.0,Table de fait
+0,Modélisation dimensionnelle,3583,6,43,0.0,Grain
+0,Modélisation dimensionnelle,3583,6,44,0.0,Grain
+0,Architecture,3583,6,45,0.0,Composants
+0,Modélisation dimensionnelle,3583,6,46,1.0,Clefs
+0,Modélisation dimensionnelle,3583,6,47,0.0,Dimension fourre-tout
+0,Architecture,3583,6,48,1.0,Mise à jour
+0,Entretien,3583,6,49,0.0,Guide d’entretien
+0,Architecture,3583,6,50,0.0,OLAP
+0,Architecture,3583,6,51,0.0,OLAP
+0,Modélisation dimensionnelle,3583,6,52,0.0,Mesures et Faits
+0,Entretien,3583,6,53,0.0,Mener un entretien
+0,Architecture,3583,6,54,0.0,OLAP
+0,Architecture,3583,6,55,0.0,OLAP
+0,Modélisation dimensionnelle,3583,6,56,1.0,Table de fait
+0,Modélisation dimensionnelle,3583,6,57,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,3583,6,58,1.0,Dimension conforme
+0,Modélisation dimensionnelle,3583,6,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,14462,1,40,1.0,Schéma
+0,Modélisation dimensionnelle,14462,1,41,1.0,Grain
+0,Modélisation dimensionnelle,14462,1,42,1.0,Table de fait
+0,Modélisation dimensionnelle,14462,1,43,1.0,Grain
+0,Modélisation dimensionnelle,14462,1,44,1.0,Grain
+0,Architecture,14462,1,45,1.0,Composants
+0,Modélisation dimensionnelle,14462,1,46,1.0,Clefs
+0,Modélisation dimensionnelle,14462,1,47,0.0,Dimension fourre-tout
+0,Architecture,14462,1,48,0.0,Mise à jour
+0,Entretien,14462,1,49,1.0,Guide d’entretien
+0,Architecture,14462,1,50,1.0,OLAP
+0,Architecture,14462,1,51,1.0,OLAP
+0,Modélisation dimensionnelle,14462,1,52,0.0,Mesures et Faits
+0,Entretien,14462,1,53,0.0,Mener un entretien
+0,Architecture,14462,1,54,1.0,OLAP
+0,Architecture,14462,1,55,0.0,OLAP
+0,Modélisation dimensionnelle,14462,1,56,1.0,Table de fait
+0,Modélisation dimensionnelle,14462,1,57,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,14462,1,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,14462,1,59,0.0,Table de faits sans fait
+0,Modélisation dimensionnelle,9295,3,40,1.0,Schéma
+0,Modélisation dimensionnelle,9295,3,41,1.0,Grain
+0,Modélisation dimensionnelle,9295,3,42,1.0,Table de fait
+0,Modélisation dimensionnelle,9295,3,43,1.0,Grain
+0,Modélisation dimensionnelle,9295,3,44,1.0,Grain
+0,Architecture,9295,3,45,0.0,Composants
+0,Modélisation dimensionnelle,9295,3,46,0.0,Clefs
+0,Modélisation dimensionnelle,9295,3,47,0.0,Dimension fourre-tout
+0,Architecture,9295,3,48,0.0,Mise à jour
+0,Entretien,9295,3,49,1.0,Guide d’entretien
+0,Architecture,9295,3,50,0.0,OLAP
+0,Architecture,9295,3,51,0.0,OLAP
+0,Modélisation dimensionnelle,9295,3,52,1.0,Mesures et Faits
+0,Entretien,9295,3,53,1.0,Mener un entretien
+0,Architecture,9295,3,54,0.0,OLAP
+0,Architecture,9295,3,55,0.0,OLAP
+0,Modélisation dimensionnelle,9295,3,56,1.0,Table de fait
+0,Modélisation dimensionnelle,9295,3,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,9295,3,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,9295,3,59,0.0,Table de faits sans fait
+0,Modélisation dimensionnelle,15276,6,40,1.0,Schéma
+0,Modélisation dimensionnelle,15276,6,41,0.0,Grain
+0,Modélisation dimensionnelle,15276,6,42,1.0,Table de fait
+0,Modélisation dimensionnelle,15276,6,43,1.0,Grain
+0,Modélisation dimensionnelle,15276,6,44,1.0,Grain
+0,Architecture,15276,6,45,1.0,Composants
+0,Modélisation dimensionnelle,15276,6,46,1.0,Clefs
+0,Modélisation dimensionnelle,15276,6,47,1.0,Dimension fourre-tout
+0,Architecture,15276,6,48,0.0,Mise à jour
+0,Entretien,15276,6,49,1.0,Guide d’entretien
+0,Architecture,15276,6,50,1.0,OLAP
+0,Architecture,15276,6,51,1.0,OLAP
+0,Modélisation dimensionnelle,15276,6,52,1.0,Mesures et Faits
+0,Entretien,15276,6,53,0.0,Mener un entretien
+0,Architecture,15276,6,54,1.0,OLAP
+0,Architecture,15276,6,55,0.0,OLAP
+0,Modélisation dimensionnelle,15276,6,56,1.0,Table de fait
+0,Modélisation dimensionnelle,15276,6,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,15276,6,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,15276,6,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,13046,1,40,1.0,Schéma
+0,Modélisation dimensionnelle,13046,1,41,1.0,Grain
+0,Modélisation dimensionnelle,13046,1,42,1.0,Table de fait
+0,Modélisation dimensionnelle,13046,1,43,0.0,Grain
+0,Modélisation dimensionnelle,13046,1,44,1.0,Grain
+0,Architecture,13046,1,45,0.0,Composants
+0,Modélisation dimensionnelle,13046,1,46,1.0,Clefs
+0,Modélisation dimensionnelle,13046,1,47,0.0,Dimension fourre-tout
+0,Architecture,13046,1,48,0.0,Mise à jour
+0,Entretien,13046,1,49,1.0,Guide d’entretien
+0,Architecture,13046,1,50,0.0,OLAP
+0,Architecture,13046,1,51,1.0,OLAP
+0,Modélisation dimensionnelle,13046,1,52,0.0,Mesures et Faits
+0,Entretien,13046,1,53,1.0,Mener un entretien
+0,Architecture,13046,1,54,1.0,OLAP
+0,Architecture,13046,1,55,1.0,OLAP
+0,Modélisation dimensionnelle,13046,1,56,1.0,Table de fait
+0,Modélisation dimensionnelle,13046,1,57,0.0,Évolution des dimensions
+0,Modélisation dimensionnelle,13046,1,58,0.0,Dimension conforme
+0,Modélisation dimensionnelle,13046,1,59,1.0,Table de faits sans fait
+0,Modélisation dimensionnelle,10315,3,40,1.0,Schéma
+0,Modélisation dimensionnelle,10315,3,41,0.0,Grain
+0,Modélisation dimensionnelle,10315,3,42,1.0,Table de fait
+0,Modélisation dimensionnelle,10315,3,43,0.0,Grain
+0,Modélisation dimensionnelle,10315,3,44,1.0,Grain
+0,Architecture,10315,3,45,0.0,Composants
+0,Modélisation dimensionnelle,10315,3,46,0.0,Clefs
+0,Modélisation dimensionnelle,10315,3,47,1.0,Dimension fourre-tout
+0,Architecture,10315,3,48,0.0,Mise à jour
+0,Entretien,10315,3,49,1.0,Guide d’entretien
+0,Architecture,10315,3,50,0.0,OLAP
+0,Architecture,10315,3,51,0.0,OLAP
+0,Modélisation dimensionnelle,10315,3,52,0.0,Mesures et Faits
+0,Entretien,10315,3,53,0.0,Mener un entretien
+0,Architecture,10315,3,54,0.0,OLAP
+0,Architecture,10315,3,55,1.0,OLAP
+0,Modélisation dimensionnelle,10315,3,56,0.0,Table de fait
+0,Modélisation dimensionnelle,10315,3,57,1.0,Évolution des dimensions
+0,Modélisation dimensionnelle,10315,3,58,1.0,Dimension conforme
+0,Modélisation dimensionnelle,10315,3,59,1.0,Table de faits sans fait
+1,Modélisation dimensionnelle,13089,1,40,-1.0,Schéma
+1,Modélisation dimensionnelle,13089,1,41,-1.0,Grain
+1,Modélisation dimensionnelle,13089,1,42,-1.0,Table de fait
+1,Modélisation dimensionnelle,13089,1,43,-1.0,Grain
+1,Modélisation dimensionnelle,13089,1,44,-1.0,Grain
+1,Architecture,13089,1,45,-1.0,Composants
+1,Modélisation dimensionnelle,13089,1,46,-1.0,Clefs
+1,Modélisation dimensionnelle,13089,1,47,-1.0,Dimension fourre-tout
+1,Architecture,13089,1,48,-1.0,Mise à jour
+1,Entretien,13089,1,49,-1.0,Guide d’entretien
+1,Architecture,13089,1,50,-1.0,OLAP
+1,Architecture,13089,1,51,-1.0,OLAP
+1,Modélisation dimensionnelle,13089,1,52,-1.0,Mesures et Faits
+1,Entretien,13089,1,53,-1.0,Mener un entretien
+1,Architecture,13089,1,54,-1.0,OLAP
+1,Architecture,13089,1,55,-1.0,OLAP
+1,Modélisation dimensionnelle,13089,1,56,-1.0,Table de fait
+1,Modélisation dimensionnelle,13089,1,57,-1.0,Évolution des dimensions
+1,Modélisation dimensionnelle,13089,1,58,-1.0,Dimension conforme
+1,Modélisation dimensionnelle,13089,1,59,-1.0,Table de faits sans fait
