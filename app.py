@@ -130,7 +130,7 @@ app.layout = html.Div(className='col-12 mb-6',children=[
    dcc.Dropdown(
         options=[{'label': 'Groupe ' + str(i), 'value': i} for i in df_students.id_groupe.unique()],
         id='dropdown',
-        value='1'
+        placeholder="Tous les groupes",
     ),
            html.Div(children='''
         Veuillez choisir une catégorie
@@ -237,7 +237,7 @@ def update_heatmap(id_groupe,categorie):
     
     layout = go.Layout(
         autosize=False,
-        width=100*len(xticks),
+        width=300+50*len(xticks),
         height=100*len(yticks),
         margin=go.layout.Margin(
             l=150,
@@ -271,15 +271,16 @@ def update_heatmap(id_groupe,categorie):
     trace = go.Heatmap(z=df[[x for x in df.columns if x not in ['id_groupe','id_eleve','nom','prenom']]].values,
                        y=yticks, ytype='array',
                        x= xticks, xtype='array',
+                       zmin=0,zmax=1,
                        colorscale = [[0,'#a80101'],[0.5,"#dbf287"],[1,"#619101"]],
                        colorbar = dict(
-                                title = 'Percentage de correction',
-                                titleside = 'top',
-                                tickmode = 'array',
-                                tickvals = [0,0.5,1],
-                                ticktext = ['0%','50% ','100%'],
-                                ticks = 'outside'
-                   ),
+                                    title = 'Percentage de correction',
+                                    titleside = 'top',
+                                    tickmode = 'array',
+                                    tickvals = [0,0.5,1],
+                                    ticktext = ['0%','50% ','100%'],
+                                    ticks = 'outside'
+                       ),
     #                    connectgaps= False
                        xgap=1,
                        ygap=5
