@@ -232,6 +232,9 @@ def update_graph(value):
 def update_heatmap(id_groupe,categorie):
     
     df = dashboard.df_heatmap(id_groupe,categorie)
+    mx = dashboard.absence_matrix(id_groupe,categorie).iloc[:,4:].values
+    mx2 = [['note_with_absence:'+mx[i,j] for j in range(len(mx[i]))]for i in range(len(mx))]
+    
     yticks = df['nom'].str.cat(df['prenom'],sep=' ').values.tolist()
     xticks = [x for x in df.columns if x not in ['id_groupe','id_eleve','nom','prenom']]
     
@@ -247,6 +250,7 @@ def update_heatmap(id_groupe,categorie):
             pad=4
         ),
         xaxis=dict(
+            title = 'categorie / sous-categorie',
             showticklabels=True,
             tickangle=15,
             tickfont=dict(
@@ -262,6 +266,7 @@ def update_heatmap(id_groupe,categorie):
                 color='black'
             )
         ),
+        title='Evaluation Par Groupe',
         paper_bgcolor='#ffffff',
         plot_bgcolor='#ffffff'
     )
@@ -283,7 +288,9 @@ def update_heatmap(id_groupe,categorie):
                        ),
     #                    connectgaps= False
                        xgap=1,
-                       ygap=5
+                       ygap=5,
+                       text=mx2,
+                       hoverinfo = 'all'
                       )
     data=[trace]
     fig = go.Figure(data=data, layout=layout)
