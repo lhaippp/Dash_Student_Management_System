@@ -144,6 +144,8 @@ app.layout = html.Div(className='col-12 mb-6',children=[
            
     html.H3(id='output'),
     
+    html.Div(id='heatmap_div'),
+    
     html.Div(id='graph_div'),
     
     dcc.Graph(
@@ -164,9 +166,7 @@ app.layout = html.Div(className='col-12 mb-6',children=[
      )
     ),
       
-    html.Div(id='table_div'),
-    
-    html.Div(id='heatmap_div')
+    html.Div(id='table_div')
           
 ])
 
@@ -228,10 +228,10 @@ def update_graph(value):
     ),
       
         
-@app.callback(Output('heatmap_div', 'children'), [Input('dropdown', 'value')])
-def update_heatmap(id_groupe=1):
+@app.callback(Output('heatmap_div', 'children'), [Input('dropdown', 'value'),Input('dropdown_categorie', 'value')])
+def update_heatmap(id_groupe,categorie):
     
-    df = dashboard_prof.df_heatmap(id_groupe)
+    df = dashboard.df_heatmap(id_groupe,categorie)
     yticks = df['nom'].str.cat(df['prenom'],sep=' ').values.tolist()
     xticks = [x for x in df.columns if x not in ['id_groupe','id_eleve','nom','prenom']]
     
@@ -250,8 +250,7 @@ def update_heatmap(id_groupe=1):
             showticklabels=True,
             tickangle=15,
             tickfont=dict(
-                family='Old Standard TT, serif',
-                size=20,
+                #size=20,
                 color='black'
             )
         ),
@@ -259,8 +258,7 @@ def update_heatmap(id_groupe=1):
             showticklabels=True,
             tickangle=0,
             tickfont=dict(
-                family='Old Standard TT, serif',
-                size=20,
+                #size=20,
                 color='black'
             )
         ),
