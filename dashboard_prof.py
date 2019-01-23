@@ -20,8 +20,8 @@ class dashboard_prof:
     
     
     def __init__(self, file_path = file_path):       
-        import os 
-        print("__Path__:",file_path,'\nFiles in the path: \n',os.listdir(file_path))
+#         import os 
+#         print("__Path__:",file_path,'\nFiles in the path: \n',os.listdir(file_path))
         self.df_bi = pd.read_csv(file_path+"/fact_table_bi_exam.csv")
         self.df_eleve = pd.read_csv(file_path+"/eleve.csv")
         self.df_que = pd.read_csv(file_path+"/question.csv")
