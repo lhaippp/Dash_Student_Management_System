@@ -272,6 +272,14 @@ def update_heatmap(id_groupe,categorie):
                        y=yticks, ytype='array',
                        x= xticks, xtype='array',
                        colorscale = [[0,'#a80101'],[0.5,"#dbf287"],[1,"#619101"]],
+                       colorbar = dict(
+                                title = 'Percentage de correction',
+                                titleside = 'top',
+                                tickmode = 'array',
+                                tickvals = [0,0.5,1],
+                                ticktext = ['0%','50% ','100%'],
+                                ticks = 'outside'
+                   ),
     #                    connectgaps= False
                        xgap=1,
                        ygap=5
