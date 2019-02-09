@@ -1,4 +1,4 @@
-Groupe, Identificateur,  QCM , Note, Nom et Prenom
+id_groupe, id_eleve,  QCM , note, name
 11, 1, QCM1, 9 , Hassen Njah
 11, 1, QCM2, 11 , Hassen Njah
 11, 1, QCM3, 15 , Hassen Njah
