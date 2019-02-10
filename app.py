@@ -1,0 +1,446 @@
+import dash
+import dash_html_components as html
+import dash_core_components as dcc
+import pandas as pd
+import plotly.graph_objs as go
+from dash.dependencies import Input, Output, State
+import dash_table
+import plotly.plotly as py
+from dashboard_prof import dashboard_prof 
+
+external_stylesheets = [
+    {
+        'href': 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css',
+        'rel': 'stylesheet',
+        'integrity': 'sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4',
+        'crossorigin': 'anonymous'
+    }
+]
+
+external_scripts = [
+    {
+        'src': 'https://use.fontawesome.com/releases/v5.0.13/js/solid.js',
+        'integrity': 'sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ',
+        'crossorigin': 'anonymous'
+    },
+    {
+        'src': 'https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js',
+        'integrity': 'sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY',
+        'crossorigin': 'anonymous'
+    },
+    {
+        'src': 'https://code.jquery.com/jquery-3.3.1.slim.min.js',
+        'integrity': 'sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo',
+        'crossorigin': 'anonymous'
+    },
+    {
+        'src': 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js',
+        'integrity': 'sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ',
+        'crossorigin': 'anonymous'
+    },
+    {
+        'src': 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js',
+        'integrity': 'sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm',
+        'crossorigin': 'anonymous'
+    }
+]
+
+
+dashboard = dashboard_prof('https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/devs/Data')
+url_fait = 'https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/devs/Data/fact_table_bi_exam.csv'
+df_fait = pd.read_csv(url_fait,index_col=0,parse_dates=[0])
+
+url_student = 'https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/devs/Data/eleve.csv'
+df_students = pd.read_csv(url_student,index_col=0,parse_dates=[0])
+
+
+df_students.columns = [x.lower() for x in df_students.columns]
+df_students = df_students.sort_index(by = 'id_groupe', ascending= True)
+
+group_variables = ['nom','prenom','id_groupe','niveau_initial_francais','niveau_atteint_francais']
+
+df_students.niveau_atteint_francais[df_students.niveau_atteint_francais == '0']='Maternel'
+df_students.niveau_initial_francais[df_students.niveau_initial_francais == '0']='Maternel'
+
+app = dash.Dash(
+    __name__,
+    external_scripts=external_scripts,
+    external_stylesheets=external_stylesheets)
+
+app.index_string = '''<!DOCTYPE html>
+<html>
+    <head>
+        {%metas%}
+        <title>{%title%}</title>
+        {%favicon%}
+        {%css%}
+    </head>
+    <body id="page-top">
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+      <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+       <a class="navbar-brand mr-1" href="">  Analyse et suivi de l'acquisition des connaissances des étudiants (BI)</a>
+        <i class="fas fa-bars"></i>
+      </button>
+
+    </nav>
+
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <ul class="sidebar navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="charts.html">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Evolution</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tables.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Tableaux</span></a>
+        </li>
+      </ul>
+    <!-- /#wrapper -->
+    
+     {%app_entry%}
+     {%config%}
+     {%scripts%}
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  </body>
+</html>''' 
+# Since we're adding callbacks to elements that don't exist in the app.layout,
+# Dash will raise an exception to warn us that we might be
+# doing something wrong.
+# In this case, we're adding the elements through a callback, so we can ignore
+# the exception.
+app.config.suppress_callback_exceptions = True
+
+app.layout = html.Div([
+    dcc.Location(id='url', refresh=False),
+    html.Div(id='page-content')
+])
+
+
+index_page = html.Div([
+    dcc.Link('Go to Page 1', href='/page-1'),
+    html.Br(),
+    dcc.Link('Go to Page 2', href='/page-2'),
+])
+
+page_1_layout = html.Div(children=[
+    
+    html.H1('Page 1'),
+    dcc.Link('Go to Page 2', href='/page-2'),
+    html.Br(),
+    dcc.Link('Go back to home', href='/'),
+    html.H1(children='Aperçu général des performances'),
+    html.Div(children='''
+        Veuillez choisir un Groupe
+    '''),
+   dcc.Dropdown(
+        options=[{'label': 'Groupe ' + str(i), 'value': i} for i in df_students.id_groupe.unique()],
+        id='dropdown',
+        placeholder="Tous les groupes",
+    ),
+           html.Div(children='''
+        Veuillez choisir une catégorie
+    '''),
+    dcc.Dropdown(
+        options=[{'label': str(i), 'value': i} for i in df_fait.categorie.unique()],
+        id='dropdown_categorie',
+        placeholder="Toutes les catégories",
+    ),
+           
+           
+    html.H3(id='output'),
+    
+    html.Div(id='heatmap_div'),
+    
+    html.Div(id='graph_div'),
+    
+    dcc.Graph(
+     figure=go.Figure(
+      data = [go.Scatterpolar(
+      r = [39, 28, 8, 7, 28, 39],
+      theta = [i for i in df_fait.categorie.unique().tolist()],
+      fill = 'toself'
+      )],
+    
+      layout = go.Layout(
+      polar = dict(
+      radialaxis = dict(
+      visible = True,
+      range = [0, 50])),
+      showlegend = False
+      )
+     )
+    ),
+
+    html.Div(id='table_div')
+
+
+])
+
+@app.callback(Output('output', 'children'), [Input('dropdown', 'value')])
+def display_output(value):
+    return 'Visulisation des résultats pour Groupe '+str(value)
+
+@app.callback(Output('table_div', 'children'), [Input('dropdown', 'value')])
+def update_table(value):
+    return  dash_table.DataTable(
+            id='table',
+            #columns=[{"name": i, "id": i} for i in df_students.ix[(df_students["id_groupe"]==value),['nom_ele','prenom_ele']]],
+            columns=[{"name": i, "id": i} for i in df_students.loc[(df_students["id_groupe"]==value),]],
+            data=df_students.loc[(df_students["id_groupe"]==value),].to_dict("rows"),),
+            
+@app.callback(Output('graph_div', 'children'), [Input('dropdown', 'value')])
+def update_graph(value):
+    df_buffer = df_students.loc[(df_students["id_groupe"]==value),['nom','prenom']]
+    buffer = df_buffer['nom']+' '+df_buffer['prenom']
+    return dcc.Graph(
+    figure=go.Figure(
+        data=[
+            go.Bar(
+                x=buffer.tolist(),
+                y=[40, 46, 32, 57, 44],
+                name='Réponses correctes',
+                marker=go.bar.Marker(
+                    color='rgb(55, 83, 109)'
+                )
+            ),
+            go.Bar(
+                x=buffer.tolist(),
+                y=[20, 14, 28, 3, 16],
+                name='Réponses incorrectes',
+                marker=go.bar.Marker(
+                    color='rgb(26, 118, 255)'
+                )
+            ),
+            go.Bar(
+                x=buffer.tolist(),
+                y=[5, 11, 2, 3,12],
+                name='Pas de réponses',
+                marker=go.bar.Marker(
+                    color='rgb(0, 0, 0)'
+                )
+            )
+        ],
+        layout=go.Layout(
+            title='Réponses au QCM par étudiant',
+            showlegend=True,
+            legend=go.layout.Legend(
+                x=0,
+                y=1.0
+            ),
+            margin=go.layout.Margin(l=40, r=0, t=40, b=30)
+        )
+    ),
+    style={'height': 400,'width':800}
+    ),
+      
+        
+@app.callback(Output('heatmap_div', 'children'), [Input('dropdown', 'value'),Input('dropdown_categorie', 'value')])
+def update_heatmap(id_groupe,categorie):
+    
+    df = dashboard.df_heatmap(id_groupe,categorie)
+    mx = dashboard.absence_matrix(id_groupe,categorie).iloc[:,4:].values
+    mx2 = [['note_with_absence:'+mx[i,j] for j in range(len(mx[i]))]for i in range(len(mx))]
+    
+    yticks = df['nom'].str.cat(df['prenom'],sep=' ').values.tolist()
+    xticks = [x for x in df.columns if x not in ['id_groupe','id_eleve','nom','prenom']]
+    
+    layout = go.Layout(
+        autosize=False,
+        width=300+50*len(xticks),
+        height=100*len(yticks),
+        margin=go.layout.Margin(
+            l=150,
+            r=50,
+            b=100,
+            t=100,
+            pad=4
+        ),
+        xaxis=dict(
+            title = 'categorie / sous-categorie',
+            showticklabels=True,
+            tickangle=15,
+            tickfont=dict(
+                #size=20,
+                color='black'
+            )
+        ),
+        yaxis=dict(
+            showticklabels=True,
+            tickangle=0,
+            tickfont=dict(
+                #size=20,
+                color='black'
+            )
+        ),
+        title='Evaluation Par Groupe',
+        paper_bgcolor='#ffffff',
+        plot_bgcolor='#ffffff'
+    )
+    
+    yticks = df['nom'].str.cat(df['prenom'],sep=' ').values.tolist()
+    xticks = [x for x in df.columns if x not in ['id_groupe','id_eleve','nom','prenom']]
+    trace = go.Heatmap(z=df[[x for x in df.columns if x not in ['id_groupe','id_eleve','nom','prenom']]].values,
+                       y=yticks, ytype='array',
+                       x= xticks, xtype='array',
+                       zmin=0,zmax=1,
+                       colorscale = [[0,'#a80101'],[0.5,"#dbf287"],[1,"#619101"]],
+                       colorbar = dict(
+                                    title = 'Percentage de correction',
+                                    titleside = 'top',
+                                    tickmode = 'array',
+                                    tickvals = [0,0.5,1],
+                                    ticktext = ['0%','50% ','100%'],
+                                    ticks = 'outside'
+                       ),
+    #                    connectgaps= False
+                       xgap=1,
+                       ygap=5,
+                       text=mx2,
+                       hoverinfo = 'all'
+                      )
+    data=[trace]
+    fig = go.Figure(data=data, layout=layout)
+    return dcc.Graph(figure = fig )
+
+# for the second page
+
+import dash_table_experiments as dt
+
+df = pd.read_csv(
+    'https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/devs/Data/note_eleve.csv'
+)
+
+df['id_eleve']= df['id_eleve'].astype(str)
+df['id_groupe']= df['id_groupe'].astype(str)
+df['average'] = round(df.mean(numeric_only=True, axis=1),2)
+
+df.rename(columns={'id_groupe':'Groupe','id_eleve':'Identificateur','name':'Élève','average':'Moyenne'},  inplace=True)
+
+
+page_2_layout = html.Div([
+    html.H1('Page 2'),
+    html.Div(id='page-2-content'),
+    html.Br(),
+    dcc.Link('Go to Page 1', href='/page-1'),
+    html.Br(),
+    dcc.Link('Go back to home', href='/'),
+    html.H4('Suivi des performances '),
+    dt.DataTable(
+        rows=df.to_dict('records'),
+        # optional - sets the order of columns
+        columns=['Identificateur','Élève','Groupe','Moyenne'],
+        row_selectable=True,
+        filterable=True,
+        sortable=True,
+        selected_row_indices=[0],
+        editable=False,
+        id='datatable-gapminder'
+    ),
+    html.Div(id='selected-indexes'),
+    dcc.Graph(
+        id='graph-gapminder'
+    ),
+], className="container")
+
+
+@app.callback(dash.dependencies.Output('page-2-content', 'children'),
+              [dash.dependencies.Input('page-2-radios', 'value')])
+def page_2_radios(value):
+    return 'You have selected "{}"'.format(value)
+
+@app.callback(
+    Output('datatable-gapminder', 'selected_row_indices'),
+    [Input('graph-gapminder', 'clickData')],
+    [State('datatable-gapminder', 'selected_row_indices')])
+def update_selected_row_indices(clickData, selected_row_indices):
+    if clickData:
+        for point in clickData['points']:
+            if point['pointNumber'] in selected_row_indices:
+                selected_row_indices.remove(point['pointNumber'])
+            else:
+                selected_row_indices.append(point['pointNumber'])
+    return selected_row_indices
+
+
+@app.callback(
+    Output('graph-gapminder', 'figure'),
+    [Input('datatable-gapminder', 'rows'),
+     Input('datatable-gapminder', 'selected_row_indices')])
+def update_figure(rows, selected_row_indices):
+    dff = pd.DataFrame(rows)
+    l = dff.iloc[selected_row_indices[0]][df.filter(like='qcm').columns].tolist()
+    i=0
+    moy=[]
+    j=0
+    s=0
+    for i in range(len(l)):
+        while (j<=i):
+            s=s+l[j]
+            j+=1
+            moy.append(round(s/(j),2))
+    
+    fig = go.Figure(
+        data=[
+            go.Scatter(
+            x=dff.filter(like='qcm').columns.tolist(),
+            y=moy
+            ),
+            go.Bar(
+            x= dff.filter(like='qcm').columns.tolist(),
+            y= l,
+            width = 0.5,
+            marker=dict(
+                    color='rgb(158,202,225)',
+                    line=dict( color='rgb(8,48,107)', width=1.5,)
+                    ),
+            )],
+            layout=go.Layout(
+            title='Evolution de note par étudiant',
+            showlegend=True,
+            yaxis=dict(range=[0, 20]),
+            legend=go.layout.Legend(
+                x=0,
+                y=1.0
+            ),
+            margin=go.layout.Margin(l=40, r=0, t=40, b=30)
+            )
+    )
+    return fig
+
+app.css.append_css({
+    'external_url': 'https://codepen.io/chriddyp/pen/bWLwgP.css'
+})
+
+# Update the index
+@app.callback(dash.dependencies.Output('page-content', 'children'),
+              [dash.dependencies.Input('url', 'pathname')])
+def display_page(pathname):
+    if pathname == '/page-1':
+        return page_1_layout
+    elif pathname == '/page-2':
+        return page_2_layout
+    else:
+        return index_page
+    # You could also return a 404 "URL not found" page here
+
+
+if __name__ == '__main__':
+    app.run_server(debug=True,port='8055')
