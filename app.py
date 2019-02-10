@@ -3,11 +3,10 @@ import dash_html_components as html
 import dash_core_components as dcc
 import pandas as pd
 import plotly.graph_objs as go
-from dash.dependencies import Input, Output
+from dash.dependencies import Input, Output, State
 import dash_table
 import plotly.plotly as py
 from dashboard_prof import dashboard_prof 
-
 
 external_stylesheets = [
     {
@@ -45,6 +44,7 @@ external_scripts = [
         'crossorigin': 'anonymous'
     }
 ]
+
 
 dashboard = dashboard_prof('https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/devs/Data')
 url_fait = 'https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/devs/Data/fact_table_bi_exam.csv'
@@ -121,9 +121,32 @@ app.index_string = '''<!DOCTYPE html>
 
   </body>
 </html>''' 
-app.layout = html.Div(className='col-12 mb-6',children=[
-    html.H1(children='Aperçu général des performances'),
+# Since we're adding callbacks to elements that don't exist in the app.layout,
+# Dash will raise an exception to warn us that we might be
+# doing something wrong.
+# In this case, we're adding the elements through a callback, so we can ignore
+# the exception.
+app.config.suppress_callback_exceptions = True
 
+app.layout = html.Div([
+    dcc.Location(id='url', refresh=False),
+    html.Div(id='page-content')
+])
+
+
+index_page = html.Div([
+    dcc.Link('Go to Page 1', href='/page-1'),
+    html.Br(),
+    dcc.Link('Go to Page 2', href='/page-2'),
+])
+
+page_1_layout = html.Div(children=[
+    
+    html.H1('Page 1'),
+    dcc.Link('Go to Page 2', href='/page-2'),
+    html.Br(),
+    dcc.Link('Go back to home', href='/'),
+    html.H1(children='Aperçu général des performances'),
     html.Div(children='''
         Veuillez choisir un Groupe
     '''),
@@ -165,9 +188,10 @@ app.layout = html.Div(className='col-12 mb-6',children=[
       )
      )
     ),
-      
+
     html.Div(id='table_div')
-          
+
+
 ])
 
 @app.callback(Output('output', 'children'), [Input('dropdown', 'value')])
@@ -295,6 +319,127 @@ def update_heatmap(id_groupe,categorie):
     data=[trace]
     fig = go.Figure(data=data, layout=layout)
     return dcc.Graph(figure = fig )
+
+# for the second page
+
+import dash_table_experiments as dt
+
+df = pd.read_csv(
+    'https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/devs/Data/note_eleve.csv'
+)
+
+df['id_eleve']= df['id_eleve'].astype(str)
+df['id_groupe']= df['id_groupe'].astype(str)
+df['average'] = round(df.mean(numeric_only=True, axis=1),2)
+
+df.rename(columns={'id_groupe':'Groupe','id_eleve':'Identificateur','name':'Élève','average':'Moyenne'},  inplace=True)
+
+
+page_2_layout = html.Div([
+    html.H1('Page 2'),
+    html.Div(id='page-2-content'),
+    html.Br(),
+    dcc.Link('Go to Page 1', href='/page-1'),
+    html.Br(),
+    dcc.Link('Go back to home', href='/'),
+    html.H4('Suivi des performances '),
+    dt.DataTable(
+        rows=df.to_dict('records'),
+        # optional - sets the order of columns
+        columns=['Identificateur','Élève','Groupe','Moyenne'],
+        row_selectable=True,
+        filterable=True,
+        sortable=True,
+        selected_row_indices=[0],
+        editable=False,
+        id='datatable-gapminder'
+    ),
+    html.Div(id='selected-indexes'),
+    dcc.Graph(
+        id='graph-gapminder'
+    ),
+], className="container")
+
+
+@app.callback(dash.dependencies.Output('page-2-content', 'children'),
+              [dash.dependencies.Input('page-2-radios', 'value')])
+def page_2_radios(value):
+    return 'You have selected "{}"'.format(value)
+
+@app.callback(
+    Output('datatable-gapminder', 'selected_row_indices'),
+    [Input('graph-gapminder', 'clickData')],
+    [State('datatable-gapminder', 'selected_row_indices')])
+def update_selected_row_indices(clickData, selected_row_indices):
+    if clickData:
+        for point in clickData['points']:
+            if point['pointNumber'] in selected_row_indices:
+                selected_row_indices.remove(point['pointNumber'])
+            else:
+                selected_row_indices.append(point['pointNumber'])
+    return selected_row_indices
+
+
+@app.callback(
+    Output('graph-gapminder', 'figure'),
+    [Input('datatable-gapminder', 'rows'),
+     Input('datatable-gapminder', 'selected_row_indices')])
+def update_figure(rows, selected_row_indices):
+    dff = pd.DataFrame(rows)
+    l = dff.iloc[selected_row_indices[0]][df.filter(like='qcm').columns].tolist()
+    i=0
+    moy=[]
+    j=0
+    s=0
+    for i in range(len(l)):
+        while (j<=i):
+            s=s+l[j]
+            j+=1
+            moy.append(round(s/(j),2))
+    
+    fig = go.Figure(
+        data=[
+            go.Scatter(
+            x=dff.filter(like='qcm').columns.tolist(),
+            y=moy
+            ),
+            go.Bar(
+            x= dff.filter(like='qcm').columns.tolist(),
+            y= l,
+            width = 0.5,
+            marker=dict(
+                    color='rgb(158,202,225)',
+                    line=dict( color='rgb(8,48,107)', width=1.5,)
+                    ),
+            )],
+            layout=go.Layout(
+            title='Evolution de note par étudiant',
+            showlegend=True,
+            yaxis=dict(range=[0, 20]),
+            legend=go.layout.Legend(
+                x=0,
+                y=1.0
+            ),
+            margin=go.layout.Margin(l=40, r=0, t=40, b=30)
+            )
+    )
+    return fig
+
+app.css.append_css({
+    'external_url': 'https://codepen.io/chriddyp/pen/bWLwgP.css'
+})
+
+# Update the index
+@app.callback(dash.dependencies.Output('page-content', 'children'),
+              [dash.dependencies.Input('url', 'pathname')])
+def display_page(pathname):
+    if pathname == '/page-1':
+        return page_1_layout
+    elif pathname == '/page-2':
+        return page_2_layout
+    else:
+        return index_page
+    # You could also return a 404 "URL not found" page here
 
 
 if __name__ == '__main__':
