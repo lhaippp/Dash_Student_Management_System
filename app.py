@@ -89,18 +89,18 @@ app.index_string = '''<!DOCTYPE html>
         <li class="nav-item">
           <a class="nav-link" href="/page-1">
             <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span>
+            <span>Bilan par Groupe</span>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/page-2">
             <i class="fas fa-fw fa-chart-area"></i>
-            <span>Evolution</span></a>
+            <span>Evolution d'individu</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/page-3">
             <i class="fas fa-fw fa-table"></i>
-            <span>Profils</span></a>
+            <span>Evaluation d'enseignement</span></a>
         </li>
       </ul>
     <!-- /#wrapper -->
@@ -458,6 +458,8 @@ df7 = df2.groupby(['professor_name'])['Avg'].mean().round(2).reset_index()
 trace1 = go.Bar(
     x = df4.iloc[:,0].map(str),
     y = df4.iloc[:,2],
+    width = [0.5 for _ in range(df4.shape[0])],
+    
     name = 'Note moyenne par niveau de français',
     showlegend = False
 ) 
@@ -465,6 +467,7 @@ trace1 = go.Bar(
 trace2 = go.Bar(
     x = df5.iloc[:,0],
     y = df5.iloc[:,1],
+    width = [0.5 for _ in range(df5.shape[0])],
     name = 'Note moyenne par formation',
     showlegend = False
 ) 
@@ -472,6 +475,7 @@ trace2 = go.Bar(
 trace3 = go.Bar(
     x = df6.iloc[:,0],
     y = df6.iloc[:,1],
+    width = [0.3 for _ in range(df6.shape[0])],
     name = 'Note moyenne par site',
     showlegend = False
 ) 
@@ -479,6 +483,7 @@ trace3 = go.Bar(
 trace4 = go.Bar(
     x = df7.iloc[:,0],
     y = df7.iloc[:,1],
+    width = [0.2 for _ in range(df7.shape[0])],
     name = 'Note moyenne par professeur',
     showlegend = False
 )  
