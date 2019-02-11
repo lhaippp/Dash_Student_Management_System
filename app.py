@@ -3,11 +3,11 @@ import dash_html_components as html
 import dash_core_components as dcc
 import pandas as pd
 import plotly.graph_objs as go
-from dash.dependencies import Input, Output
+from dash.dependencies import Input, Output, State
 import dash_table
 import plotly.plotly as py
 from dashboard_prof import dashboard_prof 
-
+import dash_table_experiments as dt
 
 external_stylesheets = [
     {
@@ -46,6 +46,7 @@ external_scripts = [
     }
 ]
 
+
 dashboard = dashboard_prof('https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/devs/Data')
 url_fait = 'https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/devs/Data/fact_table_bi_exam.csv'
 df_fait = pd.read_csv(url_fait,index_col=0,parse_dates=[0])
@@ -76,34 +77,30 @@ app.index_string = '''<!DOCTYPE html>
         {%css%}
     </head>
     <body id="page-top">
-
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
        <a class="navbar-brand mr-1" href="">  Analyse et suivi de l'acquisition des connaissances des étudiants (BI)</a>
         <i class="fas fa-bars"></i>
       </button>
-
     </nav>
-
     <div id="wrapper">
-
       <!-- Sidebar -->
       <ul class="sidebar navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="index">
+          <a class="nav-link" href="/page-1">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="charts">
+          <a class="nav-link" href="/page-2">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Evolution</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="tables">
+          <a class="nav-link" href="/page-3">
             <i class="fas fa-fw fa-table"></i>
-            <span>Tableaux</span></a>
+            <span>Profils</span></a>
         </li>
       </ul>
     <!-- /#wrapper -->
@@ -111,29 +108,52 @@ app.index_string = '''<!DOCTYPE html>
      {%app_entry%}
      {%config%}
      {%scripts%}
-
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
   </body>
 </html>''' 
-app.layout = html.Div(className='col-12 mb-6',children=[
-    html.H1(children='Aperçu général des performances'),
+# Since we're adding callbacks to elements that don't exist in the app.layout,
+# Dash will raise an exception to warn us that we might be
+# doing something wrong.
+# In this case, we're adding the elements through a callback, so we can ignore
+# the exception.
+app.config.suppress_callback_exceptions = True
 
+app.layout = html.Div([
+    dcc.Location(id='url', refresh=False),
+    html.Div(id='page-content', style={'marginBottom': 50, 'marginTop': 25, 'marginLeft':25 })
+])
+
+
+index_page = html.Div([
+    dcc.Link('Go to Page 1', href='/page-1'),
+    html.Br(),
+    dcc.Link('Go to Page 2', href='/page-2'),
+    html.Br(),
+    dcc.Link('Go to Page 3', href='/page-3'),
+])
+
+page_1_layout = html.Div(children=[
+    
+    # html.H1('Page 1'),
+    # dcc.Link('Go to Page 2', href='/page-2'),
+    # html.Br(),
+    # dcc.Link('Go back to home', href='/'),
+    html.H1(children='Aperçu général des performances'),
     html.Div(children='''
         Veuillez choisir un Groupe
     '''),
    dcc.Dropdown(
         options=[{'label': 'Groupe ' + str(i), 'value': i} for i in df_students.id_groupe.unique()],
         id='dropdown',
+        value='1',
         placeholder="Tous les groupes",
     ),
            html.Div(children='''
-        Veuillez choisir une catégorie
+        Veuillez choisir une catégorie d'enseignement
     '''),
     dcc.Dropdown(
         options=[{'label': str(i), 'value': i} for i in df_fait.categorie.unique()],
@@ -148,69 +168,73 @@ app.layout = html.Div(className='col-12 mb-6',children=[
     
     html.Div(id='graph_div'),
     
-    dcc.Graph(
-     figure=go.Figure(
-      data = [go.Scatterpolar(
-      r = [39, 28, 8, 7, 28, 39],
-      theta = [i for i in df_fait.categorie.unique().tolist()],
-      fill = 'toself'
-      )],
+    # dcc.Graph(
+    #  figure=go.Figure(
+    #   data = [go.Scatterpolar(
+    #   r = [39, 28, 8, 7, 28, 39],
+    #   theta = [i for i in df_fait.categorie.unique().tolist()],
+    #   fill = 'toself'
+    #   )],
     
-      layout = go.Layout(
-      polar = dict(
-      radialaxis = dict(
-      visible = True,
-      range = [0, 50])),
-      showlegend = False
-      )
-     )
-    ),
-      
-    html.Div(id='table_div')
-          
+    #   layout = go.Layout(
+    #   polar = dict(
+    #   radialaxis = dict(
+    #   visible = True,
+    #   range = [0, 50])),
+    #   showlegend = False
+    #   )
+    #  )
+    # ),
+    
+    html.Div(id='table_div', style={'width': '1000px'})
+    
+
+
 ])
 
 @app.callback(Output('output', 'children'), [Input('dropdown', 'value')])
 def display_output(value):
-    return 'Visulisation des résultats pour Groupe '+str(value)
+    return 'Visualisation des résultats pour Groupe '+str(value)
 
 @app.callback(Output('table_div', 'children'), [Input('dropdown', 'value')])
 def update_table(value):
-    return  dash_table.DataTable(
-            id='table',
-            #columns=[{"name": i, "id": i} for i in df_students.ix[(df_students["id_groupe"]==value),['nom_ele','prenom_ele']]],
-            columns=[{"name": i, "id": i} for i in df_students.loc[(df_students["id_groupe"]==value),]],
-            data=df_students.loc[(df_students["id_groupe"]==value),].to_dict("rows"),),
+    return  dt.DataTable(
+            rows=df_students.loc[(df_students["id_groupe"]==value),].to_dict("rows"),
+            columns=df_students.columns.tolist(),
+            filterable=True,
+            sortable=True,
+            editable=False
+            ),
             
 @app.callback(Output('graph_div', 'children'), [Input('dropdown', 'value')])
-def update_graph(value):
-    df_buffer = df_students.loc[(df_students["id_groupe"]==value),['nom','prenom']]
-    buffer = df_buffer['nom']+' '+df_buffer['prenom']
+def update_graph(id_groupe):
+    df = dashboard.df_score(id_groupe)
+    xticks = df['nom'].str.cat(df['prenom'],sep=' ').values.tolist()
     return dcc.Graph(
     figure=go.Figure(
         data=[
             go.Bar(
-                x=buffer.tolist(),
-                y=[40, 46, 32, 57, 44],
+                x=xticks,
+                y=df.reponse_correcte.values.tolist(),
                 name='Réponses correctes',
                 marker=go.bar.Marker(
-                    color='rgb(55, 83, 109)'
+                    color='rgb(97, 145, 1)'
                 )
             ),
             go.Bar(
-                x=buffer.tolist(),
-                y=[20, 14, 28, 3, 16],
+                x=xticks,
+                y=df.reponse_fause.values.tolist(),
                 name='Réponses incorrectes',
                 marker=go.bar.Marker(
-                    color='rgb(26, 118, 255)'
+                    color='rgb(168, 4, 2)'
                 )
             ),
             go.Bar(
-                x=buffer.tolist(),
-                y=[5, 11, 2, 3,12],
+                x=xticks,
+                y=df.pas_de_reponse.values.tolist(),
                 name='Pas de réponses',
                 marker=go.bar.Marker(
-                    color='rgb(0, 0, 0)'
+                    color='rgb(136, 136, 136)'
                 )
             )
         ],
@@ -232,6 +256,9 @@ def update_graph(value):
 def update_heatmap(id_groupe,categorie):
     
     df = dashboard.df_heatmap(id_groupe,categorie)
+    mx = dashboard.absence_matrix(id_groupe,categorie).iloc[:,4:].values
+    mx2 = [['Reponses Correctes/ Questions repondu :'+mx[i,j] for j in range(len(mx[i]))]for i in range(len(mx))]
+    
     yticks = df['nom'].str.cat(df['prenom'],sep=' ').values.tolist()
     xticks = [x for x in df.columns if x not in ['id_groupe','id_eleve','nom','prenom']]
     
@@ -247,6 +274,7 @@ def update_heatmap(id_groupe,categorie):
             pad=4
         ),
         xaxis=dict(
+            title = 'categorie / sous-categorie',
             showticklabels=True,
             tickangle=15,
             tickfont=dict(
@@ -262,6 +290,7 @@ def update_heatmap(id_groupe,categorie):
                 color='black'
             )
         ),
+        title='Evaluation Par Groupe',
         paper_bgcolor='#ffffff',
         plot_bgcolor='#ffffff'
     )
@@ -283,11 +312,349 @@ def update_heatmap(id_groupe,categorie):
                        ),
     #                    connectgaps= False
                        xgap=1,
-                       ygap=5
+                       ygap=5,
+                       text=mx2,
+                       hoverinfo = 'all'
                       )
     data=[trace]
     fig = go.Figure(data=data, layout=layout)
     return dcc.Graph(figure = fig )
+
+# for the second page
+
+df = pd.read_csv(
+    'https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/devs/Data/note_eleve.csv'
+)
+
+df['id_eleve']= df['id_eleve'].astype(str)
+df['id_groupe']= df['id_groupe'].astype(str)
+df['average'] = round(df.mean(numeric_only=True, axis=1),2)
+
+df.rename(columns={'id_groupe':'Groupe','id_eleve':'Identificateur','name':'Élève','average':'Moyenne'},  inplace=True)
+
+
+page_2_layout = html.Div([
+    # html.H1('Page 2'),
+    # html.Div(id='page-2-content'),
+    # html.Br(),
+    # dcc.Link('Go to Page 1', href='/page-1'),
+    # html.Br(),
+    # dcc.Link('Go back to home', href='/'),
+    html.H1('Suivi des performances ', style={'width': '1000px'}),
+    html.Div(children='''
+        Veuillez sélectionner un Étudiant
+    '''),
+    
+    dt.DataTable(
+        rows=df.to_dict('records'),
+        # optional - sets the order of columns
+        columns=['Identificateur','Élève','Groupe','Moyenne'],
+        row_selectable=True,
+        filterable=True,
+        sortable=True,
+        selected_row_indices=[0],
+        editable=False,
+        id='datatable-gapminder'
+    ),
+    html.Div(id='selected-indexes'),
+    dcc.Graph(
+        id='graph-gapminder'
+    ),
+], className="container")
+
+
+@app.callback(dash.dependencies.Output('page-2-content', 'children'),
+              [dash.dependencies.Input('page-2-radios', 'value')])
+def page_2_radios(value):
+    return 'You have selected "{}"'.format(value)
+
+@app.callback(
+    Output('datatable-gapminder', 'selected_row_indices'),
+    [Input('graph-gapminder', 'clickData')],
+    [State('datatable-gapminder', 'selected_row_indices')])
+def update_selected_row_indices(clickData, selected_row_indices):
+    if clickData:
+        for point in clickData['points']:
+            if point['pointNumber'] in selected_row_indices:
+                selected_row_indices.remove(point['pointNumber'])
+            else:
+                selected_row_indices.append(point['pointNumber'])
+    return selected_row_indices
+
+
+@app.callback(
+    Output('graph-gapminder', 'figure'),
+    [Input('datatable-gapminder', 'rows'),
+     Input('datatable-gapminder', 'selected_row_indices')])
+def update_figure(rows, selected_row_indices):
+    dff = pd.DataFrame(rows)
+    l = dff.iloc[selected_row_indices[0]][df.filter(like='qcm').columns].tolist()
+    i=0
+    moy=[]
+    j=0
+    s=0
+    for i in range(len(l)):
+        while (j<=i):
+            s=s+l[j]
+            j+=1
+            moy.append(round(s/(j),2))
+    
+    fig = go.Figure(
+        data=[
+            go.Scatter(
+            x=dff.filter(like='qcm').columns.tolist(),
+            y=moy,
+            name='Moyenne'
+            ),
+            go.Bar(
+            x= dff.filter(like='qcm').columns.tolist(),
+            y= l,
+            width = 0.5,
+            marker=dict(
+                    color='rgb(158,202,225)',
+                    line=dict( color='rgb(8,48,107)', width=1.5,)
+                    ),
+            name='Note'
+            )],
+            layout=go.Layout(
+            title='Evolution de note par étudiant',
+            showlegend=True,
+            yaxis=dict(range=[0, 20]),
+            legend=go.layout.Legend(
+                x=0,
+                y=1.0
+            ),
+            margin=go.layout.Margin(l=40, r=0, t=40, b=30)
+            )
+    )
+    return fig
+
+# the third page
+
+#Could be better if use a fact table instead?
+df1 = pd.read_csv('Data/note_eleve.csv')
+df2 = pd.read_csv('Data/eleve.csv')
+df3 = pd.read_csv('Data/ExportElevesUVSimple.csv')
+
+#Dataframe modifications for the requirements
+df2 = df2.merge(df3[['ID_ELEVE','groupe_promo', 'site', 'CODE_FORMATION']], left_on='id_eleve', right_on='ID_ELEVE').drop('ID_ELEVE',1)
+df2.loc[df2['groupe_promo'] == 1, 'professor_name'] = 'Laurent'
+df2.loc[df2['groupe_promo'] == 2, 'professor_name'] = 'Sylvie'
+filter_col = [col for col in df1 if col.startswith('qcm')]
+filter_col.sort()
+df1['Avg'] = df1[filter_col].mean(axis=1).round(2)
+filter_col.extend(['Avg','id_eleve'])
+df2 = df2.merge(df1[filter_col], on='id_eleve')
+
+#Better use a def with group_by?
+df2.niveau_atteint_francais[df2.niveau_atteint_francais == '0']='Maternel'
+df2.niveau_initial_francais[df2.niveau_initial_francais == '0']='Maternel'
+df4 = df2.groupby(['niveau_initial_francais', 'niveau_atteint_francais'])['Avg'].mean().round(2).reset_index()
+df5 = df2.groupby(['CODE_FORMATION'])['Avg'].mean().round(2).reset_index()
+df6 = df2.groupby(['site'])['Avg'].mean().round(2).reset_index()
+df7 = df2.groupby(['professor_name'])['Avg'].mean().round(2).reset_index()
+
+#Also, could use a def to plot these Bar charts?
+trace1 = go.Bar(
+    x = df4.iloc[:,0].map(str),
+    y = df4.iloc[:,2],
+    name = 'Note moyenne par niveau de français',
+    showlegend = False
+) 
+
+trace2 = go.Bar(
+    x = df5.iloc[:,0],
+    y = df5.iloc[:,1],
+    name = 'Note moyenne par formation',
+    showlegend = False
+) 
+
+trace3 = go.Bar(
+    x = df6.iloc[:,0],
+    y = df6.iloc[:,1],
+    name = 'Note moyenne par site',
+    showlegend = False
+) 
+
+trace4 = go.Bar(
+    x = df7.iloc[:,0],
+    y = df7.iloc[:,1],
+    name = 'Note moyenne par professeur',
+    showlegend = False
+)  
+
+#Global average value, shown as a threshold line
+trace5 = go.Scatter(
+    x = [" "],    
+    y = [df1['Avg'].mean()],
+    mode = 'text',
+    text = ['Moyenne globale'],
+    name = 'Moyenne globale',
+    showlegend = False
+) 
+
+page_3_layout = html.Div([
+    html.H1('Evaluation par Profil par étudiant ', style={'width': '1000px'}),
+    html.Div(children='''
+        Veuillez choisir un filtre
+    '''),
+    
+        dcc.Tabs(id="tabs", value='tab_1', children=[
+            dcc.Tab(label='Niveau de français', value='tab_1'),
+            dcc.Tab(label='Formation', value='tab_2'),
+            dcc.Tab(label='Site', value='tab_3'),
+            dcc.Tab(label='Professeur', value='tab_4'),
+        ]),
+        html.Div(id='tabs_content')
+])
+
+@app.callback(Output('tabs_content', 'children'),
+              [Input('tabs', 'value')])
+def render_content(tab):
+    if tab == 'tab_1':
+        return html.Div([
+            dcc.Graph(
+                id='avg-tbl1',
+                figure={
+                    'data' : [trace1, trace5],
+                    'layout' : {
+                        'shapes' : [{
+                            'type' : 'line',
+                            'xref' : 'paper',
+                            'yref' : 'y',
+                            'x0' : 0,
+                            'y0' : df1['Avg'].mean(),
+                            'x1' : 1,
+                            'y1' : df1['Avg'].mean(),
+                            'line' : {
+                                'color' : 'rgb(50, 171, 96)',
+                                'width' : 3,
+                                'dash' : 'dashdot'
+                            },
+                            'name' : 'Moyenne globale'
+                        }],
+                        'title' : 'Note moyenne par niveau de français',
+                        'xaxis' : {
+                            'title' : 'Niveau de français'
+                        },
+                        'yaxis' : {
+                            'title' : 'Note moyenne'
+                        },       
+                    }
+                }
+            )
+        ])
+    elif tab == 'tab_2':
+        return html.Div([
+            dcc.Graph(
+                id='avg-tbl2',
+                figure={
+                    'data' : [trace2, trace5],
+                    'layout' : {
+                        'shapes' : [{
+                            'type' : 'line',
+                            'xref' : 'paper',
+                            'yref' : 'y',
+                            'x0' : 0,
+                            'y0' : df1['Avg'].mean(),
+                            'x1' : 1,
+                            'y1' : df1['Avg'].mean(),
+                            'line' : {
+                                'color' : 'rgb(50, 171, 96)',
+                                'width' : 3,
+                                'dash' : 'dashdot'
+                            },
+                            'name' : 'Moyenne globale'
+                        }],
+                        'title' : 'Note moyenne par formation',
+                        'xaxis' : {
+                            'title' : 'Formation'
+                        },
+                        'yaxis' : {
+                            'title' : 'Note moyenne'
+                        },       
+                    }
+                }
+            )
+        ])
+    elif tab == 'tab_3':
+        return html.Div([
+            dcc.Graph(
+                id='avg-tbl3',
+                figure={
+                    'data' : [trace3, trace5],
+                    'layout' : {
+                        'shapes' : [{
+                            'type' : 'line',
+                            'xref' : 'paper',
+                            'yref' : 'y',
+                            'x0' : 0,
+                            'y0' : df1['Avg'].mean(),
+                            'x1' : 1,
+                            'y1' : df1['Avg'].mean(),
+                            'line' : {
+                                'color' : 'rgb(50, 171, 96)',
+                                'width' : 3,
+                                'dash' : 'dashdot'
+                            },
+                            'name' : 'Moyenne globale'
+                        }],
+                        'title' : 'Note moyenne par site',
+                        'xaxis' : {
+                            'title' : 'Site'
+                        },
+                        'yaxis' : {
+                            'title' : 'Note moyenne'
+                        },       
+                    }
+                }
+            )
+        ])       
+    elif tab == 'tab_4':
+        return html.Div([
+            dcc.Graph(
+                id='avg-tbl4',
+                figure={
+                    'data' : [trace4, trace5],
+                    'layout' : {
+                        'shapes' : [{
+                            'type' : 'line',
+                            'xref' : 'paper',
+                            'yref' : 'y',
+                            'x0' : 0,
+                            'y0' : df1['Avg'].mean(),
+                            'x1' : 1,
+                            'y1' : df1['Avg'].mean(),
+                            'line' : {
+                                'color' : 'rgb(50, 171, 96)',
+                                'width' : 3,
+                                'dash' : 'dashdot'
+                            },
+                            'name' : 'Moyenne globale'
+                        }],
+                        'title' : 'Note moyenne par professeur',
+                        'xaxis' : {
+                            'title' : 'Professeur'
+                        },
+                        'yaxis' : {
+                            'title' : 'Note moyenne'
+                        },       
+                    }
+                }
+            )
+        ])
+
+# Update the index
+@app.callback(dash.dependencies.Output('page-content', 'children'),
+              [dash.dependencies.Input('url', 'pathname')])
+def display_page(pathname):
+    if pathname == '/page-1':
+        return page_1_layout
+    elif pathname == '/page-2':
+        return page_2_layout
+    elif pathname == '/page-3':
+        return page_3_layout
+    # You could also return a 404 "URL not found" page here
 
 
 if __name__ == '__main__':
