@@ -399,6 +399,7 @@ def update_figure(rows, selected_row_indices):
             j+=1
             moy.append(round(s/(j),2))
     
+        # print("123123123123123")
     fig = go.Figure(
         data=[
             go.Scatter(
@@ -411,6 +412,11 @@ def update_figure(rows, selected_row_indices):
             y= l,
             width = 0.5,
             marker=dict(
+                    color='rgb(158,0,0)',
+                    line=dict( color='rgb(8,48,107)', width=1.5,)
+                    ) if moy[-1] > l[-1] 
+                    else 
+                   dict(
                     color='rgb(158,202,225)',
                     line=dict( color='rgb(8,48,107)', width=1.5,)
                     ),
