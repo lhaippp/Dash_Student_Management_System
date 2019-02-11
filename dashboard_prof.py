@@ -27,7 +27,7 @@ class dashboard_prof:
         self.df_que = pd.read_csv(file_path+"/question.csv")
         self.df_bi['note'][self.df_bi.absence == 1] = 0
         
-     def df_score(self,id_groupe):
+    def df_score(self,id_groupe):
         df_groupe = self.df_bi[self.df_bi.id_groupe == id_groupe]
         df_groupe['note'][df_groupe.absence == 1] = -1 
         df_groupe_1 = df_groupe[df_groupe.note == 1]
