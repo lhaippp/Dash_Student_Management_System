@@ -209,31 +209,32 @@ def update_table(value):
             data=df_students.loc[(df_students["id_groupe"]==value),].to_dict("rows"),),
             
 @app.callback(Output('graph_div', 'children'), [Input('dropdown', 'value')])
-def update_graph(value):
-    df_buffer = df_students.loc[(df_students["id_groupe"]==value),['nom','prenom']]
-    buffer = df_buffer['nom']+' '+df_buffer['prenom']
+def update_graph(id_groupe):
+
+    df = dashboard.df_score(id_groupe)
+    xticks = df['nom'].str.cat(df['prenom'],sep=' ').values.tolist()
     return dcc.Graph(
     figure=go.Figure(
         data=[
             go.Bar(
-                x=buffer.tolist(),
-                y=[40, 46, 32, 57, 44],
+                x=xticks,
+                y=df.reponse_correcte.values.tolist(),
                 name='Réponses correctes',
                 marker=go.bar.Marker(
                     color='rgb(55, 83, 109)'
                 )
             ),
             go.Bar(
-                x=buffer.tolist(),
-                y=[20, 14, 28, 3, 16],
+                x=xticks,
+                y=df.reponse_fause.values.tolist(),
                 name='Réponses incorrectes',
                 marker=go.bar.Marker(
                     color='rgb(26, 118, 255)'
                 )
             ),
             go.Bar(
-                x=buffer.tolist(),
-                y=[5, 11, 2, 3,12],
+                x=xticks,
+                y=df.pas_de_reponse.values.tolist(),
                 name='Pas de réponses',
                 marker=go.bar.Marker(
                     color='rgb(0, 0, 0)'
@@ -259,7 +260,7 @@ def update_heatmap(id_groupe,categorie):
     
     df = dashboard.df_heatmap(id_groupe,categorie)
     mx = dashboard.absence_matrix(id_groupe,categorie).iloc[:,4:].values
-    mx2 = [['note_with_absence:'+mx[i,j] for j in range(len(mx[i]))]for i in range(len(mx))]
+    mx2 = [['Reponses Correctes/ Questions repondu :'+mx[i,j] for j in range(len(mx[i]))]for i in range(len(mx))]
     
     yticks = df['nom'].str.cat(df['prenom'],sep=' ').values.tolist()
     xticks = [x for x in df.columns if x not in ['id_groupe','id_eleve','nom','prenom']]

@@ -26,8 +26,25 @@ class dashboard_prof:
         self.df_eleve = pd.read_csv(file_path+"/eleve.csv")
         self.df_que = pd.read_csv(file_path+"/question.csv")
         self.df_bi['note'][self.df_bi.absence == 1] = 0
-        
     
+
+    def df_score(self,id_groupe):
+        df_groupe = self.df_bi[self.df_bi.id_groupe == id_groupe]
+        df_groupe['note'][df_groupe.absence == 1] = -1 
+        df_groupe_1 = df_groupe[df_groupe.note == 1]
+        df_groupe_2 = df_groupe[df_groupe.note == 0]
+        df_groupe_3 = df_groupe[df_groupe.note == -1]
+        
+        df = df_groupe[['id_eleve']].drop_duplicates()
+        df = df.merge(self.df_eleve[['id_eleve','nom','prenom']],left_on='id_eleve',right_on='id_eleve',how='left')
+        
+        df = df.merge(df_groupe_1.groupby('id_eleve')['note'].agg({'reponse_correcte':'count'}).reset_index(),how='left')
+        df = df.merge(df_groupe_2.groupby('id_eleve')['note'].agg({'reponse_fause':'count'}).reset_index(),how='left')
+        df = df.merge(df_groupe_3.groupby('id_eleve')['note'].agg({'pas_de_reponse':'count'}).reset_index(),how='left')
+        
+        return df
+        
+        
     def df_categorie(self):
         """
         This function will return a data frame which evaluates each student's competance by categories.
