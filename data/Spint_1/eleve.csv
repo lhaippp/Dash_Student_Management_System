@@ -1,4 +1,4 @@
-id_eleve,nom,prenom,groupe,niveau_initial_francais,niveau_atteint_francais
+id_eleve,nom,prenom,id_groupe,niveau_initial_francais,niveau_atteint_francais
 6536,Blizzard,Banegrief,8,0,0
 8389,Blizzard,Spelldragon,8,b2,B1+
 6507,Bo'thal,Resthres,2,0,0
