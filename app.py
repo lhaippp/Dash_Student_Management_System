@@ -90,18 +90,18 @@ app.index_string = '''<!DOCTYPE html>
       <!-- Sidebar -->
       <ul class="sidebar navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="">
+          <a class="nav-link" href="/page-1">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="charts.html">
+          <a class="nav-link" href="/page-2">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Evolution</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="tables.html">
+          <a class="nav-link" href="/page-3">
             <i class="fas fa-fw fa-table"></i>
             <span>Tableaux</span></a>
         </li>
@@ -138,14 +138,16 @@ index_page = html.Div([
     dcc.Link('Go to Page 1', href='/page-1'),
     html.Br(),
     dcc.Link('Go to Page 2', href='/page-2'),
+    html.Br(),
+    dcc.Link('Go to Page 3', href='/page-3'),
 ])
 
 page_1_layout = html.Div(children=[
     
-    html.H1('Page 1'),
-    dcc.Link('Go to Page 2', href='/page-2'),
-    html.Br(),
-    dcc.Link('Go back to home', href='/'),
+    # html.H1('Page 1'),
+    # dcc.Link('Go to Page 2', href='/page-2'),
+    # html.Br(),
+    # dcc.Link('Go back to home', href='/'),
     html.H1(children='Aperçu général des performances'),
     html.Div(children='''
         Veuillez choisir un Groupe
@@ -171,23 +173,23 @@ page_1_layout = html.Div(children=[
     
     html.Div(id='graph_div'),
     
-    dcc.Graph(
-     figure=go.Figure(
-      data = [go.Scatterpolar(
-      r = [39, 28, 8, 7, 28, 39],
-      theta = [i for i in df_fait.categorie.unique().tolist()],
-      fill = 'toself'
-      )],
+    # dcc.Graph(
+    #  figure=go.Figure(
+    #   data = [go.Scatterpolar(
+    #   r = [39, 28, 8, 7, 28, 39],
+    #   theta = [i for i in df_fait.categorie.unique().tolist()],
+    #   fill = 'toself'
+    #   )],
     
-      layout = go.Layout(
-      polar = dict(
-      radialaxis = dict(
-      visible = True,
-      range = [0, 50])),
-      showlegend = False
-      )
-     )
-    ),
+    #   layout = go.Layout(
+    #   polar = dict(
+    #   radialaxis = dict(
+    #   visible = True,
+    #   range = [0, 50])),
+    #   showlegend = False
+    #   )
+    #  )
+    # ),
 
     html.Div(id='table_div')
 
@@ -336,12 +338,12 @@ df.rename(columns={'id_groupe':'Groupe','id_eleve':'Identificateur','name':'Él�
 
 
 page_2_layout = html.Div([
-    html.H1('Page 2'),
-    html.Div(id='page-2-content'),
-    html.Br(),
-    dcc.Link('Go to Page 1', href='/page-1'),
-    html.Br(),
-    dcc.Link('Go back to home', href='/'),
+    # html.H1('Page 2'),
+    # html.Div(id='page-2-content'),
+    # html.Br(),
+    # dcc.Link('Go to Page 1', href='/page-1'),
+    # html.Br(),
+    # dcc.Link('Go back to home', href='/'),
     html.H4('Suivi des performances '),
     dt.DataTable(
         rows=df.to_dict('records'),
@@ -425,6 +427,215 @@ def update_figure(rows, selected_row_indices):
     )
     return fig
 
+# the third page
+
+#Could be better if use a fact table instead?
+df1 = pd.read_csv('Data/note_eleve.csv')
+df2 = pd.read_csv('Data/eleve.csv')
+df3 = pd.read_csv('Data/ExportElevesUVSimple.csv')
+
+#Dataframe modifications for the requirements
+df2 = df2.merge(df3[['ID_ELEVE','groupe_promo', 'site', 'CODE_FORMATION']], left_on='id_eleve', right_on='ID_ELEVE').drop('ID_ELEVE',1)
+df2.loc[df2['groupe_promo'] == 1, 'professor_name'] = 'Laurent'
+df2.loc[df2['groupe_promo'] == 2, 'professor_name'] = 'Sylvie'
+filter_col = [col for col in df1 if col.startswith('qcm')]
+filter_col.sort()
+df1['Avg'] = df1[filter_col].mean(axis=1).round(2)
+filter_col.extend(['Avg','id_eleve'])
+df2 = df2.merge(df1[filter_col], on='id_eleve')
+
+#Better use a def with group_by?
+df4 = df2.groupby(['niveau_initial_francais', 'niveau_atteint_francais'])['Avg'].mean().round(2).reset_index()
+df5 = df2.groupby(['CODE_FORMATION'])['Avg'].mean().round(2).reset_index()
+df6 = df2.groupby(['site'])['Avg'].mean().round(2).reset_index()
+df7 = df2.groupby(['professor_name'])['Avg'].mean().round(2).reset_index()
+
+#Also, could use a def to plot these Bar charts?
+trace1 = go.Bar(
+    x = df4.iloc[:,0].map(str) + "_to_" + df4.iloc[:,1],
+    y = df4.iloc[:,2],
+    name = 'Average score per French level',
+    showlegend = False
+) 
+
+trace2 = go.Bar(
+    x = df5.iloc[:,0],
+    y = df5.iloc[:,1],
+    name = 'Average score per formation',
+    showlegend = False
+) 
+
+trace3 = go.Bar(
+    x = df6.iloc[:,0],
+    y = df6.iloc[:,1],
+    name = 'Average score per site',
+    showlegend = False
+) 
+
+trace4 = go.Bar(
+    x = df7.iloc[:,0],
+    y = df7.iloc[:,1],
+    name = 'Average score per professor',
+    showlegend = False
+)  
+
+#Global average value, shown as a threshold line
+trace5 = go.Scatter(
+    x = [" "],    
+    y = [df1['Avg'].mean()],
+    mode = 'text',
+    text = ['Global average'],
+    name = 'Global average',
+    showlegend = False
+) 
+
+page_3_layout = html.Div([
+    html.H1('Professor view'),
+        dcc.Tabs(id="tabs", value='tab_1', children=[
+            dcc.Tab(label='French level', value='tab_1'),
+            dcc.Tab(label='Formation', value='tab_2'),
+            dcc.Tab(label='Site', value='tab_3'),
+            dcc.Tab(label='Professor', value='tab_4'),
+        ]),
+        html.Div(id='tabs_content')
+])
+
+@app.callback(Output('tabs_content', 'children'),
+              [Input('tabs', 'value')])
+def render_content(tab):
+    if tab == 'tab_1':
+        return html.Div([
+            dcc.Graph(
+                id='avg-tbl1',
+                figure={
+                    'data' : [trace1, trace5],
+                    'layout' : {
+                        'shapes' : [{
+                            'type' : 'line',
+                            'xref' : 'paper',
+                            'yref' : 'y',
+                            'x0' : 0,
+                            'y0' : df1['Avg'].mean(),
+                            'x1' : 1,
+                            'y1' : df1['Avg'].mean(),
+                            'line' : {
+                                'color' : 'rgb(50, 171, 96)',
+                                'width' : 3,
+                                'dash' : 'dashdot'
+                            },
+                            'name' : 'Global average'
+                        }],
+                        'title' : 'Average score per French level',
+                        'xaxis' : {
+                            'title' : 'French level'
+                        },
+                        'yaxis' : {
+                            'title' : 'Average score'
+                        },       
+                    }
+                }
+            )
+        ])
+    elif tab == 'tab_2':
+        return html.Div([
+            dcc.Graph(
+                id='avg-tbl2',
+                figure={
+                    'data' : [trace2, trace5],
+                    'layout' : {
+                        'shapes' : [{
+                            'type' : 'line',
+                            'xref' : 'paper',
+                            'yref' : 'y',
+                            'x0' : 0,
+                            'y0' : df1['Avg'].mean(),
+                            'x1' : 1,
+                            'y1' : df1['Avg'].mean(),
+                            'line' : {
+                                'color' : 'rgb(50, 171, 96)',
+                                'width' : 3,
+                                'dash' : 'dashdot'
+                            },
+                            'name' : 'Global average'
+                        }],
+                        'title' : 'Average score per formation',
+                        'xaxis' : {
+                            'title' : 'Formation'
+                        },
+                        'yaxis' : {
+                            'title' : 'Average score'
+                        },       
+                    }
+                }
+            )
+        ])
+    elif tab == 'tab_3':
+        return html.Div([
+            dcc.Graph(
+                id='avg-tbl3',
+                figure={
+                    'data' : [trace3, trace5],
+                    'layout' : {
+                        'shapes' : [{
+                            'type' : 'line',
+                            'xref' : 'paper',
+                            'yref' : 'y',
+                            'x0' : 0,
+                            'y0' : df1['Avg'].mean(),
+                            'x1' : 1,
+                            'y1' : df1['Avg'].mean(),
+                            'line' : {
+                                'color' : 'rgb(50, 171, 96)',
+                                'width' : 3,
+                                'dash' : 'dashdot'
+                            },
+                            'name' : 'Global average'
+                        }],
+                        'title' : 'Average score per site',
+                        'xaxis' : {
+                            'title' : 'Site'
+                        },
+                        'yaxis' : {
+                            'title' : 'Average score'
+                        },       
+                    }
+                }
+            )
+        ])       
+    elif tab == 'tab_4':
+        return html.Div([
+            dcc.Graph(
+                id='avg-tbl4',
+                figure={
+                    'data' : [trace4, trace5],
+                    'layout' : {
+                        'shapes' : [{
+                            'type' : 'line',
+                            'xref' : 'paper',
+                            'yref' : 'y',
+                            'x0' : 0,
+                            'y0' : df1['Avg'].mean(),
+                            'x1' : 1,
+                            'y1' : df1['Avg'].mean(),
+                            'line' : {
+                                'color' : 'rgb(50, 171, 96)',
+                                'width' : 3,
+                                'dash' : 'dashdot'
+                            },
+                            'name' : 'Global average'
+                        }],
+                        'title' : 'Average score per professor',
+                        'xaxis' : {
+                            'title' : 'Professor'
+                        },
+                        'yaxis' : {
+                            'title' : 'Average score'
+                        },       
+                    }
+                }
+            )
+        ])
+
 app.css.append_css({
     'external_url': 'https://codepen.io/chriddyp/pen/bWLwgP.css'
 })
@@ -437,8 +648,8 @@ def display_page(pathname):
         return page_1_layout
     elif pathname == '/page-2':
         return page_2_layout
-    else:
-        return index_page
+    elif pathname == '/page-3':
+        return page_3_layout
     # You could also return a 404 "URL not found" page here
 
 
