@@ -445,6 +445,8 @@ filter_col.extend(['Avg','id_eleve'])
 df2 = df2.merge(df1[filter_col], on='id_eleve')
 
 #Better use a def with group_by?
+df2.niveau_atteint_francais[df2.niveau_atteint_francais == '0']='Maternel'
+df2.niveau_initial_francais[df2.niveau_initial_francais == '0']='Maternel'
 df4 = df2.groupby(['niveau_initial_francais', 'niveau_atteint_francais'])['Avg'].mean().round(2).reset_index()
 df5 = df2.groupby(['CODE_FORMATION'])['Avg'].mean().round(2).reset_index()
 df6 = df2.groupby(['site'])['Avg'].mean().round(2).reset_index()
@@ -452,30 +454,30 @@ df7 = df2.groupby(['professor_name'])['Avg'].mean().round(2).reset_index()
 
 #Also, could use a def to plot these Bar charts?
 trace1 = go.Bar(
-    x = df4.iloc[:,0].map(str) + "_to_" + df4.iloc[:,1],
+    x = df4.iloc[:,0].map(str),
     y = df4.iloc[:,2],
-    name = 'Average score per French level',
+    name = 'Note moyenne par niveau de français',
     showlegend = False
 ) 
 
 trace2 = go.Bar(
     x = df5.iloc[:,0],
     y = df5.iloc[:,1],
-    name = 'Average score per formation',
+    name = 'Note moyenne par formation',
     showlegend = False
 ) 
 
 trace3 = go.Bar(
     x = df6.iloc[:,0],
     y = df6.iloc[:,1],
-    name = 'Average score per site',
+    name = 'Note moyenne par site',
     showlegend = False
 ) 
 
 trace4 = go.Bar(
     x = df7.iloc[:,0],
     y = df7.iloc[:,1],
-    name = 'Average score per professor',
+    name = 'Note moyenne par professeur',
     showlegend = False
 )  
 
@@ -484,18 +486,18 @@ trace5 = go.Scatter(
     x = [" "],    
     y = [df1['Avg'].mean()],
     mode = 'text',
-    text = ['Global average'],
-    name = 'Global average',
+    text = ['Moyenne globale'],
+    name = 'Moyenne globale',
     showlegend = False
 ) 
 
 page_3_layout = html.Div([
-    html.H1('Professor view'),
+    html.H1('Evaluation par profil'),
         dcc.Tabs(id="tabs", value='tab_1', children=[
-            dcc.Tab(label='French level', value='tab_1'),
+            dcc.Tab(label='Niveau de français', value='tab_1'),
             dcc.Tab(label='Formation', value='tab_2'),
             dcc.Tab(label='Site', value='tab_3'),
-            dcc.Tab(label='Professor', value='tab_4'),
+            dcc.Tab(label='Professeur', value='tab_4'),
         ]),
         html.Div(id='tabs_content')
 ])
@@ -523,14 +525,14 @@ def render_content(tab):
                                 'width' : 3,
                                 'dash' : 'dashdot'
                             },
-                            'name' : 'Global average'
+                            'name' : 'Moyenne globale'
                         }],
-                        'title' : 'Average score per French level',
+                        'title' : 'Note moyenne par niveau de français',
                         'xaxis' : {
-                            'title' : 'French level'
+                            'title' : 'Niveau de français'
                         },
                         'yaxis' : {
-                            'title' : 'Average score'
+                            'title' : 'Note moyenne'
                         },       
                     }
                 }
@@ -556,14 +558,14 @@ def render_content(tab):
                                 'width' : 3,
                                 'dash' : 'dashdot'
                             },
-                            'name' : 'Global average'
+                            'name' : 'Moyenne globale'
                         }],
-                        'title' : 'Average score per formation',
+                        'title' : 'Note moyenne par formation',
                         'xaxis' : {
                             'title' : 'Formation'
                         },
                         'yaxis' : {
-                            'title' : 'Average score'
+                            'title' : 'Note moyenne'
                         },       
                     }
                 }
@@ -589,14 +591,14 @@ def render_content(tab):
                                 'width' : 3,
                                 'dash' : 'dashdot'
                             },
-                            'name' : 'Global average'
+                            'name' : 'Moyenne globale'
                         }],
-                        'title' : 'Average score per site',
+                        'title' : 'Note moyenne par site',
                         'xaxis' : {
                             'title' : 'Site'
                         },
                         'yaxis' : {
-                            'title' : 'Average score'
+                            'title' : 'Note moyenne'
                         },       
                     }
                 }
@@ -622,14 +624,14 @@ def render_content(tab):
                                 'width' : 3,
                                 'dash' : 'dashdot'
                             },
-                            'name' : 'Global average'
+                            'name' : 'Moyenne globale'
                         }],
-                        'title' : 'Average score per professor',
+                        'title' : 'Note moyenne par professeur',
                         'xaxis' : {
-                            'title' : 'Professor'
+                            'title' : 'Professeur'
                         },
                         'yaxis' : {
-                            'title' : 'Average score'
+                            'title' : 'Note moyenne'
                         },       
                     }
                 }
