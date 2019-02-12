@@ -460,49 +460,7 @@ df5 = df2.groupby(['CODE_FORMATION'])['Avg'].mean().round(2).reset_index()
 df6 = df2.groupby(['site'])['Avg'].mean().round(2).reset_index()
 df7 = df2.groupby(['professor_name'])['Avg'].mean().round(2).reset_index()
 
-#Also, could use a def to plot these Bar charts?
-trace1 = go.Bar(
-    x = df4.iloc[:,0].map(str),
-    y = df4.iloc[:,2],
-    width = [0.5 for _ in range(df4.shape[0])],
-    
-    name = 'Note moyenne par niveau de français',
-    showlegend = False
-) 
 
-trace2 = go.Bar(
-    x = df5.iloc[:,0],
-    y = df5.iloc[:,1],
-    width = [0.5 for _ in range(df5.shape[0])],
-    name = 'Note moyenne par formation',
-    showlegend = False
-) 
-
-trace3 = go.Bar(
-    x = df6.iloc[:,0],
-    y = df6.iloc[:,1],
-    width = [0.3 for _ in range(df6.shape[0])],
-    name = 'Note moyenne par site',
-    showlegend = False
-) 
-
-trace4 = go.Bar(
-    x = df7.iloc[:,0],
-    y = df7.iloc[:,1],
-    width = [0.2 for _ in range(df7.shape[0])],
-    name = 'Note moyenne par professeur',
-    showlegend = False
-)  
-
-#Global average value, shown as a threshold line
-trace5 = go.Scatter(
-    x = [" "],    
-    y = [df1['Avg'].mean()],
-    mode = 'text',
-    text = ['Moyenne globale'],
-    name = 'Moyenne globale',
-    showlegend = False
-) 
 
 page_3_layout = html.Div([
     html.H1('Evaluation par Profil par étudiant ', style={'width': '1000px'}),
@@ -522,6 +480,51 @@ page_3_layout = html.Div([
 @app.callback(Output('tabs_content', 'children'),
               [Input('tabs', 'value')])
 def render_content(tab):
+    # df1,df4,df5,df6,df7 = dashboard.function_name()
+
+    #Also, could use a def to plot these Bar charts?
+    trace1 = go.Bar(
+        x = df4.iloc[:,0].map(str),
+        y = df4.iloc[:,2],
+        width = [0.5 for _ in range(df4.shape[0])],
+        
+        name = 'Note moyenne par niveau de français',
+        showlegend = False
+    ) 
+
+    trace2 = go.Bar(
+        x = df5.iloc[:,0],
+        y = df5.iloc[:,1],
+        width = [0.5 for _ in range(df5.shape[0])],
+        name = 'Note moyenne par formation',
+        showlegend = False
+    ) 
+
+    trace3 = go.Bar(
+        x = df6.iloc[:,0],
+        y = df6.iloc[:,1],
+        width = [0.3 for _ in range(df6.shape[0])],
+        name = 'Note moyenne par site',
+        showlegend = False
+    ) 
+
+    trace4 = go.Bar(
+        x = df7.iloc[:,0],
+        y = df7.iloc[:,1],
+        width = [0.2 for _ in range(df7.shape[0])],
+        name = 'Note moyenne par professeur',
+        showlegend = False
+    )  
+
+    #Global average value, shown as a threshold line
+    trace5 = go.Scatter(
+        x = [" "],    
+        y = [df1['Avg'].mean()],
+        mode = 'text',
+        text = ['Moyenne globale'],
+        name = 'Moyenne globale',
+        showlegend = False
+    ) 
     if tab == 'tab_1':
         return html.Div([
             dcc.Graph(
