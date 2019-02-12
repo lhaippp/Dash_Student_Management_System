@@ -443,7 +443,8 @@ df2 = pd.read_csv('Data/eleve.csv')
 df3 = pd.read_csv('Data/ExportElevesUVSimple.csv')
 
 #Dataframe modifications for the requirements
-df2 = df2.merge(df3[['ID_ELEVE','groupe_promo', 'site', 'CODE_FORMATION']], left_on='id_eleve', right_on='ID_ELEVE').drop('ID_ELEVE',1)
+# df2 = df2.merge(df3[['ID_ELEVE','groupe_promo', 'site', 'CODE_FORMATION']], left_on='id_eleve', right_on='ID_ELEVE').drop('ID_ELEVE',1)
+# print(df2)
 df2.loc[df2['groupe_promo'] == 1, 'professor_name'] = 'Laurent'
 df2.loc[df2['groupe_promo'] == 2, 'professor_name'] = 'Sylvie'
 filter_col = [col for col in df1 if col.startswith('qcm')]

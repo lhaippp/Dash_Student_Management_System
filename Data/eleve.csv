@@ -1,51 +1,51 @@
-,id_eleve,nom,prenom,id_groupe,niveau_initial_francais,niveau_atteint_francais
-0,6536,Blizzard,Banegrief,8,0,0
-1,8389,Blizzard,Spelldragon,8,b2,B1+
-2,6507,Bo'thal,Resthres,2,0,0
-3,5961,Celeborn,Imorcaror,7,0,0
-4,15671,Comet,Lord,8,0,0
-5,13164,Daedrel,Losimor,7,0,0
-6,15806,Dagger,Curselance,8,0,0
-7,9277,Dawn,Amber,8,0,0
-8,11576,Dirk,Lordhell,9,b1+,B1
-9,6852,Disles,Lë,6,0,0
-10,12886,Dor,Galadhdrel,2,0,0
-11,3020,Duilal,Dhros,4,0,0
-12,15569,Dwyram,Leeana,4,0,0
-13,5115,Eril,Imormiel,3,0,0
-14,5149,Ev,Paeril,4,0,0
-15,13211,Findthal,Drinrin,7,0,0
-16,11656,Flora,Midnightmagic,9,0,0
-17,8654,Flora,Tomedragon,9,0,0
-18,7794,Grielria,Thelsyl,2,0,0
-19,4381,Grimoire,Direjackal,9,0,0
-20,7966,Halnas,Dal,7,0,0
-21,4472,Imgorsar,Saras,5,c1,C1
-22,13753,Jagi,Anornyë,3,0,0
-23,15312,Laae,Losmethran,2,0,0
-24,9723,Leo,Dragon,9,0,0
-25,4394,Lethwing,Danra,5,0,0
-26,7960,Lightning,Knight,10,0,0
-27,14134,Lokur,Viusmoril,6,0,0
-28,14201,Losfela,Randu,7,0,0
-29,4884,Mal'va,Ilra,5,0,0
-30,7471,Manduilos,Dwyren,3,b2,B1+
-31,7848,Midnight,Edenmourner,10,0,0
-32,11575,Morilce,Ra,4,b2,B2
-33,7800,Mothrond,Gille,2,0,0
-34,10228,Mystery,Queencurse,10,0,0
-35,12406,Nasthe,Leerien,5,0,0
-36,7239,Rasve,Raenfë,4,0,0
-37,9573,Riae,Kithril,6,0,0
-38,4623,Ro,Dandor,5,0,0
-39,11535,Star,Eternity,10,0,0
-40,8992,Stiletto,Shroud,10,0,0
-41,4579,Storm,Katana,1,0,0
-42,3095,Sunset,Lionchanter,1,b1,A2
-43,3583,Tari,Nordral,6,0,0
-44,14462,Tempest,Queensong,1,0,0
-45,9295,Thognor,Sarbeleg,3,0,0
-46,15276,Thranvoduil,Thafin,6,0,0
-47,13046,Tome,Starfinder,1,0,0
-48,10315,Tortha,Rohirea,3,b2,B1+
-49,13089,Typhoon,Honor,1,b2,B2
+id_eleve,nom,prenom,id_groupe,niveau_init_max_francais,niveau_atteint_max_francais,groupe_promo,code_formation,site
+6536,Blizzard,Banegrief,8,Maternel,Maternel,2,IG 3A,Brest
+8389,Blizzard,Spelldragon,8,b2,B1+,2,IG 3A,Brest
+6507,Bo'thal,Resthres,2,Maternel,Maternel,1,IG 3A,Brest
+5961,Celeborn,Imorcaror,7,Maternel,Maternel,2,IG 3A,Brest
+15671,Comet,Lord,8,Maternel,Maternel,2,IG 3A,Brest
+13164,Daedrel,Losimor,7,Maternel,Maternel,2,IG 3A,Brest
+15806,Dagger,Curselance,8,Maternel,Maternel,2,IG 3A,Brest
+9277,Dawn,Amber,8,Maternel,Maternel,2,IG 3A,Brest
+11576,Dirk,Lordhell,9,b1+,B1,2,IG 3A,Brest
+6852,Disles,Lë,6,Maternel,Maternel,2,IG 3A,Brest
+12886,Dor,Galadhdrel,2,Maternel,Maternel,1,IG 3A,Brest
+3020,Duilal,Dhros,4,Maternel,Maternel,1,IG 3A,Brest
+15569,Dwyram,Leeana,4,Maternel,Maternel,1,IG 3A,Brest
+5115,Eril,Imormiel,3,Maternel,Maternel,1,IG 3A,Brest
+5149,Ev,Paeril,4,Maternel,Maternel,1,MSC 2A DS,Brest
+13211,Findthal,Drinrin,7,Maternel,Maternel,2,IG 3A,Brest
+11656,Flora,Midnightmagic,9,Maternel,Maternel,2,IG 3A,Brest
+8654,Flora,Tomedragon,9,Maternel,Maternel,2,IG 3A,Brest
+7794,Grielria,Thelsyl,2,Maternel,Maternel,1,IG 3A,Brest
+4381,Grimoire,Direjackal,9,Maternel,Maternel,2,IG 3A,Brest
+7966,Halnas,Dal,7,Maternel,Maternel,2,IG 3A,Brest
+4472,Imgorsar,Saras,5,c1,C1,2,IG 3A,Brest
+13753,Jagi,Anornyë,3,Maternel,Maternel,1,IG 3A,Brest
+15312,Laae,Losmethran,2,Maternel,Maternel,1,IG 3A,Brest
+9723,Leo,Dragon,9,Maternel,Maternel,2,IG 3A,Brest
+4394,Lethwing,Danra,5,Maternel,Maternel,2,IG 3A,Brest
+7960,Lightning,Knight,10,Maternel,Maternel,2,MSC 2A DS,Brest
+14134,Lokur,Viusmoril,6,Maternel,Maternel,2,IG 3A,Brest
+14201,Losfela,Randu,7,Maternel,Maternel,2,MP ECOTIC,Brest
+4884,Mal'va,Ilra,5,Maternel,Maternel,2,MP ECOTIC,Brest
+7471,Manduilos,Dwyren,3,b2,B1+,1,IG 3A,Brest
+7848,Midnight,Edenmourner,10,Maternel,Maternel,2,IG 3A,Brest
+11575,Morilce,Ra,4,b2,B2,1,MSC 2A DS,Brest
+7800,Mothrond,Gille,2,Maternel,Maternel,1,IG 3A,Brest
+10228,Mystery,Queencurse,10,Maternel,Maternel,2,IG 3A,Brest
+12406,Nasthe,Leerien,5,Maternel,Maternel,2,IG 3A,Brest
+7239,Rasve,Raenfë,4,Maternel,Maternel,1,IG 3A,Brest
+9573,Riae,Kithril,6,Maternel,Maternel,2,IG 3A,Brest
+4623,Ro,Dandor,5,Maternel,Maternel,2,IG 3A,Brest
+11535,Star,Eternity,10,Maternel,Maternel,2,MP ECOTIC,Brest
+8992,Stiletto,Shroud,10,Maternel,Maternel,2,IG 3A,Brest
+4579,Storm,Katana,1,Maternel,Maternel,1,IG 3A,Brest
+3095,Sunset,Lionchanter,1,b1,A2,1,MSC 2A DS,Brest
+3583,Tari,Nordral,6,Maternel,Maternel,2,IG 3A,Brest
+14462,Tempest,Queensong,1,Maternel,Maternel,1,IG 3A,Brest
+9295,Thognor,Sarbeleg,3,Maternel,Maternel,1,MSC 2A DS,Brest
+15276,Thranvoduil,Thafin,6,Maternel,Maternel,2,IG 3A,Brest
+13046,Tome,Starfinder,1,Maternel,Maternel,1,IG 3A,Brest
+10315,Tortha,Rohirea,3,b2,B1+,1,IG 3A,Brest
+13089,Typhoon,Honor,1,b2,B2,1,IG 3A,Brest
