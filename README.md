@@ -47,6 +47,7 @@ Now you can visit the dashboard at [http://127.0.0.1:8055/](http://127.0.0.1:805
 
 ### Demo
 Here we offer a demo for the [dashborad](BI-projet/docs/Dash.png)
+![demo](BI-projet/docs/Dash.png)
 
 
 ## Built With
