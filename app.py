@@ -454,10 +454,10 @@ filter_col.extend(['Avg','id_eleve'])
 df2 = df2.merge(df1[filter_col], on='id_eleve')
 
 #Better use a def with group_by?
-df2.niveau_atteint_francais[df2.niveau_atteint_francais == '0']='Maternel'
-df2.niveau_initial_francais[df2.niveau_initial_francais == '0']='Maternel'
-df4 = df2.groupby(['niveau_initial_francais', 'niveau_atteint_francais'])['Avg'].mean().round(2).reset_index()
-df5 = df2.groupby(['CODE_FORMATION'])['Avg'].mean().round(2).reset_index()
+# df2.niveau_atteint_francais[df2.niveau_atteint_francais == '0']='Maternel'
+# df2.niveau_initial_francais[df2.niveau_initial_francais == '0']='Maternel'
+df4 = df2.groupby(['niveau_init_francais', 'niveau_atteint_francais'])['Avg'].mean().round(2).reset_index()
+df5 = df2.groupby(['code_formation'])['Avg'].mean().round(2).reset_index()
 df6 = df2.groupby(['site'])['Avg'].mean().round(2).reset_index()
 df7 = df2.groupby(['professor_name'])['Avg'].mean().round(2).reset_index()
 

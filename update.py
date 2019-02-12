@@ -52,7 +52,7 @@ def update_eleve(eleve_file,path):
     def table_eleve(eleve_file,path = path):
         df_student = pd.read_csv(path+eleve_file)
         df = df_student[['ID_ELEVE','NOM_ELE','PRENOM_ELE','num_groupe_etudiant','NIVEAU_INIT_MAX_FRANCAIS','NIVEAU_ATTEINT_MAX_FRANCAIS','groupe_promo','CODE_FORMATION','site']]
-        df.columns = ['id_eleve','nom','prenom','id_groupe','niveau_init_max_francais','niveau_atteint_max_francais','groupe_promo','code_formation','site']
+        df.columns = ['id_eleve','nom','prenom','id_groupe','niveau_init_francais','niveau_atteint_francais','groupe_promo','code_formation','site']
         df.fillna('Maternel',inplace=True)
         return df
     df_eleve = table_eleve(eleve_file)

@@ -1,4 +1,4 @@
-id_eleve,nom,prenom,id_groupe,niveau_init_max_francais,niveau_atteint_max_francais,groupe_promo,code_formation,site
+id_eleve,nom,prenom,id_groupe,niveau_init_francais,niveau_atteint_francais,groupe_promo,code_formation,site
 6536,Blizzard,Banegrief,8,Maternel,Maternel,2,IG 3A,Brest
 8389,Blizzard,Spelldragon,8,b2,B1+,2,IG 3A,Brest
 6507,Bo'thal,Resthres,2,Maternel,Maternel,1,IG 3A,Brest
