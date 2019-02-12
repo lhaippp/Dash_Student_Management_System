@@ -73,4 +73,4 @@ We use [Github](https://github.com/lhaippp/Dash_Student_Management_System) for v
 
 ## License
 
-This project is licensed under the European Union Public License 1.1 - see the [LICENSE file for details
+This project is licensed under the European Union Public License 1.1 - see the LICENSE file for details
