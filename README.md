@@ -63,11 +63,11 @@ We use [Github](https://github.com/lhaippp/Dash_Student_Management_System) for v
 
 ## Authors
 
-* **Xiaorui HUO** - *ETL work* - [github-xiaorui](https://github.com/PurpleBooth)
-* **Xuanqi HUANG** - *ETL work* - [github-xuanqi](https://github.com/PurpleBooth)
-* **Hassen NJAH** - *Dash work* - [github-hassen](https://github.com/PurpleBooth)
-* **Haipeng LI** - *Dash work* - [github-haipeng](https://github.com/PurpleBooth)
-* **Duk Minh** - *ETL work* - [github-duk](https://github.com/PurpleBooth)
+* **Xiaorui HUO** - *ETL work* 
+* **Xuanqi HUANG** - *ETL work* 
+* **Hassen NJAH** - *Dash work* 
+* **Haipeng LI** - *Dash work* 
+* **Duk Minh** - *ETL work* 
 
 
 ## License
