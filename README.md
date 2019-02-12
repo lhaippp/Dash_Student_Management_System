@@ -46,7 +46,7 @@ $ python3 app.py
 Now you can visit the dashboard at [http://127.0.0.1:8055/](http://127.0.0.1:8055/)
 
 ### Demo
-Here we offer a demo for the [dashborad](BI-projet/docs/Dash.html)
+Here we offer a demo for the [dashborad](BI-projet/docs/Dash.png)
 
 
 ## Built With
