@@ -20,6 +20,8 @@ Linux
 ```
 $ git clone https://github.com/lhaippp/Dash_Student_Management_System
 
+$ cd Dash_Student_Management_System
+
 $ chmod +x set-environment.sh
 
 $ source set-environment.sh
