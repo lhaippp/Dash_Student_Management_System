@@ -120,6 +120,27 @@ app.index_string = '''<!DOCTYPE html>
             <i class="fas fa-fw fa-table"></i>
             <span>Profils</span></a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <br>
+            <br>
+            <br>
+            <br>
+            <i></i>
+            <span>Developpers:</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/178661133/">     
+                <span>Haipeng LI - Dash work</span><br></a>
+            <a class="nav-link" href="https://www.linkedin.com/in/hassen-njah-23394b122/">
+                <span>Hassen NJAH - Dash work</span><br></a>
+            <a class="nav-link" href="https://www.linkedin.com/in/xuanqi-huang-599a62140/">
+                <span>Xuanqi HUANG - ETL work</span><br></a>
+            <a class="nav-link" href="https://www.linkedin.com/in/xiaorui-huo-257a5a140/">   
+                <span>Xiaorui HUO - ETL work</span><br></a>
+            <a class="nav-link" href="https://www.linkedin.com/in/minh-duc-nguyen-672b26153/">     
+                <span>Minh Duc NGUYEN - ETL work</span><br></a>
+        </li>
       </ul>
     <!-- /#wrapper -->
     
