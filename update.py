@@ -92,7 +92,6 @@ def update_fact(qcm_list,path):
 
         # df_bi-exam = pd.DataFrame()
         a = pd.DataFrame(data = dict_bi_exam)
-        #Don't use a['note'][a.note.isna()] = -1 (SettingWithCopyWarning!!!)
         a.loc[a.note.isna(), 'note'] = -1    
         return a
     

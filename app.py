@@ -48,27 +48,8 @@ external_scripts = [
 ]
 
 #load fact table into memory
-#url = 'https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/master/Data' (not needed)
 local_path = './Data/'
 dashboard = dashboard_prof(local_path)
-#url_fait = 'https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/devs/Data/fact_table_bi_exam.csv'
-## df_fait = pd.read_csv(url_fait,index_col=0,parse_dates=[0])
-#df_fait = dashboard.df_bi
-##load studnet dimention into memory
-#url_student = 'https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/devs/Data/eleve.csv'
-## df_students = pd.read_csv(url_student,index_col=0,parse_dates=[0])
-#df_students = dashboard.df_eleve
-##sort studnets by group id
-#df_students.columns = [x.lower() for x in df_students.columns]
-#df_students = df_students.sort_index(by = 'id_groupe', ascending= True)
-#(Create and modify copies of the original data in the app.callback decorator, not here)
-
-#pretty variable names
-#group_variables = ['nom','prenom','id_groupe','niveau_initial_francais','niveau_atteint_francais'] (why?)
-
-# cleaning the data
-# df_students.niveau_atteint_francais[df_students.niveau_atteint_francais == '0']='Maternel'
-# df_students.niveau_initial_francais[df_students.niveau_initial_francais == '0']='Maternel'
 
 #the main dash app starts here
 app = dash.Dash(
@@ -188,7 +169,6 @@ page_1_layout = html.Div(children=[
         Veuillez choisir un Groupe :
     '''),
    dcc.Dropdown(
-        #options=[{'label': 'Groupe ' + str(i), 'value': i} for i in df_students.id_groupe.unique()], (df_students not needed)
         options=[{'label': 'Groupe ' + str(i), 'value': i} for i in dashboard.df_eleve.id_groupe.sort_values().unique()],
         id='dropdown',
         value='1', 
@@ -198,7 +178,6 @@ page_1_layout = html.Div(children=[
         Veuillez choisir une catégorie d'enseignement :
     '''),
     dcc.Dropdown(
-        #options=[{'label': str(i), 'value': i} for i in df_fait.categorie.unique()], (df_fait not needed)
         options=[{'label': str(i), 'value': i} for i in dashboard.df_bi.categorie.unique()],
         id='dropdown_categorie',
         placeholder="Toutes les catégories",
@@ -673,4 +652,4 @@ def display_page(pathname):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True,port=8055)
+    app.run_server(debug=False,port=8055)

@@ -25,9 +25,7 @@ class dashboard_prof:
         self.df_bi = pd.read_csv(file_path+"/fact_table_bi_exam.csv")
         self.df_eleve = pd.read_csv(file_path+"/eleve.csv")
         self.df_que = pd.read_csv(file_path+"/question.csv")
-        #self.df_bi['note'][self.df_bi.absence == 1] = 0 (keep score at -1)
-    
-    
+
     
     def df_score_by_qcm(self):
         """
@@ -42,12 +40,9 @@ class dashboard_prof:
         df = df.merge(self.df_que[['id_question','id_qcm']], right_on='id_question',left_on='id_question',how='left')
         
         new_df = self.df_eleve[['id_eleve','id_groupe','nom','prenom']]
-        #new_df['name'] = new_df['nom'] + ' '+ new_df['prenom'] (SettingWithCopyWarning!!!)
         new_df.loc[:,'name']= new_df['nom'] + ' ' + new_df['prenom'] 
         for i in range(1,qcm_num+1):
-            #new_df = new_df.merge(df[df.id_qcm == i].groupby('id_eleve')['note'].agg({'qcm_%d'%i:'sum'}).reset_index(),how='left') (have to manually modify negative values)
             new_df = new_df.merge(df[df.id_qcm == i].groupby('id_eleve')['note'].agg({'qcm_%d'%i: lambda x : x[x > 0].sum()}).reset_index(),how='left')
-        #print(new_df)
         return new_df
                 
     
@@ -65,24 +60,18 @@ class dashboard_prof:
         df1['Avg'] = df1[filter_col].mean(axis=1).round(2)
         filter_col.extend(['Avg','id_eleve'])
         df2 = df2.merge(df1[filter_col], on='id_eleve')
-        # print('df2',df2)
-        # df2.niveau_atteint_francais[df2.niveau_atteint_francais == '0']='Maternel'
-        # df2.niveau_initial_francais[df2.niveau_initial_francais == '0']='Maternel'
         df4 = df2.groupby(['niveau_atteint_francais'])['Avg'].mean().round(2).reset_index()
         df5 = df2.groupby(['code_formation'])['Avg'].mean().round(2).reset_index()
         df6 = df2.groupby(['site'])['Avg'].mean().round(2).reset_index()
         df7 = df2.groupby(['professor_name'])['Avg'].mean().round(2).reset_index()
-
         return df1,df4,df5,df6,df7
         
+    
     def all_score(self):
         """
             return a df which shows each student's correct response / mistakes / empty response
         """
-    
-    
         df_groupe = self.df_bi
-        #df_groupe['note'][df_groupe.absence == 1] = -1 (not needed)
         df_groupe_1 = df_groupe[df_groupe.note == 1]
         df_groupe_2 = df_groupe[df_groupe.note == 0]
         df_groupe_3 = df_groupe[df_groupe.note == -1]
@@ -96,6 +85,7 @@ class dashboard_prof:
         df.fillna(0,inplace = True)
         # print(df)
         return df
+     
         
     def df_score(self, id_groupe):
         """
@@ -103,6 +93,7 @@ class dashboard_prof:
         """
         df = self.all_score()
         return df[df.id_groupe == id_groupe]
+
 
     def df_categorie(self):
         """
@@ -115,16 +106,14 @@ class dashboard_prof:
             categorie: object
             note_par_cate: float
             num_question: int
-        
         """
         cc = self.df_que.groupby(['categorie']).categorie.count()
         df_cc = pd.DataFrame({"categorie":cc.index.values, 'num_question':cc.values})
-        #competance_cate = self.df_bi.groupby(['id_eleve','id_groupe','categorie'])['note'].agg({'note_par_cate':'sum'}).reset_index() (have to manually modify negative values)
         competance_cate = self.df_bi.groupby(['id_eleve','id_groupe','categorie'])['note'].agg({'note_par_cate': lambda x : x[x > 0].sum()}).reset_index()
         df = competance_cate.merge(df_cc, left_on= 'categorie', right_on='categorie',how='left')
-        df = df.merge(self.df_eleve[['id_eleve','nom','prenom']],left_on='id_eleve',right_on='id_eleve',how='left')
-        
+        df = df.merge(self.df_eleve[['id_eleve','nom','prenom']],left_on='id_eleve',right_on='id_eleve',how='left')      
         return df
+
 
     def df_sous_categorie(self,categorie):
         """
@@ -136,18 +125,14 @@ class dashboard_prof:
             id_groupe: int
             sous_categorie: object
             note_par_cate: float
-            num_question: int
-        
+            num_question: int       
         """
         df_cate = self.df_que[self.df_que["categorie"] == categorie]
         cc = df_cate.groupby(['sous_categorie']).sous_categorie.count()
         df_cc = pd.DataFrame({"sous_categorie":cc.index.values, 'num_question':cc.values})
-        # print(categorie,"\n",df_cc)
-        #competance_cate = self.df_bi[self.df_bi['categorie'] == categorie].groupby(['id_eleve','id_groupe','sous_categorie'])['note'].agg({'note_par_sous_cate':'sum'}).reset_index() (have to manually modify negative values)
         competance_cate = self.df_bi[self.df_bi['categorie'] == categorie].groupby(['id_eleve','id_groupe','sous_categorie'])['note'].agg({'note_par_sous_cate': lambda x : x[x > 0].sum()}).reset_index()
         df = competance_cate.merge(df_cc, left_on= 'sous_categorie', right_on='sous_categorie',how='left')
-        df = df.merge(self.df_eleve[['id_eleve','nom','prenom']],left_on='id_eleve',right_on='id_eleve',how='left')
-        
+        df = df.merge(self.df_eleve[['id_eleve','nom','prenom']],left_on='id_eleve',right_on='id_eleve',how='left')        
         return df
     
     
@@ -164,21 +149,19 @@ class dashboard_prof:
         Tableaux de bord	
         Entretien	
         Modélisation dimensionnelle
-        """
-        
+        """      
         if id_groupe < 0:
             print('\n\nError heatmap_categories: id_groupe can not be < 0 !\n\n')
             exit()
         df = self.df_categorie()
         df = df[df.id_groupe == id_groupe]
         df['competance'] = df.note_par_cate/df.num_question
-
         categorie_list = df.categorie.value_counts().index.values.tolist()
         df_new = df[['id_groupe','id_eleve','nom','prenom']].drop_duplicates().reset_index(drop = True)
         for i in categorie_list:
-            df_new=df_new.merge(df[['id_eleve','competance']][df["categorie"] == i].rename(columns={"competance":i}))
-        
+            df_new=df_new.merge(df[['id_eleve','competance']][df["categorie"] == i].rename(columns={"competance":i}))       
         return df_new
+    
     
     def heatmap_sous_categorie(self,id_groupe,categorie):
         """
@@ -189,22 +172,20 @@ class dashboard_prof:
         nom	
         prenom	
         sous-categorie dans ce categorie
-        """
-        
+        """       
         if id_groupe < 0:
             print('\n\nError heatmap_categories: id_groupe can not be < 0 !\n\n')
             exit()
         df = self.df_sous_categorie(categorie)
         df = df[df.id_groupe == id_groupe]
         df['competance'] = df.note_par_sous_cate/df.num_question
-
         sous_categorie_list = df.sous_categorie.value_counts().index.values.tolist()
         df_new = df[['id_groupe','id_eleve','nom','prenom']].drop_duplicates().reset_index(drop = True)
         for i in sous_categorie_list:
-            df_new=df_new.merge(df[['id_eleve','competance']][df["sous_categorie"] == i].rename(columns={"competance":i}))
-        
+            df_new=df_new.merge(df[['id_eleve','competance']][df["sous_categorie"] == i].rename(columns={"competance":i}))       
         return df_new
-      
+ 
+     
     def df_matrix_categorie(self):
         """
         This function will return a data frame which evaluates each student's competance by categories.
@@ -214,10 +195,8 @@ class dashboard_prof:
             prenom: object
             id_groupe: int
             categorie: object
-            real_note: string
-        
+            real_note: string       
         """
-        #df_note = self.df_bi.groupby(['id_eleve','id_groupe','categorie'])['note'].agg({'note_cate':'sum'}).reset_index() (have to manually modify negative values)
         df_note = self.df_bi.groupby(['id_eleve','id_groupe','categorie'])['note'].agg({'note_cate': lambda x : x[x > 0].sum()}).reset_index()
         df_note['note_cate'] = df_note['note_cate'].astype(int)
         df_note['note_cate'] = df_note['note_cate'].astype(str)
@@ -230,6 +209,7 @@ class dashboard_prof:
         df_buffer["real_note"]= df_buffer["note_cate"].str.cat(df_buffer['actu_resp_ques'],sep = '/')
         df_buffer = df_buffer.merge(self.df_eleve[['id_eleve','nom','prenom']],left_on='id_eleve',right_on='id_eleve',how='left')
         return df_buffer
+    
     
     def matrix_categorie(self,id_groupe):
         """
@@ -244,8 +224,7 @@ class dashboard_prof:
         Tableaux de bord	
         Entretien	
         Modélisation dimensionnelle
-        """
-        
+        """      
         if id_groupe < 0:
             print('\n\nError heatmap_categories: id_groupe can not be < 0 !\n\n')
             exit()
@@ -254,9 +233,9 @@ class dashboard_prof:
         categorie_list = df.categorie.value_counts().index.values.tolist()
         df_new = df[['id_groupe','id_eleve','nom','prenom']].drop_duplicates().reset_index(drop = True)
         for i in categorie_list:
-            df_new=df_new.merge(df[['id_eleve','real_note']][df["categorie"] == i].rename(columns={"real_note":i}),how='left')
-        
+            df_new=df_new.merge(df[['id_eleve','real_note']][df["categorie"] == i].rename(columns={"real_note":i}),how='left')       
         return df_new
+ 
     
     def df_matrix_sous_categorie(self,categorie):
         """
@@ -267,11 +246,9 @@ class dashboard_prof:
             prenom: object
             id_groupe: int
             souscategorie: object
-            real_note: string
-        
+            real_note: string       
         """
         df_sous = self.df_bi[self.df_bi.categorie == categorie]
-        #df_note = df_sous.groupby(['id_eleve','id_groupe','sous_categorie'])['note'].agg({'note_souscate':'sum'}).reset_index() (have to manually modify negative values)
         df_note = df_sous.groupby(['id_eleve','id_groupe','sous_categorie'])['note'].agg({'note_souscate': lambda x : x[x > 0].sum()}).reset_index()
         df_note['note_souscate'] = df_note['note_souscate'].astype(int)
         df_note['note_souscate'] = df_note['note_souscate'].astype(str)
@@ -284,6 +261,7 @@ class dashboard_prof:
         df_buffer["real_note"]= df_buffer["note_souscate"].str.cat(df_buffer['actu_resp_ques'],sep = '/')
         df_buffer = df_buffer.merge(self.df_eleve[['id_eleve','nom','prenom']],left_on='id_eleve',right_on='id_eleve',how='left')
         return df_buffer
+       
         
     def matrix_sous_categorie(self,id_groupe,categorie):
         """
@@ -294,21 +272,19 @@ class dashboard_prof:
         nom	
         prenom	
         sous-categorie dans ce categorie
-        """
-        
+        """      
         if id_groupe < 0:
             print('\n\nError heatmap_categories: id_groupe can not be < 0 !\n\n')
             exit()
         df = self.df_matrix_sous_categorie(categorie)
         df = df[df.id_groupe == id_groupe]  
-
         sous_categorie_list = df.sous_categorie.value_counts().index.values.tolist()
         df_new = df[['id_groupe','id_eleve','nom','prenom']].drop_duplicates().reset_index(drop = True)
         for i in sous_categorie_list:
-            df_new=df_new.merge(df[['id_eleve','real_note']][df["sous_categorie"] == i].rename(columns={"real_note":i}),how='left')
-        
+            df_new=df_new.merge(df[['id_eleve','real_note']][df["sous_categorie"] == i].rename(columns={"real_note":i}),how='left')      
         return df_new
-     
+  
+    
     def absence_matrix(self,id_groupe,categorie = None):
             
         id_groupe_list = self.df_eleve.id_groupe.unique().tolist()
@@ -329,6 +305,7 @@ class dashboard_prof:
         
         elif id_groupe not in id_groupe_list:
             raise AttributeError('absence_matric, id_groupe = %d , which is not in id_groupe_list:'%id_groupe, sorted(id_groupe_list))
+     
         
     def df_heatmap(self, id_groupe = None,categorie = None):
         """
@@ -336,8 +313,7 @@ class dashboard_prof:
             id_groupe: choose a group of student by their id_groupe
             categorie: choose a categorie to show the competance of sous-categorie in this categorie, 
                         if categorie == None , show competance of all categorie
-        """
-        
+        """     
         id_groupe_list = self.df_eleve.id_groupe.unique().tolist()
         categorie_list = self.df_que.categorie.unique().tolist()
         
