@@ -16,21 +16,22 @@ class dashboard_prof:
     """
     
     ## data path, need to be change from user.
-    file_path = "/content/drive/My Drive/S5/F3B_415_G11/data"
+    #file_path = "/content/drive/My Drive/S5/F3B_415_G11/data"
     
     
-    def __init__(self, file_path = file_path):       
+    def __init__(self, file_path):       
 #         import os 
 #         print("__Path__:",file_path,'\nFiles in the path: \n',os.listdir(file_path))
         self.df_bi = pd.read_csv(file_path+"/fact_table_bi_exam.csv")
         self.df_eleve = pd.read_csv(file_path+"/eleve.csv")
         self.df_que = pd.read_csv(file_path+"/question.csv")
-        self.df_bi['note'][self.df_bi.absence == 1] = 0
+        #self.df_bi['note'][self.df_bi.absence == 1] = 0 (not needed)
+        
     
 
     def df_score(self,id_groupe):
         df_groupe = self.df_bi[self.df_bi.id_groupe == id_groupe]
-        df_groupe['note'][df_groupe.absence == 1] = -1 
+        #df_groupe['note'][df_groupe.absence == 1] = -1 (not needed)
         df_groupe_1 = df_groupe[df_groupe.note == 1]
         df_groupe_2 = df_groupe[df_groupe.note == 0]
         df_groupe_3 = df_groupe[df_groupe.note == -1]
@@ -60,7 +61,8 @@ class dashboard_prof:
         """
         cc = self.df_que.groupby(['categorie']).categorie.count()
         df_cc = pd.DataFrame({"categorie":cc.index.values, 'num_question':cc.values})
-        competance_cate = self.df_bi.groupby(['id_eleve','id_groupe','categorie'])['note'].agg({'note_par_cate':'sum'}).reset_index()
+        #competance_cate = self.df_bi.groupby(['id_eleve','id_groupe','categorie'])['note'].agg({'note_par_cate':'sum'}).reset_index() (have to manually modify negative values)
+        competance_cate = self.df_bi.groupby(['id_eleve','id_groupe','categorie'])['note'].agg({'note_par_cate': lambda x : x[x > 0].sum()}).reset_index()
         df = competance_cate.merge(df_cc, left_on= 'categorie', right_on='categorie',how='left')
         df = df.merge(self.df_eleve[['id_eleve','nom','prenom']],left_on='id_eleve',right_on='id_eleve',how='left')
         
@@ -83,7 +85,8 @@ class dashboard_prof:
         cc = df_cate.groupby(['sous_categorie']).sous_categorie.count()
         df_cc = pd.DataFrame({"sous_categorie":cc.index.values, 'num_question':cc.values})
         print(categorie,"\n",df_cc)
-        competance_cate = self.df_bi[self.df_bi['categorie'] == categorie].groupby(['id_eleve','id_groupe','sous_categorie'])['note'].agg({'note_par_sous_cate':'sum'}).reset_index()
+        #competance_cate = self.df_bi[self.df_bi['categorie'] == categorie].groupby(['id_eleve','id_groupe','sous_categorie'])['note'].agg({'note_par_sous_cate':'sum'}).reset_index() (have to manually modify negative values)
+        competance_cate = self.df_bi[self.df_bi['categorie'] == categorie].groupby(['id_eleve','id_groupe','sous_categorie'])['note'].agg({'note_par_sous_cate': lambda x : x[x > 0].sum()}).reset_index()
         df = competance_cate.merge(df_cc, left_on= 'sous_categorie', right_on='sous_categorie',how='left')
         df = df.merge(self.df_eleve[['id_eleve','nom','prenom']],left_on='id_eleve',right_on='id_eleve',how='left')
         
@@ -156,7 +159,8 @@ class dashboard_prof:
             real_note: string
         
         """
-        df_note = self.df_bi.groupby(['id_eleve','id_groupe','categorie'])['note'].agg({'note_cate':'sum'}).reset_index()
+        #df_note = self.df_bi.groupby(['id_eleve','id_groupe','categorie'])['note'].agg({'note_cate':'sum'}).reset_index() (have to manually modify negative values)
+        df_note = self.df_bi.groupby(['id_eleve','id_groupe','categorie'])['note'].agg({'note_cate': lambda x : x[x > 0].sum()}).reset_index()
         df_note['note_cate'] = df_note['note_cate'].astype(int)
         df_note['note_cate'] = df_note['note_cate'].astype(str)
         df_absence = self.df_bi.groupby(['id_eleve','id_groupe','categorie'])['absence'].agg({'num_absence':'sum'}).reset_index()
@@ -209,7 +213,8 @@ class dashboard_prof:
         
         """
         df_sous = self.df_bi[self.df_bi.categorie == categorie]
-        df_note = df_sous.groupby(['id_eleve','id_groupe','sous_categorie'])['note'].agg({'note_souscate':'sum'}).reset_index()
+#        df_note = df_sous.groupby(['id_eleve','id_groupe','sous_categorie'])['note'].agg({'note_souscate':'sum'}).reset_index() (have to manually modify negative values)
+        df_note = df_sous.groupby(['id_eleve','id_groupe','sous_categorie'])['note'].agg({'note_souscate': lambda x : x[x > 0].sum()}).reset_index()
         df_note['note_souscate'] = df_note['note_souscate'].astype(int)
         df_note['note_souscate'] = df_note['note_souscate'].astype(str)
         df_absence = df_sous.groupby(['id_eleve','id_groupe','sous_categorie'])['absence'].agg({'num_absence':'sum'}).reset_index()
@@ -293,3 +298,13 @@ class dashboard_prof:
         
         elif id_groupe not in id_groupe_list:
             raise AttributeError('id_groupe = %s , which is not in id_groupe_list:'%id_groupe, sorted(id_groupe_list))
+
+    def df_average(self, df_fact, df_question, df_student):
+        """
+            Calculate average result per student
+        """
+        df = df_fact[['id_eleve','id_question','note']].merge(df_question[['id_question','id_qcm']], on='id_question')
+        df = df.groupby(['id_eleve','id_qcm'])['note'].agg({'Avg': lambda x : x[x > 0].sum()}).reset_index()
+        df = df.groupby(['id_eleve'])['Avg'].mean().round(2).reset_index()
+        df = df.merge(df_student[['id_eleve','niveau_init_francais','niveau_atteint_francais', 'groupe_promo', 'code_formation', 'site']], on='id_eleve')
+        return df

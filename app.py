@@ -47,22 +47,22 @@ external_scripts = [
 ]
 
 
-dashboard = dashboard_prof('https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/devs/Data')
-url_fait = 'https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/devs/Data/fact_table_bi_exam.csv'
-df_fait = pd.read_csv(url_fait,index_col=0,parse_dates=[0])
-
-url_student = 'https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/devs/Data/eleve.csv'
-df_students = pd.read_csv(url_student,index_col=0,parse_dates=[0])
-
-
-df_students.columns = [x.lower() for x in df_students.columns]
-df_students = df_students.sort_index(by = 'id_groupe', ascending= True)
-
-group_variables = ['nom','prenom','id_groupe','niveau_initial_francais','niveau_atteint_francais']
-
-df_students.niveau_atteint_francais[df_students.niveau_atteint_francais == '0']='Maternel'
-df_students.niveau_initial_francais[df_students.niveau_initial_francais == '0']='Maternel'
-
+#dashboard = dashboard_prof('https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/devs/Data') (change url link)
+dashboard = dashboard_prof('https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/master/Data/')
+#url_fait = 'https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/devs/Data/fact_table_bi_exam.csv'
+#df_fait = pd.read_csv(url_fait,index_col=0,parse_dates=[0])
+#
+#url_student = 'https://raw.githubusercontent.com/lhaippp/Dash_Student_Management_System/devs/Data/eleve.csv'
+#df_students = pd.read_csv(url_student,index_col=0,parse_dates=[0])
+#print(df_students.columns)
+#
+#df_students.columns = [x.lower() for x in df_students.columns]
+#df_students = df_students.sort_index(by = 'id_groupe', ascending= True)
+#group_variables = ['nom','prenom','id_groupe','niveau_initial_francais','niveau_atteint_francais']
+#
+#df_students.niveau_atteint_francais[df_students.niveau_atteint_francais == '0']='Maternel' 
+#df_students.niveau_initial_francais[df_students.niveau_initial_francais == '0']='Maternel'
+#(Data has been loaded into the dashboard object, these lines are unnecessary...) 
 app = dash.Dash(
     __name__,
     external_scripts=external_scripts,
@@ -147,16 +147,19 @@ page_1_layout = html.Div(children=[
         Veuillez choisir un Groupe
     '''),
    dcc.Dropdown(
-        options=[{'label': 'Groupe ' + str(i), 'value': i} for i in df_students.id_groupe.unique()],
+        #options=[{'label': 'Groupe ' + str(i), 'value': i} for i in df_students.id_groupe.unique()], (df_students not needed)
+        options=[{'label': 'Groupe ' + str(i), 'value': i} for i in dashboard.df_eleve.id_groupe.sort_values().unique()],
         id='dropdown',
-        value='1',
+        #value='1', ('1' is a string, not a number)
+        value = 1,
         placeholder="Tous les groupes",
     ),
            html.Div(children='''
         Veuillez choisir une catégorie d'enseignement
     '''),
     dcc.Dropdown(
-        options=[{'label': str(i), 'value': i} for i in df_fait.categorie.unique()],
+        #options=[{'label': str(i), 'value': i} for i in df_fait.categorie.unique()], (df_fait not needed)
+        options=[{'label': str(i), 'value': i} for i in dashboard.df_bi.categorie.unique()],
         id='dropdown_categorie',
         placeholder="Toutes les catégories",
     ),
@@ -198,9 +201,11 @@ def display_output(value):
 
 @app.callback(Output('table_div', 'children'), [Input('dropdown', 'value')])
 def update_table(value):
-    return  dt.DataTable(
-            rows=df_students.loc[(df_students["id_groupe"]==value),].to_dict("rows"),
-            columns=df_students.columns.tolist(),
+    #Don't modify the original data, use a copy
+    df_students = dashboard.df_eleve.sort_values(by = 'id_groupe', ascending= True)
+    return  dt.DataTable(           
+            rows=df_students.loc[(df_students["id_groupe"]==value),].to_dict("rows"), 
+            columns=df_students.columns.tolist(), 
             filterable=True,
             sortable=True,
             editable=False
@@ -209,6 +214,7 @@ def update_table(value):
 @app.callback(Output('graph_div', 'children'), [Input('dropdown', 'value')])
 def update_graph(id_groupe):
     df = dashboard.df_score(id_groupe)
+    print(df)
     xticks = df['nom'].str.cat(df['prenom'],sep=' ').values.tolist()
     return dcc.Graph(
     figure=go.Figure(
@@ -437,32 +443,6 @@ def update_figure(rows, selected_row_indices):
 
 # the third page
 
-#Could be better if use a fact table instead?
-df1 = pd.read_csv('Data/note_eleve.csv')
-df2 = pd.read_csv('Data/eleve.csv')
-df3 = pd.read_csv('Data/ExportElevesUVSimple.csv')
-
-#Dataframe modifications for the requirements
-# df2 = df2.merge(df3[['ID_ELEVE','groupe_promo', 'site', 'CODE_FORMATION']], left_on='id_eleve', right_on='ID_ELEVE').drop('ID_ELEVE',1)
-# print(df2)
-df2.loc[df2['groupe_promo'] == 1, 'professor_name'] = 'Laurent'
-df2.loc[df2['groupe_promo'] == 2, 'professor_name'] = 'Sylvie'
-filter_col = [col for col in df1 if col.startswith('qcm')]
-filter_col.sort()
-df1['Avg'] = df1[filter_col].mean(axis=1).round(2)
-filter_col.extend(['Avg','id_eleve'])
-df2 = df2.merge(df1[filter_col], on='id_eleve')
-
-#Better use a def with group_by?
-# df2.niveau_atteint_francais[df2.niveau_atteint_francais == '0']='Maternel'
-# df2.niveau_initial_francais[df2.niveau_initial_francais == '0']='Maternel'
-df4 = df2.groupby(['niveau_init_francais', 'niveau_atteint_francais'])['Avg'].mean().round(2).reset_index()
-df5 = df2.groupby(['code_formation'])['Avg'].mean().round(2).reset_index()
-df6 = df2.groupby(['site'])['Avg'].mean().round(2).reset_index()
-df7 = df2.groupby(['professor_name'])['Avg'].mean().round(2).reset_index()
-
-
-
 page_3_layout = html.Div([
     html.H1('Evaluation par Profil par étudiant ', style={'width': '1000px'}),
     html.Div(children='''
@@ -473,7 +453,7 @@ page_3_layout = html.Div([
             dcc.Tab(label='Niveau de français', value='tab_1'),
             dcc.Tab(label='Formation', value='tab_2'),
             dcc.Tab(label='Site', value='tab_3'),
-            dcc.Tab(label='Professeur', value='tab_4'),
+            dcc.Tab(label='Groupe promo', value='tab_4'),
         ]),
         html.Div(id='tabs_content')
 ])
@@ -481,46 +461,52 @@ page_3_layout = html.Div([
 @app.callback(Output('tabs_content', 'children'),
               [Input('tabs', 'value')])
 def render_content(tab):
-    # df1,df4,df5,df6,df7 = dashboard.function_name()
-
-    #Also, could use a def to plot these Bar charts?
+    
+    #Calculate average result of students in different criteria
+    df = dashboard.df_average(dashboard.df_bi, dashboard.df_que, dashboard.df_eleve)
+    df1 = df.groupby(['niveau_init_francais', 'niveau_atteint_francais'])['Avg'].mean().round(2).reset_index()
+    df2 = df.groupby(['code_formation'])['Avg'].mean().round(2).reset_index()
+    df3 = df.groupby(['site'])['Avg'].mean().round(2).reset_index()
+    df4 = df.groupby(['groupe_promo'])['Avg'].mean().round(2).reset_index()
+    
+    #Separate graphs for average value of different criteria
     trace1 = go.Bar(
-        x = df4.iloc[:,0].map(str),
-        y = df4.iloc[:,2],
-        width = [0.5 for _ in range(df4.shape[0])],
+        x = df1.iloc[:,1],
+        y = df1.iloc[:,2],
+        width = [0.5 for _ in range(df1.shape[0])],
         
         name = 'Note moyenne par niveau de français',
         showlegend = False
     ) 
 
     trace2 = go.Bar(
-        x = df5.iloc[:,0],
-        y = df5.iloc[:,1],
-        width = [0.5 for _ in range(df5.shape[0])],
+        x = df2.iloc[:,0],
+        y = df2.iloc[:,1],
+        width = [0.5 for _ in range(df2.shape[0])],
         name = 'Note moyenne par formation',
         showlegend = False
     ) 
 
     trace3 = go.Bar(
-        x = df6.iloc[:,0],
-        y = df6.iloc[:,1],
-        width = [0.3 for _ in range(df6.shape[0])],
+        x = df3.iloc[:,0],
+        y = df3.iloc[:,1],
+        width = [0.3 for _ in range(df3.shape[0])],
         name = 'Note moyenne par site',
         showlegend = False
     ) 
 
     trace4 = go.Bar(
-        x = df7.iloc[:,0],
-        y = df7.iloc[:,1],
-        width = [0.2 for _ in range(df7.shape[0])],
-        name = 'Note moyenne par professeur',
+        x = df4.iloc[:,0],
+        y = df4.iloc[:,1],
+        width = [0.2 for _ in range(df4.shape[0])],
+        name = 'Note moyenne par groupe promo',
         showlegend = False
     )  
 
     #Global average value, shown as a threshold line
     trace5 = go.Scatter(
         x = [" "],    
-        y = [df1['Avg'].mean()],
+        y = [df['Avg'].mean()],
         mode = 'text',
         text = ['Moyenne globale'],
         name = 'Moyenne globale',
@@ -538,9 +524,9 @@ def render_content(tab):
                             'xref' : 'paper',
                             'yref' : 'y',
                             'x0' : 0,
-                            'y0' : df1['Avg'].mean(),
+                            'y0' : df['Avg'].mean(),
                             'x1' : 1,
-                            'y1' : df1['Avg'].mean(),
+                            'y1' : df['Avg'].mean(),
                             'line' : {
                                 'color' : 'rgb(50, 171, 96)',
                                 'width' : 3,
@@ -571,9 +557,9 @@ def render_content(tab):
                             'xref' : 'paper',
                             'yref' : 'y',
                             'x0' : 0,
-                            'y0' : df1['Avg'].mean(),
+                            'y0' : df['Avg'].mean(),
                             'x1' : 1,
-                            'y1' : df1['Avg'].mean(),
+                            'y1' : df['Avg'].mean(),
                             'line' : {
                                 'color' : 'rgb(50, 171, 96)',
                                 'width' : 3,
@@ -604,9 +590,9 @@ def render_content(tab):
                             'xref' : 'paper',
                             'yref' : 'y',
                             'x0' : 0,
-                            'y0' : df1['Avg'].mean(),
+                            'y0' : df['Avg'].mean(),
                             'x1' : 1,
-                            'y1' : df1['Avg'].mean(),
+                            'y1' : df['Avg'].mean(),
                             'line' : {
                                 'color' : 'rgb(50, 171, 96)',
                                 'width' : 3,
@@ -637,9 +623,9 @@ def render_content(tab):
                             'xref' : 'paper',
                             'yref' : 'y',
                             'x0' : 0,
-                            'y0' : df1['Avg'].mean(),
+                            'y0' : df['Avg'].mean(),
                             'x1' : 1,
-                            'y1' : df1['Avg'].mean(),
+                            'y1' : df['Avg'].mean(),
                             'line' : {
                                 'color' : 'rgb(50, 171, 96)',
                                 'width' : 3,
@@ -647,9 +633,9 @@ def render_content(tab):
                             },
                             'name' : 'Moyenne globale'
                         }],
-                        'title' : 'Note moyenne par professeur',
+                        'title' : 'Note moyenne par groupe promo',
                         'xaxis' : {
-                            'title' : 'Professeur'
+                            'title' : 'Groupe promo'
                         },
                         'yaxis' : {
                             'title' : 'Note moyenne'
@@ -673,4 +659,4 @@ def display_page(pathname):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True,port='8055')
+    app.run_server(debug=False,port=8055)
