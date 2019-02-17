@@ -31,7 +31,7 @@ If success, you'll see a result like below:
 ****************************************************************
 Congratulations! All the environment are installed successfully
 ****************************************************************
-Now you enter the project!
+Now you can view and edit the project!
 ****************************************************************
 ```
 
