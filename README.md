@@ -46,7 +46,7 @@ $ python3 app.py
 Now you can visit the dashboard at [http://127.0.0.1:8055/](http://127.0.0.1:8055/)
 
 ### Demo
-Here we offer a demo for the [dashborad](BI-projet/docs/Dash.png)
+Here we offer a demo for the [dashboard](BI-projet/docs/Dash.png)
 ![demo](BI-projet/docs/Dash.png)
 
 
@@ -68,7 +68,7 @@ We use [Github](https://github.com/lhaippp/Dash_Student_Management_System) for v
 * **Xuanqi HUANG** - *ETL work* 
 * **Hassen NJAH** - *Dash work* 
 * **Haipeng LI** - *Dash work* 
-* **Duk Minh** - *ETL work* 
+* **Minh Duc NGUYEN** - *ETL work* 
 
 
 ## License
