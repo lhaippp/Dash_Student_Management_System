@@ -27,24 +27,62 @@ class dashboard_prof:
         self.df_que = pd.read_csv(file_path+"/question.csv")
         self.df_bi['note'][self.df_bi.absence == 1] = 0
     
+    def df_score_by_qcm(self):
+    
+        qcm_num = self.df_que.id_qcm.max()
+        df = self.df_bi[['id_eleve','id_groupe','id_question','note']]
+        df = df.merge(self.df_que[['id_question','id_qcm']], right_on='id_question',left_on='id_question',how='left')
+        
+        new_df = self.df_eleve[['id_eleve','id_groupe','nom','prenom']]
+        new_df['name'] = new_df['nom'] + ' '+ new_df['prenom']
+        for i in range(1,qcm_num+1):
+            new_df = new_df.merge(df[df.id_qcm == i].groupby('id_eleve')['note'].agg({'qcm_%d'%i:'sum'}).reset_index(),how='left')
+        # print(new_df)
+        return new_df
+                
+    
+    def df_profile(self):
+        df1 = self.df_score_by_qcm()
+        df2 = self.df_eleve
+        df2.loc[df2['groupe_promo'] == 1, 'professor_name'] = 'Laurent'
+        df2.loc[df2['groupe_promo'] == 2, 'professor_name'] = 'Sylvie'
+        filter_col = [col for col in df1 if col.startswith('qcm')]
+        filter_col.sort()
+        df1['Avg'] = np.nan
+        df1['Avg'] = df1[filter_col].mean(axis=1).round(2)
+        filter_col.extend(['Avg','id_eleve'])
+        df2 = df2.merge(df1[filter_col], on='id_eleve')
+        print('df2',df2)
+        df2.niveau_atteint_francais[df2.niveau_atteint_francais == '0']='Maternel'
+        # df2.niveau_initial_francais[df2.niveau_initial_francais == '0']='Maternel'
+        df4 = df2.groupby(['niveau_atteint_francais'])['Avg'].mean().round(2).reset_index()
+        df5 = df2.groupby(['code_formation'])['Avg'].mean().round(2).reset_index()
+        df6 = df2.groupby(['site'])['Avg'].mean().round(2).reset_index()
+        df7 = df2.groupby(['professor_name'])['Avg'].mean().round(2).reset_index()
 
-    def df_score(self,id_groupe):
-        df_groupe = self.df_bi[self.df_bi.id_groupe == id_groupe]
+        return df1,df4,df5,df6,df7
+        
+    def all_score(self):
+        df_groupe = self.df_bi
         df_groupe['note'][df_groupe.absence == 1] = -1 
         df_groupe_1 = df_groupe[df_groupe.note == 1]
         df_groupe_2 = df_groupe[df_groupe.note == 0]
         df_groupe_3 = df_groupe[df_groupe.note == -1]
         
         df = df_groupe[['id_eleve']].drop_duplicates()
-        df = df.merge(self.df_eleve[['id_eleve','nom','prenom']],left_on='id_eleve',right_on='id_eleve',how='left')
-        
+        df = df.merge(self.df_eleve[['id_eleve','id_groupe','nom','prenom']],left_on='id_eleve',right_on='id_eleve',how='left')
+        # print(df)
         df = df.merge(df_groupe_1.groupby('id_eleve')['note'].agg({'reponse_correcte':'count'}).reset_index(),how='left')
         df = df.merge(df_groupe_2.groupby('id_eleve')['note'].agg({'reponse_fause':'count'}).reset_index(),how='left')
         df = df.merge(df_groupe_3.groupby('id_eleve')['note'].agg({'pas_de_reponse':'count'}).reset_index(),how='left')
-        
+        df.fillna(0,inplace = True)
+        # print(df)
         return df
         
-        
+    def df_score(self, id_groupe):
+        df = self.all_score()
+        return df[df.id_groupe == id_groupe]
+
     def df_categorie(self):
         """
         This function will return a data frame which evaluates each student's competance by categories.
@@ -293,3 +331,6 @@ class dashboard_prof:
         
         elif id_groupe not in id_groupe_list:
             raise AttributeError('id_groupe = %s , which is not in id_groupe_list:'%id_groupe, sorted(id_groupe_list))
+
+# test            
+dashboard_prof('./Data/').df_score_by_qcm()

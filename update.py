@@ -117,5 +117,13 @@ def update_all(qcm_list,eleve = None,data_path = './Data/'):
     update_fact(qcm_list,data_path)
     print('Mis_a_jour est fini, path:',data_path)
 
+    
+    
+    
+    
+    
+######################################################################    
 ### Test    
 update_all(['QCM.csv','QCM2.csv','QCM3.csv'],'ExportElevesUVSimple.csv')   
+
+######################################################################
