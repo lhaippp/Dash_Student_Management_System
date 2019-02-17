@@ -205,7 +205,7 @@ page_1_layout = html.Div(children=[
     ),
     html.Br(),
            
-#html elemnts for every dash component          
+#html elements for every dash component          
     html.H3(id='output'),
     
     html.Div(id='heatmap_div'),
@@ -476,8 +476,10 @@ page_3_layout = html.Div([
         html.Div(id='tabs_content')
 ])
 
+#Filter necessary data for the graphs
 df1,df4,df5,df6,df7 = dashboard.df_profile()
-# print(df4)
+
+#Define graphs for average value of different criteria
 trace1 = go.Bar(
         x = df4.iloc[:,0].map(str),
         y = df4.iloc[:,1],
@@ -510,7 +512,7 @@ trace4 = go.Bar(
         showlegend = False
     )  
 
-    #Global average value, shown as a threshold line
+#Global average value, shown as a threshold line
 trace5 = go.Scatter(
         x = [" "],    
         y = [df1['Avg'].mean()],
@@ -518,15 +520,12 @@ trace5 = go.Scatter(
         text = ['Moyenne globale'],
         name = 'Moyenne globale',
         showlegend = False
-) 
+    ) 
 
-
-
+#Plot the graphs
 @app.callback(Output('tabs_content', 'children'),
               [Input('tabs', 'value')])
-def render_content(tab):
-    #Also, could use a def to plot these Bar charts?
- 
+def render_content(tab):    
     if tab == 'tab_1':
         return html.Div([
             dcc.Graph(
@@ -674,4 +673,4 @@ def display_page(pathname):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=False,port=8055)
+    app.run_server(debug=True,port=8055)
