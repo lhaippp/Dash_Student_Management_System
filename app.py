@@ -480,7 +480,7 @@ page_3_layout = html.Div([
 ])
 
 df1,df4,df5,df6,df7 = dashboard.df_profile()
-print(df4)
+# print(df4)
 trace1 = go.Bar(
         x = df4.iloc[:,0].map(str),
         y = df4.iloc[:,1],

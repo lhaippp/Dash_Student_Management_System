@@ -27,8 +27,16 @@ class dashboard_prof:
         self.df_que = pd.read_csv(file_path+"/question.csv")
         self.df_bi['note'][self.df_bi.absence == 1] = 0
     
-    def df_score_by_qcm(self):
     
+    
+    def df_score_by_qcm(self):
+        """
+        return a data frame which has 
+            id_eleve,
+            id_groupe,
+            name(Nom + Prenom)
+            qcm score in Nth qcm(if 3 qcm in total, there will be 3 columns qcm_1 qcm_2 qcm_3 ... which saved score in each qcm)
+        """
         qcm_num = self.df_que.id_qcm.max()
         df = self.df_bi[['id_eleve','id_groupe','id_question','note']]
         df = df.merge(self.df_que[['id_question','id_qcm']], right_on='id_question',left_on='id_question',how='left')
@@ -42,6 +50,9 @@ class dashboard_prof:
                 
     
     def df_profile(self):
+        """
+        Return 5 data frames to pages-3 for (analyse par profile)
+        """
         df1 = self.df_score_by_qcm()
         df2 = self.df_eleve
         df2.loc[df2['groupe_promo'] == 1, 'professor_name'] = 'Laurent'
@@ -52,7 +63,7 @@ class dashboard_prof:
         df1['Avg'] = df1[filter_col].mean(axis=1).round(2)
         filter_col.extend(['Avg','id_eleve'])
         df2 = df2.merge(df1[filter_col], on='id_eleve')
-        print('df2',df2)
+        # print('df2',df2)
         df2.niveau_atteint_francais[df2.niveau_atteint_francais == '0']='Maternel'
         # df2.niveau_initial_francais[df2.niveau_initial_francais == '0']='Maternel'
         df4 = df2.groupby(['niveau_atteint_francais'])['Avg'].mean().round(2).reset_index()
@@ -63,6 +74,11 @@ class dashboard_prof:
         return df1,df4,df5,df6,df7
         
     def all_score(self):
+        """
+            return a df which shows each student's correct response / mistakes / empty response
+        """
+    
+    
         df_groupe = self.df_bi
         df_groupe['note'][df_groupe.absence == 1] = -1 
         df_groupe_1 = df_groupe[df_groupe.note == 1]
@@ -80,6 +96,9 @@ class dashboard_prof:
         return df
         
     def df_score(self, id_groupe):
+        """
+        select a groupe of students from self.all_score()
+        """
         df = self.all_score()
         return df[df.id_groupe == id_groupe]
 
@@ -120,7 +139,7 @@ class dashboard_prof:
         df_cate = self.df_que[self.df_que["categorie"] == categorie]
         cc = df_cate.groupby(['sous_categorie']).sous_categorie.count()
         df_cc = pd.DataFrame({"sous_categorie":cc.index.values, 'num_question':cc.values})
-        print(categorie,"\n",df_cc)
+        # print(categorie,"\n",df_cc)
         competance_cate = self.df_bi[self.df_bi['categorie'] == categorie].groupby(['id_eleve','id_groupe','sous_categorie'])['note'].agg({'note_par_sous_cate':'sum'}).reset_index()
         df = competance_cate.merge(df_cc, left_on= 'sous_categorie', right_on='sous_categorie',how='left')
         df = df.merge(self.df_eleve[['id_eleve','nom','prenom']],left_on='id_eleve',right_on='id_eleve',how='left')
