@@ -214,7 +214,6 @@ def update_table(value):
 @app.callback(Output('graph_div', 'children'), [Input('dropdown', 'value')])
 def update_graph(id_groupe):
     df = dashboard.df_score(id_groupe)
-    print(df)
     xticks = df['nom'].str.cat(df['prenom'],sep=' ').values.tolist()
     return dcc.Graph(
     figure=go.Figure(
