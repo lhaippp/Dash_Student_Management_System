@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-**todo**
+Bonjour!
 
 ### Prerequisites
 
