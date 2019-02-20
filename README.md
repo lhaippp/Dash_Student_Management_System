@@ -56,6 +56,7 @@ Here we offer a demo for the [dashboard](BI-projet/docs/Dash.png)
 * [Pandas](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) - The high-performance, easy-to-use data structures and data analysis tools
 * [Jupyter](https://jupyter.org/) - The services for interactive computing
 * [Colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb?hl=zh-cn) - The free Jupyter notebook environment that requires no setup and runs entirely in the cloud.
+* [AMC](https://project.auto-multiple-choice.net/) - The services for making QCM
 
 
 ## Versioning
